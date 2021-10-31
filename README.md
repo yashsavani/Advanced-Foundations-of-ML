@@ -17,7 +17,7 @@ The rest of this document lists the different areas and resources I think are ne
 
 ## Meta Tools
 
-First there are meta tools that expedite the acquisition and integration of new tools and concepts. These are things like a good code and manuscript editor (I use neovim with plugins see my (dotfiles)[https://github.com/yashsavani/dotfiles] for my configuration), a good reference manager (I use Zotero, but I've heard good things about Mendeley as well), and a good concept management system (I use Zettelkasten, to understand my notetaking approach better take a look at (How to Take Smart Notes)[https://www.amazon.com/How-Take-Smart-Notes-Nonfiction/dp/1542866502]).
+First there are meta tools that expedite the acquisition and integration of new tools and concepts. These are things like a good code and manuscript editor (I use neovim with plugins see my [dotfiles](https://github.com/yashsavani/dotfiles) for my configuration), a good reference manager (I use Zotero, but I've heard good things about Mendeley as well), and a good concept management system (I use Zettelkasten, to understand my notetaking approach better take a look at [How to Take Smart Notes](https://www.amazon.com/How-Take-Smart-Notes-Nonfiction/dp/1542866502)).
 
 ## Core Math
 
