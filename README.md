@@ -1,3 +1,9 @@
+---
+title: Advanced Foundations of ML
+author: Yash Savani
+date: November 1, 2021
+---
+
 # Advanced-Foundations-of-ML
 
 There are already several repositories and courses that cover the foundations of Machine Learning. Here are a few of them:
