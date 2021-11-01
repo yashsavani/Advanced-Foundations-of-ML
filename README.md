@@ -19,11 +19,11 @@ The rest of this document lists several different areas, with accompanying learn
 
 Before you start this journey, I would recommend making sure you have a solid arsenal of meta tools that will expedite your acquisition and integration of the new concepts you will be learning. These are tools like a good code and manuscript editor (I use neovim with plugins. See my [dotfiles](https://github.com/yashsavani/dotfiles) for my configuration), a good reference manager (I use Zotero, but I've heard good things about Mendeley as well), and a good concept management system (I use Zettelkasten: for an introduction to this system look at [this blog post](https://zenkit.com/en/blog/a-beginners-guide-to-the-zettelkasten-method/). For a deeper dive, read [How to Take Smart Notes](https://www.amazon.com/How-Take-Smart-Notes-Nonfiction/dp/1542866502)).
 
-I also generally prefer videos over textbooks to learn new material. Unfortunately, the speed of the video tends to vary a lot and does not necassarily match my comfort level with the material. I use the [Video Speed Controller](https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk) chrome extension to dial in the speed I want.
+I also generally prefer videos over textbooks to learn new material. Unfortunately, the speed of any video tends to vary a lot and does not necessarily match my comfort level with the material. I use the [Video Speed Controller](https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk) chrome extension to dial in the speed I want.
 
 ## Core Math
 
-Before diving into some of the more advanced math concepts, I would encourage you to at least cursorily go through some of the core math resources even if you think you already know them all. I can't count the number of times I thought I understood some core math concept very well, only to later realize that there was some subtlety I was missing, which had a cascading effect on so much more of my understanding.
+Before diving into some of the more advanced math concepts, I would encourage you to at least cursorily go through some of the core math resources provided here. I recommend doing this even if you think you are comfortable with all the topics listed below. I can't count the number of times I thought I completely understood some core math concept, only to later realize that there was some subtlety I had neglected. These neglected subtleties can often have a cascading effect making it very hard to understand some of the more advanced material that rely on this solid core.
 
 - Propositional logic,
 - Set theory (ZFC axioms),
@@ -46,11 +46,48 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 
 One excellent resource I have found for this material is the playlist [Introduction to Higher Mathematics](https://youtube.com/playlist?list=PLZzHxk_TPOStgPtqRZ6KzmkUQBQ8TSWVX). I recommend going through this playlist at least once.
 
-Linear algebra is the foundation of almost all math needed for machine learning. As my advisor says, you can't know enough Linear Algebra. To get started I would recommend going through [this excellent playlist](https://youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) by [3Blue1Brown](https://www.3blue1brown.com/)  to get some intuition, and then go through this playlist (https://youtube.com/playlist?list=PLE7DDD91010BC51F8) for more thorough coverage.
+Linear algebra is the foundation of almost all the math needed for machine learning. As my advisor says, you can't know enough linear algebra. To develop a strong intuition for this material, I would first recommend going through [this excellent playlist](https://youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) by [3Blue1Brown](https://www.3blue1brown.com/). Once you have developed the intuition, then I would recommend going through [this playlist](https://youtube.com/playlist?list=PLE7DDD91010BC51F8) by the esteemed Prof. Gilbert Strang from MIT for a more thorough coverage of the material.
 
 ## Core CS
 
-Core ideas in CS: types, variables, conditionals, loops, functions, OOP vs functional, memory management, algorithms (recursion, search, sort, big O, graph algorithms, dynamic programming), data structures (lists, stacks, queues, trees, heaps, hashmaps), standard libraries, debugging, and profiling.
+Machine learning relies on having a solid foundation in Computer Science. All the topics covered here are probably available through an introductory course in CS at any university.
+
+### Basics
+
+- Types,
+- Variables,
+- Conditionals,
+- Loops,
+- Functions,
+- Recursion
+- Classes and Objects,
+- Functional programming, and
+- Memory organization and Pointers/References.
+
+### Algorithms
+
+- Search,
+- Sort,
+- Landau notation (Big/Little O, Omega, Theta),
+- Graph algorithms, and
+- Dynamic programming
+
+### Data Structures
+
+- Lists,
+- Stacks,
+- Queues,
+- Trees,
+- Heaps, and
+- Hashmaps
+
+### Additional Topics
+
+- Standard Libraries,
+- Debugging techniques, and 
+- Profiling.
+
+I would also recommend learning as many of these concepts as you can through python since that is the most common language for machine learning.
 
 ## Intermediate Math
 
