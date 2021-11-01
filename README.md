@@ -91,7 +91,22 @@ I would also recommend learning as many of these concepts as you can through pyt
 
 ## Intermediate Math
 
-Intermediate math: spectral Linear Algebra (SVD), duality, real analysis (topology+sequences), multivariable calc w/ analysis, probability theory (measure theory), and statistics (concentration inequalities, CLT, exp families, MLE, hyp testing, regression, Bayesian methods).
+Now we come to some of the more advanced topics in math that will almost definitely be used either directly or indirectly in any contemporary machine learning research you may come across.
+
+- Spectral linear algebra,
+- Multilinear algebra,
+- Real Analysis,
+- Multivariable calculus using analysis,
+- Probability theory (measure theory and stochastic processes),
+- Concentration inequalities,
+- Central limit theorem,
+- Exponential families,
+- Maximum likelihood estimation,
+- Hypothesis testing,
+- Regression (Linear, Logistic, Generalized), and
+- Bayesian techniques
+
+Some of the resources to learn this material are:
 
 - https://amazon.com/Analysis-II-Third-Readings-Mathematics/dp/9380250657
 - https://statweb.stanford.edu/~adembo/stat-310b/lnotes.PLE7DDD91010BC51F8
