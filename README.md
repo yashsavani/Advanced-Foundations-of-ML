@@ -4,7 +4,7 @@ author: Yash Savani
 date: November 1, 2021
 ---
 
-# Advanced-Foundations-of-ML
+# Advanced Foundations of ML
 
 There are already several repositories and courses that cover the foundations of Machine Learning. Here are a few of them:
 
@@ -15,7 +15,7 @@ Most of these resources are designed to get you to the starting line. They provi
 
 Some might argue that the best way to learn this missing material is to just dive in and start reading papers. Try to figure out the missing concepts on the fly. That is exactly what I have been doing over the past few years, and I am sad to say that this approach is very insufficient. While it may get you to a place where you can understand the research at a surface level, this top-down model leaves you with a deep sense of inadequacy; a feeling that you are lacking something base. With this approach, you eventually realize that you lack a cohesive narrative and many foundational concepts. You find it difficult to see the work in a wider theoretical and applied context, and have a hard time identifying nontrivial extensions. The need to go back and relearn some of the mathematical foundations then becomes imperative. This is exactly what I went through, and if you have had a similar experience, I hope this resource will be of some help to you.
 
-If you have no experience with machine learning at all, then I would encourage you to take an intro class in machine learning to see just how cool this field is. One example of such a course is (https://www.coursera.org/learn/machine-learning) by Andrew Ng. Machine learning is one of the most exciting technologies to have blossomed over the past decade, and there are still a plethora of untapped applications to many of the existing techniques. I urge you to explore as much as you can. However, if you find yourself struggling with some of the advanced material, or you get a gnawing sense that you are missing something fundamental while reading the literature, then maybe this resource can help you.
+If you have no experience with machine learning at all, then I would encourage you to take an intro class in machine learning to see just how cool this field is. One example of such a course is (https://www.coursera.org/learn/machine-learning) by Andrew Ng. Machine learning is one of the most exciting technologies to have blossomed over the past decade, and there are still a plethora of untapped applications to many of the existing techniques. I urge you to explore as much as you can, and also to start reading papers and thinking of extensions to contemporary work. This material should be seen more as a complement than a prerequisite to your machine learning journey. If you find yourself struggling with some of the advanced material, or you get a gnawing sense that you are missing something fundamental while reading the literature, then maybe something from this resource can help you.
 
 My goal with this repository is to create a curated list of resources for those who want to do a deeper dive into some of the more advanced foundations of machine learning. I hope that anyone with a high school background in math and CS who goes through all the material here will successfully be able to read and carry out state-of-the-art research in both theoretical and applied machine learning feeling empowered and confident in their work.
 
@@ -52,11 +52,13 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 
 One excellent resource I have found for this material is the playlist [Introduction to Higher Mathematics](https://youtube.com/playlist?list=PLZzHxk_TPOStgPtqRZ6KzmkUQBQ8TSWVX). I recommend going through this playlist at least once.
 
-Linear algebra is the foundation of almost all the math needed for machine learning. As my advisor says, you can't know enough linear algebra. To develop a strong intuition for this material, I would first recommend going through [this excellent playlist](https://youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) by [3Blue1Brown](https://www.3blue1brown.com/). Once you have developed the intuition, then I would recommend going through [this playlist](https://youtube.com/playlist?list=PLE7DDD91010BC51F8) by the esteemed Prof. Gilbert Strang from MIT for a more thorough coverage of the material.
+Linear algebra is the foundation of almost all the math needed for machine learning. As my advisor says, you can't know enough linear algebra. To develop a strong intuition for this material, I would first recommend going through [this excellent playlist](https://youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) by [3Blue1Brown](https://www.3blue1brown.com/). Once you have developed some intuition for linear algebra, then I would recommend going through [this playlist](https://youtube.com/playlist?list=PLE7DDD91010BC51F8) by the esteemed Prof. Gilbert Strang from MIT for a more thorough coverage of the material.
+
+Another crucial tool in the machine learning toolbox is calculus. Most of the machine learning literature will extensive use of tools from multivariable calculus. However, before diving into the nuances of multivariable calculus, it's important to make sure you have the foundations and intuition for single variable calculus first. To gain the intuition I would recommend a [this playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr) by 3Blue1Brown, or [this course](https://www.khanacademy.org/math/ap-calculus-bc) by khanacademy. If you already have a strong calculus foundation, these courses can safely be skipped. I would encourage you to go through 3Blue1Brown's playlist at some point though, as it does help clarify a lot of misconceptions that most high schoolers seem to have about calculus. Who knows, you may learn something you didn't realize you had missed. Even small insights in the foundations can lead to major revelations later on.
 
 ## Core CS
 
-Machine learning relies on having a solid foundation in Computer Science. All the topics covered here are probably available through an introductory course in CS at any university.
+Many of the recent innovations in machine learning can be traced directly back to computer science roots. Furthermore, much of the language used in the contemporary machine learning literature is inherited almost entirely from the computer science literature. Also, ultimately most machine learning ideas will have to be transcribed into code that will run on computers. Therefore, having a solid foundation in computer science will be imperitave to your success in machine learning research. All the topics covered here should be part of any introductory CS curriculum.
 
 ### Basics
 
@@ -93,7 +95,23 @@ Machine learning relies on having a solid foundation in Computer Science. All th
 - Debugging techniques, and 
 - Profiling.
 
-I would also recommend learning as many of these concepts as you can through python since that is the most common language for machine learning.
+I learned most of this material through various online and in person classes over 15 years ago. As a result, most of the sources I learned this material through have since become antiquated and have been replaced with several better, and friendlier versions. I am happy to add more resources to this section based on recommendations.
+
+Since I had to go through all of this material at Stanford, I can at least attest to the quality of the mandatory CS courses from there.
+
+- Programming Methodology by Prof. Mehran Sahami. While this is a little older, I do think Prof. Mehran does a fantastic job of laying out the basics of programming in this course. You can find the playlist for the course [here](https://www.youtube.com/watch?v=KkMDCCdjyW8&list=PL84A56BC7F4A1F852). This can safely be skipped if you already have some experience with programming.
+- Once you have whet your appetite for programming and basic computer science, [CS106b](https://www.youtube.com/watch?v=FIroM06V2MA&list=PL-h0BZdG_K4kAmsfvAik-Za826pNbQd0d) is a good segue into the world of algorithms and abstractions. If you are already familiar with most basic algorithms and abstractions feel free to skip this course as well. If you think your algorithms and abstraction skills may have gotten a little rusty lately take a look at the [slides](https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1214/) from the version of the course taught by Keith Schwarz.
+- Now that you have had some experience programming and learning how to abstract some of the basic ideas from programming into algorithms, it's important to learn some of the most fundamental algorithmic techniques in computer science. To cover this material there are several fantastic resources.
+    - [CS161](https://www.youtube.com/watch?v=hbJMUzZtJgk&list=PLyhSTP3Z5_mZ8krUa2JsvL7V755ogHgkK) by Prof. Tim Roughgarden is a incredible introduction to many of the most important algorithmic techniques you will need to know taught by an excellent professor.
+    - The equivalent of CS161 on Coursera split into [part 1](https://www.coursera.org/learn/algorithms-divide-conquer), [part 2](https://www.coursera.org/learn/algorithms-graphs-data-structures), [part 3](https://www.coursera.org/learn/algorithms-greedy), and [part 4](https://www.coursera.org/learn/algorithms-npcomplete). Or if you prefer, [playlist 1](https://www.youtube.com/playlist?list=PLXFMmlk03Dt7Q0xr1PIAriY5623cKiH7V) and [playlist 2](https://www.youtube.com/playlist?list=PLXFMmlk03Dt5EMI2s2WQBsLsZl7A5HEK6) are the corresponding YouTube playlists.
+    - An course series on introductory algorithms from MIT that covers a little more with accompanying lecture videos includes [6.006](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-spring-2020/index.htm) and [6.046](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-design-and-analysis-of-algorithms-spring-2015/index.htm).
+- Beyond a working foundation on basic algorithms and analysis techniques it's important to have some background in systems. Whether you chose to do research in theoretical or applied research, you will inevitably come across some literature that will require you to have a background in at least basic systems. Much of the modern revolution in machine learning comes from the incredible advances we have made in hardware technology. Understanding the relationship between hardware and the algorithms therefore becomes critical to an appreciation of modern machine learning. For the basics of systems that you will need to get started I would recommend [CS107](https://www.youtube.com/playlist?list=PL9D558D49CA734A02) (Note that these are the lectures I used, but they are a little dated now. For an updated version see [this playlist](https://www.youtube.com/playlist?list=PLoCMsyE1cvdWivlV-39KKsBKUX-4DvraN)) and [CS110](https://www.youtube.com/playlist?list=PLu77E6J7s6Ko3Ft4XcOX1yKW6iX3eEFqS).
+- If you already feel comfortable with systems but feel like you may be a little rusty, I would recommend going through this short series by [Brian Will](https://www.youtube.com/channel/UCseUQK4kC3x2x543nHtGpzw):
+    - [Hardware Basics Video](https://www.youtube.com/watch?v=9-KUm9YpPm0),
+    - [Operating Systems Video](https://www.youtube.com/watch?v=9GDX-IyZ_C8),
+    - [Unix System Calls 1](https://youtu.be/xHu7qI1gDPA), [Unix System Calls 2](https://youtu.be/2DrjQBL5FMU), and
+    - [This playlist on Unix terminals and shells](https://www.youtube.com/playlist?list=PLFAC320731F539902).
+
 
 ## Intermediate Math
 
@@ -122,7 +140,7 @@ Some of the resources to learn this material are:
 
 Numerical methods+optimization: matrix factorization (LU, Cholesky, QR, SVD), FFT, normal equations, sensitivity analysis, convexity, Newton’s method, auto diff, grad descent, conj GD, proximal GD, SGD, momentum, BFGS, duality, KKT, LP, QP, SDP, SOCP, Frank Wolfe, and mirror descent.
 
-- https://people.csail.mit.edu/jsolomon/share/book/numerical_book.PLE7DDD91010BC51F8
+- https://people.csail.mit.edu/jsolomon/share/book/numerical_book.PLE7DDD91010BC51F8 with accompanying lecture playlist 
 - https://youtube.com/playlist?list=PLRPU00LaonXQ27RBcq6jFJnyIbGw5azOI
 
 ## Core ML
@@ -148,3 +166,6 @@ Tools: Python or Julia w/ conda, numerical libs (numpy, PyTorch, JAX), data (SQL
 
 Additional topics: optimal transport, functional analysis, algebraic/differential topology/geometry, information theory, game theory, stat mech, psychology, cognitive science, graphics, hardware architecture, automata theory (decidability, P vs NP), type theory, category theory.
 
+- [Computational Fluid Dynamics](https://www.youtube.com/c/braintruffle/videos) (a visual masterpiece) and also introduces some important ideas about information reduction for computational feasibility.
+- [Intution for General Relativity](https://www.youtube.com/playlist?list=PLu7cY2CPiRjVY-VaUZ69bXHZr5QslKbzo).
+- [Breadboard computer](https://www.youtube.com/playlist?list=PLowKtXNTBypGqImE405J2565dvjafglHU)
