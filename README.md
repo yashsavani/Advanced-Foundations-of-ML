@@ -135,12 +135,14 @@ Some of the resources to learn this material are:
 - https://amazon.com/Analysis-II-Third-Readings-Mathematics/dp/9380250657
 - https://statweb.stanford.edu/~adembo/stat-310b/lnotes.PLE7DDD91010BC51F8
 - http://stat.cmu.edu/~siva/705/main.html
+- https://www.youtube.com/playlist?list=PLBh2i93oe2qswFOC98oSFc37-0f4S3D4z
+- https://www.youtube.com/playlist?list=PLBh2i93oe2quABbNq4I_-hyjhW8eOdgrO
 
 ## Numerical Methods and Optimization
 
 Numerical methods+optimization: matrix factorization (LU, Cholesky, QR, SVD), FFT, normal equations, sensitivity analysis, convexity, Newton’s method, auto diff, grad descent, conj GD, proximal GD, SGD, momentum, BFGS, duality, KKT, LP, QP, SDP, SOCP, Frank Wolfe, and mirror descent.
 
-- https://people.csail.mit.edu/jsolomon/share/book/numerical_book.PLE7DDD91010BC51F8 with accompanying lecture playlist 
+- https://people.csail.mit.edu/jsolomon/share/book/numerical_book.PLE7DDD91010BC51F8 with accompanying [lecture playlist](https://www.youtube.com/playlist?list=PLHrg69yaUAPeiLEsa-1KauSe2HaA0Wf6I).
 - https://youtube.com/playlist?list=PLRPU00LaonXQ27RBcq6jFJnyIbGw5azOI
 
 ## Core ML
@@ -168,4 +170,6 @@ Additional topics: optimal transport, functional analysis, algebraic/differentia
 
 - [Computational Fluid Dynamics](https://www.youtube.com/c/braintruffle/videos) (a visual masterpiece) and also introduces some important ideas about information reduction for computational feasibility.
 - [Intution for General Relativity](https://www.youtube.com/playlist?list=PLu7cY2CPiRjVY-VaUZ69bXHZr5QslKbzo).
-- [Breadboard computer](https://www.youtube.com/playlist?list=PLowKtXNTBypGqImE405J2565dvjafglHU)
+- [Breadboard computer](https://www.youtube.com/playlist?list=PLowKtXNTBypGqImE405J2565dvjafglHU).
+- [Advanced Algorithms Stanford CS261](https://www.youtube.com/playlist?list=PLEGCF-WLh2RJh2yDxlJJjnKswWdoO8gAc) by Prof. Tim Roughgarden.
+- [Advanced Algorithms Harvard COMPSCI 224](https://www.youtube.com/playlist?list=PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf) by Prof. Jelani Nelson.
