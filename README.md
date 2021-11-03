@@ -137,6 +137,11 @@ Some of the resources to learn this material are:
 - http://stat.cmu.edu/~siva/705/main.html
 - https://www.youtube.com/playlist?list=PLBh2i93oe2qswFOC98oSFc37-0f4S3D4z
 - https://www.youtube.com/playlist?list=PLBh2i93oe2quABbNq4I_-hyjhW8eOdgrO
+- https://www.youtube.com/playlist?list=PL17567A1A3F5DB5E4
+- https://www.youtube.com/watch?v=wCZ1VEmVjVo
+- https://www.youtube.com/playlist?list=PLSQl0a2vh4HC5feHa6Rc5c0wbRTx56nF7
+- https://www.youtube.com/playlist?list=PLHXZ9OQGMqxc_CvEy7xBKRQr6I214QJcd
+- https://www.youtube.com/playlist?list=PLwJRxp3blEvaxmHgI2iOzNP6KGLSyd4dz
 
 ## Numerical Methods and Optimization
 
@@ -144,12 +149,18 @@ Numerical methods+optimization: matrix factorization (LU, Cholesky, QR, SVD), FF
 
 - https://people.csail.mit.edu/jsolomon/share/book/numerical_book.PLE7DDD91010BC51F8 with accompanying [lecture playlist](https://www.youtube.com/playlist?list=PLHrg69yaUAPeiLEsa-1KauSe2HaA0Wf6I).
 - https://youtube.com/playlist?list=PLRPU00LaonXQ27RBcq6jFJnyIbGw5azOI
+- https://www.youtube.com/playlist?list=PLMrJAkhIeNNRjxJ_sMtJ02geqw_-vuB7O
+- https://www.youtube.com/playlist?list=PLMrJAkhIeNNRTVrHYDfjNyqzZ6Q6rsTyf
+- https://www.cs.utexas.edu/users/flame/laff/alaff-beta/ALAFF.html
+- https://www.youtube.com/playlist?list=PLAPSKVSdi0oZPbS-UD_kwT4ePZQx_CiME
 
 ## Core ML
 
 Core ML: perceptron (XOR), SVM (Slater), kernels (Representer, Mercer), realizable PAC, VC dim, Sauer’s lemma, NFL Theorem, agnostic PAC, Rademacher Complexity, fundamental Theorem of stat learning, bias-variance tradeoff, double descent, approx algorithms, clustering, NNs, bagging, boosting, PGM, MDP.
 
 - https://cs.huji.ac.il/~shais/UnderstandingMachineLearning/understanding-machine-learning-theory-algorithms.pdf
+- https://www.youtube.com/playlist?list=PLAPSKVSdi0oac6hwCklK7pddglecmcAno
+- https://www.youtube.com/playlist?list=PLD0F06AA0D2E8FFBA (A more classical approach).
 
 ## Seminal Research in ML
 
@@ -157,6 +168,8 @@ Research: CV (classification, segmentation, OCR, optical flow, reconstruction), 
 
 - https://deeplearningbook.org
 - https://github.com/terryum/awesome-deep-learning-papers
+- https://www.youtube.com/playlist?list=PLLHTzKZzVU9e6xUfG10TkTWApKSZCzuBI
+- http://www.cs.umd.edu/class/fall2020/cmsc828W/
 
 ## Tools
 
@@ -173,3 +186,7 @@ Additional topics: optimal transport, functional analysis, algebraic/differentia
 - [Breadboard computer](https://www.youtube.com/playlist?list=PLowKtXNTBypGqImE405J2565dvjafglHU).
 - [Advanced Algorithms Stanford CS261](https://www.youtube.com/playlist?list=PLEGCF-WLh2RJh2yDxlJJjnKswWdoO8gAc) by Prof. Tim Roughgarden.
 - [Advanced Algorithms Harvard COMPSCI 224](https://www.youtube.com/playlist?list=PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf) by Prof. Jelani Nelson.
+- [General Relativity and more generally differential topology](https://www.youtube.com/playlist?list=PLFeEvEPtX_0S6vxxiiNPrJbLu9aK1UVC).
+- [Engineering Mathematics](https://www.youtube.com/playlist?list=PLMrJAkhIeNNR2W2sPWsYxfrxcASrUt_9j).
+- [Functional Analysis](https://www.youtube.com/playlist?list=PLo4jXE-LdDTTIIIRwqK35CbFJieSJEcVR).
+- [Five Miracles of Mirror Descent](https://www.youtube.com/playlist?list=PLAPSKVSdi0obG1b3w4k41JMLFbyBJS5AQ).
