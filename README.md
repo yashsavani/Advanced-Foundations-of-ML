@@ -135,12 +135,14 @@ Some of the resources to learn this material are:
 - https://amazon.com/Analysis-II-Third-Readings-Mathematics/dp/9380250657
 - https://statweb.stanford.edu/~adembo/stat-310b/lnotes.PLE7DDD91010BC51F8
 - http://stat.cmu.edu/~siva/705/main.html
+- https://www.youtube.com/playlist?list=PL05umP7R6ij1a6KdEy8PVE9zoCv6SlHRS
 - https://www.youtube.com/playlist?list=PLBh2i93oe2qswFOC98oSFc37-0f4S3D4z
 - https://www.youtube.com/playlist?list=PLBh2i93oe2quABbNq4I_-hyjhW8eOdgrO
 - https://www.youtube.com/playlist?list=PL17567A1A3F5DB5E4
 - https://www.youtube.com/watch?v=wCZ1VEmVjVo
 - https://www.youtube.com/playlist?list=PLSQl0a2vh4HC5feHa6Rc5c0wbRTx56nF7
 - https://www.youtube.com/playlist?list=PLHXZ9OQGMqxc_CvEy7xBKRQr6I214QJcd
+- https://www.youtube.com/playlist?list=PL05umP7R6ij0Gw5SLIrOA1dMYScCx4oXT
 - https://www.youtube.com/playlist?list=PLwJRxp3blEvaxmHgI2iOzNP6KGLSyd4dz
 
 ## Numerical Methods and Optimization
@@ -160,6 +162,10 @@ Core ML: perceptron (XOR), SVM (Slater), kernels (Representer, Mercer), realizab
 
 - https://cs.huji.ac.il/~shais/UnderstandingMachineLearning/understanding-machine-learning-theory-algorithms.pdf
 - https://www.youtube.com/playlist?list=PLAPSKVSdi0oac6hwCklK7pddglecmcAno
+- https://www.youtube.com/playlist?list=PLie7a1OUTSagZB9mFZnVBgsNfBtcUGJWB
+- https://www.youtube.com/playlist?list=PLPW2keNyw-usgvmR7FTQ3ZRjfLs5jT4BO
+- https://www.youtube.com/playlist?list=PLTPQEx-31JXhguCush5J7OGnEORofoCW9
+- https://www.youtube.com/playlist?list=PL05umP7R6ij2XCvrRzLokX6EoHWaGA2cC
 - https://www.youtube.com/playlist?list=PLD0F06AA0D2E8FFBA (A more classical approach).
 
 ## Seminal Research in ML
