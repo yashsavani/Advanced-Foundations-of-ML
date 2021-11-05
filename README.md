@@ -31,15 +31,102 @@ I also generally prefer videos over textbooks to learn new material. Unfortunate
 
 Before diving into some of the more advanced math concepts, I would encourage you to at least cursorily go through some of the core math resources provided here. I recommend doing this even if you think you are comfortable with all the topics listed below. I can't count the number of times I thought I completely understood some core math concept, only to later realize that there was some subtlety I had neglected. These neglected subtleties can often have a cascading effect making it very hard to understand some of the more advanced material that rely on a solid core.
 
-- Propositional logic,
+- Problem Solving (Entry, Attack, Review),
+- Propositional Logic,
+    - Propositions,
+    - Connectives (negation, conjunction, inclusive and exclusive disjunction),
+    - De Morgan's theorem,
+    - Implication (converse, inverse, contrapositive),
+    - Biconditional,
+    - Truth tables, and
+    - Logical equivalence.
 - Set theory (ZFC axioms),
+    - Roster and set builder notation,
+    - Sets contain elements,
+    - Operations (intersection [conjunction], union [disjunction], difference, symmetric difference),
+    - universal and null/empty set,
+    - Complement,
+    - Venn diagrams,
+    - Subset (implication) and superset, and
+    - Equality (biconditional).
 - Predicate logic,
+    - Noun phrase (subject) and verb phrase (predicate),
+    - Truth set,
+    - Universal quantifier,
+    - Existential quantifier,
+    - Compound quantifiers,
+    - Negation of quantifiers, and
+    - Index sets (union and intersection).
 - Proof techniques,
+    - Axioms/postulates, conjectures, lemmas, theorems, corollaries,
+    - Completeness, consistency, and decidability (Godel's incompleteness theorems),
+    - Valid Arguments (modus ponens, modus tollens, law of syllogism),
+    - Invalid argument of affirming the consequent,
+    - Direct proof,
+    - Proof by contradiction,
+    - Let x be arbitrary,
+    - Find an x such that p(x) is true,
+    - Uniqueness proof,
+    - Proof by induction (strong and weak), and
+    - Deductive vs Inductive reasoning.
 - Relations,
+    - Tuples,
+    - Cartesian products (Cartesian square),
+    - Arity of operations,
+    - Domain and codomain,
+    - Graphs and digraphs,
+    - Relations on A,
+    - Equivalence relations (symmetric, transitive, reflexive),
+    - Equivalence classes,
+    - Order relations (reflexive, transitive, antisymmetric), and
+    - Partial and total orders (strict to make a trichotomous relation).
 - Functions,
-- Number systems ($\mathbb{N}$ to $\mathbb{C}$),
+    - Left-total, left-unique, right-total, right-unique,
+    - Function (left-total and right-unique),
+    - Prototype and definition,
+    - Images, ranges, and preimages,
+    - Inverses,
+    - Injective (one-to-one), surjective (onto), bijective (one-to-one correspondence),
+    - Function composition, and
+    - Restricing domain and codomain.
+- Number systems,
+    - Pigeon-hole principle,
+    - Cantor-Bernstein-Schroder theorem,
+    - Cardinality,
+    - Finite Sets,
+    - Peano's axioms,
+    - Aleph-Null,
+    - Integers,
+    - Rationals (snaking argument),
+    - Algebraic numbers,
+    - Real Numbers (transcendental numbers, Dedekind cut, supremum property, Cantor's diagonalization argument),
+    - Cardinality of the continuum,
+    - Hilbert's paradox of the Grand Hotel
+    - Complex numbers,
 - Basic number theory,
+    - Divisibility,
+    - Multiples and factors,
+    - Euclidean division,
+    - Greatest common divisor, and lowest common multiple,
+    - Relative primes,
+    - Euclid's algorithm,
+    - Diophantine equations,
+    - Prime numbers,
+    - Unique prime factorization,
+    - Euler totient function,
+    - Prime counting function,
+    - Sieve of Eratosthenes,
+    - Mersenne primes,
+    - Mill's theorem, and
+    - Riemann Hypothesis.
 - Modular arithmetic,
+    - Remainder,
+    - Congruence modulo m,
+    - Properties of modulo,
+    - Congruence classes,
+    - Cancelling when dividing by relative prime of modulus,
+    - Divisibility tests, and
+    - Multiplicative inverses.
 - Birkhoff geometry,
 - Polynomials,
 - Systems of equations,
