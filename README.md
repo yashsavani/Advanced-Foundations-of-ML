@@ -31,7 +31,7 @@ I also generally prefer videos over textbooks to learn new material. Unfortunate
 
 Before diving into some of the more advanced math concepts, I would encourage you to at least cursorily go through some of the core math resources provided here. I recommend doing this even if you think you are comfortable with all the topics listed below. I can't count the number of times I thought I completely understood some core math concept, only to later realize that there was some subtlety I had neglected. These neglected subtleties can often have a cascading effect making it very hard to understand some of the more advanced material that rely on a solid core.
 
-### Problem Solving (Entry, Attack, Review),
+### Problem Solving (Entry, Attack, Review)
 
 ### Propositional Logic
 <details>
@@ -45,7 +45,7 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 - Logical equivalence.
 </details>
 
-### Set theory (ZFC axioms),
+### Set theory (ZFC axioms)
 <details>
 
 - Roster and set builder notation,
@@ -58,7 +58,7 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 - Equality (biconditional).
 </details>
 
-### Predicate logic,
+### Predicate logic
 <details>
 
 - Noun phrase (subject) and verb phrase (predicate),
@@ -70,7 +70,7 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 - Index sets (union and intersection).
 </details>
 
-### Proof techniques,
+### Proof techniques
 <details>
 
 - Axioms/postulates, conjectures, lemmas, theorems, corollaries,
@@ -86,7 +86,7 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 - Deductive vs Inductive reasoning.
 </details>
 
-### Relations,
+### Relations
 <details>
 
 - Tuples,
@@ -101,7 +101,7 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 - Partial and total orders (strict to make a trichotomous relation).
 </details>
 
-### Functions,
+### Functions
 <details>
 
 - Left-total, left-unique, right-total, right-unique,
@@ -114,7 +114,7 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 - Restricing domain and codomain.
 </details>
 
-### Number systems,
+### Number systems
 <details>
 
 - Pigeon-hole principle,
@@ -128,11 +128,11 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 - Algebraic numbers,
 - Real Numbers (transcendental numbers, Dedekind cut, supremum property, Cantor's diagonalization argument),
 - Cardinality of the continuum,
-- Hilbert's paradox of the Grand Hotel
-- Complex numbers,
+- Hilbert's paradox of the Grand Hotel, and 
+- Complex numbers.
 </details>
 
-### Basic number theory,
+### Basic number theory
 <details>
 
 - Divisibility,
@@ -152,7 +152,7 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 - Riemann Hypothesis.
 </details>
 
-### Modular arithmetic,
+### Modular arithmetic
 <details>
 
 - Remainder,
@@ -164,23 +164,23 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 - Multiplicative inverses.
 </details>
 
-### Birkhoff geometry,
+### Birkhoff geometry
 
-### Polynomials,
+### Polynomials
 
-### Systems of equations,
+### Systems of equations
 
-### Linear Algebra,
+### Linear Algebra
 
-### Group Theory,
+### Group Theory
 
-### Rings,
+### Rings
 
-### Fields,
+### Fields
 
-### Morphisms,
+### Morphisms
 
-### Single Variable Calculus.
+### Single Variable Calculus
 
 One excellent resource I have found for this material is the playlist [Introduction to Higher Mathematics](https://youtube.com/playlist?list=PLZzHxk_TPOStgPtqRZ6KzmkUQBQ8TSWVX). I recommend going through this playlist at least once.
 
@@ -435,3 +435,8 @@ Some resources are:
 - [Engineering Mathematics](https://www.youtube.com/playlist?list=PLMrJAkhIeNNR2W2sPWsYxfrxcASrUt_9j).
 - [Functional Analysis](https://www.youtube.com/playlist?list=PLo4jXE-LdDTTIIIRwqK35CbFJieSJEcVR).
 - [Five Miracles of Mirror Descent](https://www.youtube.com/playlist?list=PLAPSKVSdi0obG1b3w4k41JMLFbyBJS5AQ).
+
+## Acknowledgements
+
+I want to thank [Josh Cho](https://github.com/joshcho) for giving me advice on this repository.
+
