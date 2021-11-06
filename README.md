@@ -210,9 +210,12 @@ Before diving into some of the more advanced math concepts, I would encourage yo
     - Convert sine to cosine by phase shift.
 
 ### Polynomials
-- monomials,
+- Monomials,
 - Polynomials,
-TODO @yashsavani: Add details
+- Quadratic equation,
+- Cubic equation,
+- No closed form for quartic (Galois),
+- Binomial theorem (permutations and combinations) (Pascal's triangle), 
 
 ### Systems of equations
 TODO @yashsavani: Add details
@@ -235,12 +238,17 @@ TODO @yashsavani: Add details
 - Symmetric/permutation group (bijections from a set to itself) (transpositions, cycles, compostion).
 
 ### Rings and Fields
-- Rings are multiplicative abelian groups with an additive identity and inverse where addition and multiplication are linked through distribution,
+- Rings are additive abelian groups that are closed under multiplication,
+    - addition and multiplication are linked through the distributive property,
 - Exponentiation is repeated multiplication,
+- 0a = a0 = 0
+- a (-b) = (-a) b = -(ab)
+- -(-a)(-b) = ab
 - Infinite and finite rings,
 - Polynomial rings,
 - Commutative rings,
-- Unital ring (inverses and units),
+- Unital ring (multiplicative identity) (inverses and units),
+    - 1 = 0 implies the ring is the trivial ring,
 - Division ring,
 - Integral domain,
 - Field is an a
