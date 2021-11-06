@@ -280,8 +280,8 @@ Here are some resources
 
 - [Numerical Algorithms playlist](https://www.youtube.com/playlist?list=PLHrg69yaUAPeiLEsa-1KauSe2HaA0Wf6I) with accompanying [textbook](https://people.csail.mit.edu/jsolomon/share/book/numerical_book.PLE7DDD91010BC51F8)
 - [Convex optimization course](https://youtube.com/playlist?list=PLRPU00LaonXQ27RBcq6jFJnyIbGw5azOI).
-- https://www.youtube.com/playlist?list=PLMrJAkhIeNNRjxJ_sMtJ02geqw_-vuB7O
-- [Scientific computing course](https://www.youtube.com/playlist?list=PLMrJAkhIeNNRTVrHYDfjNyqzZ6Q6rsTyf
+- [Linear algebra playlist](https://www.youtube.com/playlist?list=PLMrJAkhIeNNRjxJ_sMtJ02geqw_-vuB7O)
+- [Scientific computing course](https://www.youtube.com/playlist?list=PLMrJAkhIeNNRTVrHYDfjNyqzZ6Q6rsTyf)
 - [Numerical Linear Algebra online course](https://www.cs.utexas.edu/users/flame/laff/alaff-beta/ALAFF.html).
 - [Convex optimization summer school](https://www.youtube.com/playlist?list=PLAPSKVSdi0oZPbS-UD_kwT4ePZQx_CiME)
 
@@ -347,6 +347,7 @@ Note: no reinforcement learning here.
 - WGAN,
 - NAS.
 
+Some resources are:
 - https://deeplearningbook.org
 - https://github.com/terryum/awesome-deep-learning-papers
 - https://www.youtube.com/playlist?list=PLLHTzKZzVU9e6xUfG10TkTWApKSZCzuBI
@@ -362,6 +363,7 @@ Note: no reinforcement learning here.
 - statistical analysis tools (scipy, statsmodel), and
 - Notebooks (Jupyter, Pluto).
 
+Some resources are:
 - https://www.youtube.com/playlist?list=PLP8iPy9hna6Q2Kr16aWPOKE0dz9OnsnIJ
 
 ## Additional Topics
