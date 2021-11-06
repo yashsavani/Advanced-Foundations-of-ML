@@ -309,13 +309,14 @@ Here are some resources
 
 Note: no reinforcement learning here.
 
-- https://cs.huji.ac.il/~shais/UnderstandingMachineLearning/understanding-machine-learning-theory-algorithms.pdf
+- The standard textbook [Understanding Machine Learning From Theory to Algorithms](https://cs.huji.ac.il/~shais/UnderstandingMachineLearning/understanding-machine-learning-theory-algorithms.pdf) by Prof. Shai Shalev-Shwartz and Prof. Shai Ben-David and the accompanying [lecture playlist](https://www.youtube.com/playlist?list=PLPW2keNyw-usgvmR7FTQ3ZRjfLs5jT4BO)
+- An overview of all the material and a good review if you are already familiar with these topics [EPFL playlist](https://www.youtube.com/playlist?list=PLie7a1OUTSagZB9mFZnVBgsNfBtcUGJWB).
+- [A course in statistical machine learning](https://www.youtube.com/playlist?list=PL05umP7R6ij2XCvrRzLokX6EoHWaGA2cC).
+- [A more classical approach of machine learning theory](https://www.youtube.com/playlist?list=PLD0F06AA0D2E8FFBA).
+
+Recommended but not personally reviewed.
 - https://www.youtube.com/playlist?list=PLAPSKVSdi0oac6hwCklK7pddglecmcAno
-- https://www.youtube.com/playlist?list=PLie7a1OUTSagZB9mFZnVBgsNfBtcUGJWB
-- https://www.youtube.com/playlist?list=PLPW2keNyw-usgvmR7FTQ3ZRjfLs5jT4BO
 - https://www.youtube.com/playlist?list=PLTPQEx-31JXhguCush5J7OGnEORofoCW9
-- https://www.youtube.com/playlist?list=PL05umP7R6ij2XCvrRzLokX6EoHWaGA2cC
-- https://www.youtube.com/playlist?list=PLD0F06AA0D2E8FFBA (A more classical approach).
 
 ## Seminal Research in ML
 
@@ -348,10 +349,10 @@ Note: no reinforcement learning here.
 - NAS.
 
 Some resources are:
-- https://deeplearningbook.org
-- https://github.com/terryum/awesome-deep-learning-papers
-- https://www.youtube.com/playlist?list=PLLHTzKZzVU9e6xUfG10TkTWApKSZCzuBI
-- http://www.cs.umd.edu/class/fall2020/cmsc828W/
+- [The Deep Learning Book](https://deeplearningbook.org).
+- [Repository of seminal deep learning papers](https://github.com/terryum/awesome-deep-learning-papers)
+- [NYU Deep Learning course](https://www.youtube.com/playlist?list=PLLHTzKZzVU9e6xUfG10TkTWApKSZCzuBI).
+- [Foundations of Deep Learning course](http://www.cs.umd.edu/class/fall2020/cmsc828W/) from University of Maryland, College Park.
 
 ## Tools
 
@@ -364,7 +365,7 @@ Some resources are:
 - Notebooks (Jupyter, Pluto).
 
 Some resources are:
-- https://www.youtube.com/playlist?list=PLP8iPy9hna6Q2Kr16aWPOKE0dz9OnsnIJ
+- [Introduction to Computational Thinking](https://computationalthinking.mit.edu/Spring21/semesters/) A course on Julia at MIT.
 
 ## Additional Topics
 
