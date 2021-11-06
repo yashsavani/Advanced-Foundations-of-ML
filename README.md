@@ -34,8 +34,6 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 ### Problem Solving (Entry, Attack, Review)
 
 ### Propositional Logic
-<details>
-
 - Propositions,
 - Connectives (negation, conjunction, inclusive and exclusive disjunction),
 - De Morgan's theorem,
@@ -43,104 +41,105 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 - Biconditional,
 - Truth tables, and
 - Logical equivalence.
-</details>
 
 ### Set theory (ZFC axioms)
-<details>
-
 - Roster and set builder notation,
 - Sets contain elements,
 - Operations (intersection [conjunction], union [disjunction], difference, symmetric difference),
 - universal and null/empty set,
 - Complement,
 - Venn diagrams,
-- Subset (implication) and superset, and
-- Equality (biconditional).
-</details>
+- Subset (implication) and superset,
+- Equality (biconditional), and
+- Family of sets and Russell's paradox.
 
 ### Predicate logic
-<details>
-
 - Noun phrase (subject) and verb phrase (predicate),
 - Truth set,
 - Universal quantifier,
 - Existential quantifier,
+- Unique existential quantifier,
 - Compound quantifiers,
 - Negation of quantifiers, and
 - Index sets (union and intersection).
-</details>
 
 ### Proof techniques
-<details>
-
 - Axioms/postulates, conjectures, lemmas, theorems, corollaries,
 - Completeness, consistency, and decidability (Godel's incompleteness theorems),
-- Valid Arguments (modus ponens, modus tollens, law of syllogism),
-- Invalid argument of affirming the consequent,
+- Valid arguments (modus ponens, modus tollens, law of syllogism),
+- Invalid arguments (affirming the consequent),
 - Direct proof,
+- Proof by contrapositive,
 - Proof by contradiction,
-- Let x be arbitrary,
-- Find an x such that p(x) is true,
-- Uniqueness proof,
-- Proof by induction (strong and weak), and
-- Deductive vs Inductive reasoning.
-</details>
+- Proof of conjunction,
+- Proof of inclusive disjunction,
+- Universal: let x be arbitrary, prove p(x),
+- Existential: find an x such that p(x) is true,
+- Uniqueness: assume p(x), p(y), show x = y,
+- Successor operation,
+- Proof by induction (weak and strong), and
+- Deductive vs inductive reasoning.
 
 ### Relations
-<details>
-
 - Tuples,
-- Cartesian products (Cartesian square),
+- Cartesian products (cartesian square, cartesian power),
 - Arity of operations,
 - Domain and codomain,
+- Inverse relations,
 - Graphs and digraphs,
 - Relations on A,
-- Equivalence relations (symmetric, transitive, reflexive),
+- Pre-order relations (reflexive, transitive),
+- Equivalence relations (reflexive, transitive, symmetric),
 - Equivalence classes,
-- Order relations (reflexive, transitive, antisymmetric), and
-- Partial and total orders (strict to make a trichotomous relation).
-</details>
+- Partial-order relations (reflexive, transitive, antisymmetric) (posets),
+- Hasse diagrams,
+- Total-order relations (complete, transitive, antisymmetric),
+- Strict-order relations (reflexive -> irreflexive) (trichotomous),
+- Upper bounds, lower bounds, maximum, minimum, and
+- Least upper bound (supremum), greatest lower bound (infimum).
 
 ### Functions
-<details>
-
 - Left-total, left-unique, right-total, right-unique,
 - Function (left-total and right-unique),
 - Prototype and definition,
 - Images, ranges, and preimages,
-- Inverses,
-- Injective (one-to-one), surjective (onto), bijective (one-to-one correspondence),
-- Function composition, and
-- Restricing domain and codomain.
-</details>
+- Injective/one-to-one (left-unique),
+- Surjective/onto (right-total),
+- Bijective/one-to-one correspondence (right-total and left-unique),
+- Inverse functions,
+- Function composition,
+- Restricing domain and codomain, and
+- Monotonic functions.
 
 ### Number systems
-<details>
-
+- Cardinality,
 - Pigeon-hole principle,
 - Cantor-Bernstein-Schroder theorem,
-- Cardinality,
 - Finite Sets,
 - Peano's axioms,
-- Aleph-Null,
+- Countable sets (Aleph-Null),
 - Integers,
 - Rationals (snaking argument),
 - Algebraic numbers,
-- Real Numbers (transcendental numbers, Dedekind cut, supremum property, Cantor's diagonalization argument),
-- Cardinality of the continuum,
-- Hilbert's paradox of the Grand Hotel, and 
-- Complex numbers.
-</details>
+- Real Numbers
+    - Zeno's paradoxes,
+    - Transcendental numbers,
+    - Dedekind cut,
+    - Supremum property, and
+    - Cantor's diagonalization argument,
+- Cardinality of the continuum (continuum hypothesis),
+- Hilbert's paradox of the Grand Hotel,
+- Complex numbers (closure under roots, conjugate, modulus), and
+- Quarternions (not commutative) and octonions (not associative).
 
 ### Basic number theory
-<details>
-
 - Divisibility,
 - Multiples and factors,
-- Euclidean division,
+- Euclidean division (dividend = quotient divisor + remainder),
 - Greatest common divisor, and lowest common multiple,
 - Relative primes,
 - Euclid's algorithm,
+- Linear combination,
 - Diophantine equations,
 - Prime numbers,
 - Unique prime factorization,
@@ -150,87 +149,107 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 - Mersenne primes,
 - Mill's theorem, and
 - Riemann Hypothesis.
-</details>
 
 ### Modular arithmetic
-<details>
-
-- Remainder,
+- Remainders follow cyclic pattern,
 - Congruence modulo m,
 - Properties of modulo,
 - Congruence classes,
 - Cancelling when dividing by relative prime of modulus,
 - Divisibility tests, and
 - Multiplicative inverses.
-</details>
 
-### Birkhoff geometry
-<details>
-
-- point,
-- line (set of points),
-- distance,
-- angle,
-- between,
-- line segment,
-- half-line/rays and endpoint,
-- parallel,
-- straight angle, right-angle, perpendicular,
-- triangle, vertices, degenerate triangle,
-- similar and congruent,
-- bijection between points of a line and real numbers,
-- unique line containing two distinct points,
-- bijection between rays and real numbers mod 2 pi,
-- similarity of triangles.
-</details>
+### Birkhoff geometry (geometry based on real numbers)
+- Undefined terms
+    - point,
+    - line (set of points),
+    - distance (positive definite, symmetric, triangle inequality), and
+    - angle (formed by 3 points).
+- Definitions
+    - Between,
+    - Line segment,
+    - Half-line/ray and endpoint,
+    - Parallel,
+    - Straight angle, right-angle, perpendicular,
+    - Triangle, vertices, degenerate triangle, and
+    - Similar and congruent.
+- Postulates
+    - Bijection between points of a line and real numbers,
+    - Unique line containing two distinct points,
+    - Bijection between rays and real numbers mod 2 pi, and
+    - Triangle congruences.
+- Theorems
+    - Linear pair,
+    - Vertical angles,
+    - Triangle angles sum,
+    - Corresponding angles (and converse),
+    - Alternate interior/exterior angles (and converses),
+    - Interiors on the same side (and converse),
+    - Perimeter and Area,
+    - Parallelogram,
+    - Rectangle,
+    - Rhombus,
+    - Square,
+    - Trapezoid,
+    - Polygons (regular and irregular), and
+    - Circles (radius and diameter, chords, tangents, arcs, angles).
+- Trigonometry
+    - Right-angle triangle (opposite, adjacent, hypotenuse),
+    - Sine, cosine, tangent,
+    - Reciprocals (cosecant, secant, cotangent),
+    - Inverses (arcsine, arccosine, arctangent)
+    - Unit circle,
+    - Radians vs degrees,
+    - Domains and ranges,
+    - Periods,
+    - Tan = sin / cos,
+    - Pythagorean identities (sin^2 + cos^2 = 1)
+    - Sine is odd, Cos is even,
+    - Sum and difference formulae (cos together and flip, sin seperate and keep),
+    - Product to sum and sum to product formulae, and
+    - Convert sine to cosine by phase shift.
 
 ### Polynomials
-<details>
-
+- monomials,
+- Polynomials,
 TODO @yashsavani: Add details
-</details>
 
 ### Systems of equations
-<details>
-
 TODO @yashsavani: Add details
-</details>
 
 ### Linear Algebra
-<details>
-
 TODO @yashsavani: Add details
-</details>
 
 ### Group Theory
-<details>
+- Group (closed, associative, unique identity, unique inverse),
+- Finite and infinite groups,
+- GLnR group of nonsingular matrices under matrix multiplication,
+- Abelian groups (commutative group),
+- Cayley table,
+- Subgroup (show closure and inverse for infinite group, only closure for finite group),
+- Exponentiation,
+- Generated group,
+- Order of an element,
+- Cyclic group,
+- Dihedral group (symmetries of a regular polygon), and
+- Symmetric/permutation group (bijections from a set to itself) (transpositions, cycles, compostion).
 
-TODO @yashsavani: Add details
-</details>
-
-### Rings
-<details>
-
-TODO @yashsavani: Add details
-</details>
-
-### Fields
-<details>
-
-TODO @yashsavani: Add details
-</details>
+### Rings and Fields
+- Rings are multiplicative abelian groups with an additive identity and inverse where addition and multiplication are linked through distribution,
+- Exponentiation is repeated multiplication,
+- Infinite and finite rings,
+- Polynomial rings,
+- Commutative rings,
+- Unital ring (inverses and units),
+- Division ring,
+- Integral domain,
+- Field is an a
 
 ### Morphisms
-<details>
-
 TODO @yashsavani: Add details
-</details>
 
 ### Single Variable Calculus
-<details>
-
 TODO @yashsavani: Add details
-</details>
 
 One excellent resource I have found for this material is the playlist [Introduction to Higher Mathematics](https://youtube.com/playlist?list=PLZzHxk_TPOStgPtqRZ6KzmkUQBQ8TSWVX). I recommend going through this playlist at least once.
 
