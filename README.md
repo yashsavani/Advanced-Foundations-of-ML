@@ -190,12 +190,13 @@ Many of the recent innovations in machine learning can be traced directly back t
 
 ### Systems and Additional Topics
 
+- Hardware overview (transistors, logic gates, latches, memory, CPU, RAM, GPU, peripherals),
+- Unix (filesystem, interrupts/signals, system calls, processess, interprocess communication, terminal, shell scripting),
+- Multiprocessing vs multithreading, and asynchronous processing (mutexes, semaphores, threadpools, race conditions, deadlocks),
+- Networking (TCP/IP, sockets, HTTP, HTML5, CSS3, bandwidth, latency, throughput),
 - Standard libraries (string manipulation, file I/O, datetime, basic arithmetic and math operations),
 - Regular expressions,
-- Multiprocessing vs multithreading, and asynchronous processing (mutexes, semaphores, threadpools, race conditions, deadlocks),
-- Unix (filesystem, interrupts/signals, system calls, processess, interprocess communication, terminal, shell scripting),
-- Networking (TCP/IP, sockets, HTTP, HTML5, CSS3, bandwidth, latency, throughput),
-- Debugging techniques, and 
+- Debugging techniques, and
 - Profiling.
 
 I learned most of this material through various online and in person classes over 13 years ago. As a result, most of the sources I used have since become antiquated and have been replaced with several better and friendlier versions. I am happy to add more resources to this section based on recommendations.
@@ -207,7 +208,7 @@ Once you have whet your appetite for programming and basic computer science, [CS
 Now that you have had some experience with programming and learning how to abstract some of the basic ideas from code into general algorithms, it's important to learn some of the most fundamental algorithms and algorthimic analysis techniques in computer science. To cover this material there are several fantastic resources.
 - [CS161](https://www.youtube.com/watch?v=hbJMUzZtJgk&list=PLyhSTP3Z5_mZ8krUa2JsvL7V755ogHgkK) by Prof. Tim Roughgarden is a great introduction to many of the most important algorithmic techniques you will need to know.
 - An equivalent alternative to the CS161 lectures, is a multi-part course by Prof. Roughgarden on Coursera split into [part 1 (divide and conquer)](https://www.coursera.org/learn/algorithms-divide-conquer), [part 2 (graph search, shortest paths)](https://www.coursera.org/learn/algorithms-graphs-data-structures), [part 3 (greedy algorithms)](https://www.coursera.org/learn/algorithms-greedy), and [part 4 (NP-completeness)](https://www.coursera.org/learn/algorithms-npcomplete) also taught by Prof. Roughgarden. If you prefer, [playlist 1](https://www.youtube.com/playlist?list=PLXFMmlk03Dt7Q0xr1PIAriY5623cKiH7V) and [playlist 2](https://www.youtube.com/playlist?list=PLXFMmlk03Dt5EMI2s2WQBsLsZl7A5HEK6) are the corresponding YouTube playlists. I recommend this option over the CS161 lectures because of the audio quality.
-- A course series on introductory algorithms from MIT that covers a little more than CS161 ([6.006](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-spring-2020/index.htm) and [6.046](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-design-and-analysis-of-algorithms-spring-2015/index.htm)). I preferred the dynamic programming lectures in this series. 
+- A course series on introductory algorithms from MIT that covers a little more than CS161 ([6.006](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-spring-2020/index.htm) and [6.046](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-design-and-analysis-of-algorithms-spring-2015/index.htm)). I preferred the dynamic programming lectures in this series.
 
 Regardless of whether you choose to pursue theoretical or applied research, you will inevitably come across some literature that requires you to have a working systems background. The modern revolution in machine learning was at least in some part a consequence of the incredible advances we have made in hardware technology. Understanding the relationship between hardware and algorithms therefore becomes critical to an appreciation of modern machine learning.
 
@@ -221,8 +222,6 @@ For this basic foundation in systems, I would recommend [CS107](https://www.yout
 
 Now we come to some of the more advanced topics in math that will almost definitely be used either directly or indirectly in any contemporary machine learning research you may come across.
 
-- Spectral linear algebra,
-- Multilinear algebra,
 - Real Analysis,
 - Multivariable calculus using analysis,
 - Probability theory (measure theory and stochastic processes),
@@ -233,36 +232,82 @@ Now we come to some of the more advanced topics in math that will almost definit
 - Hypothesis testing,
 - Regression (Linear, Logistic, Generalized), and
 - Bayesian techniques
+- Spectral multilinear algebra,
 
 Some of the resources to learn this material are:
 
-- https://amazon.com/Analysis-II-Third-Readings-Mathematics/dp/9380250657
-- https://statweb.stanford.edu/~adembo/stat-310b/lnotes.PLE7DDD91010BC51F8
-- http://stat.cmu.edu/~siva/705/main.html
+Once you have a strong core, one of the most important math topics to cover is real analysis and multivariable calculus. Most of the theoretical foundation in machine learning relies on analyzing the convergence of processes in the limit. Real analysis is a tough topic, so it helps to have multiple sources to refer to if you get stuck. Some of the resources I can recommend are
+- [Analysis II](https://amazon.com/Analysis-II-Third-Readings-Mathematics/dp/9380250657) by the incredible Prof. Terrence Tao.
+- [A playlist on Real Analysis](https://www.youtube.com/playlist?list=PLBh2i93oe2quABbNq4I_-hyjhW8eOdgrO) by [The Bright Side of Mathematics](https://www.youtube.com/c/brightsideofmaths).
+- [This video on the Jacobian](https://www.youtube.com/watch?v=wCZ1VEmVjVo).
+- [This course on vector calculus](https://www.youtube.com/playlist?list=PLSQl0a2vh4HC5feHa6Rc5c0wbRTx56nF7)
+- [Another course on vector calculus](https://www.youtube.com/playlist?list=PLHXZ9OQGMqxc_CvEy7xBKRQr6I214QJcd).
+- [Math 131](https://www.youtube.com/playlist?list=PL04BA7A9EB907EDAF) at Harvey Mudd College.
+
+For a course in measure theory, with a specific interest in probability theory I recommend [these notes](https://statweb.stanford.edu/~adembo/stat-310b/lnotes.PLE7DDD91010BC51F8) by Prof. Amire Dembo. Another resource is [this playlist](https://www.youtube.com/playlist?list=PLBh2i93oe2qswFOC98oSFc37-0f4S3D4z) on probability theory by [The Bright Side of Mathematics](https://www.youtube.com/c/brightsideofmaths). Yet another great resource is a [Probability Primer](https://www.youtube.com/playlist?list=PL17567A1A3F5DB5E4) by the mathematical monk.
+
+For a background in statistics I recommend the [36-705 lecture notes](http://stat.cmu.edu/~siva/705/main.html) By Prof. Sivaraman Balakrishnan.
+
+These are some resources I have been recommended, but not had the time to go through and review myself.
 - https://www.youtube.com/playlist?list=PL05umP7R6ij1a6KdEy8PVE9zoCv6SlHRS
-- https://www.youtube.com/playlist?list=PLBh2i93oe2qswFOC98oSFc37-0f4S3D4z
-- https://www.youtube.com/playlist?list=PLBh2i93oe2quABbNq4I_-hyjhW8eOdgrO
-- https://www.youtube.com/playlist?list=PL17567A1A3F5DB5E4
-- https://www.youtube.com/watch?v=wCZ1VEmVjVo
-- https://www.youtube.com/playlist?list=PLSQl0a2vh4HC5feHa6Rc5c0wbRTx56nF7
-- https://www.youtube.com/playlist?list=PLHXZ9OQGMqxc_CvEy7xBKRQr6I214QJcd
 - https://www.youtube.com/playlist?list=PL05umP7R6ij0Gw5SLIrOA1dMYScCx4oXT
 - https://www.youtube.com/playlist?list=PLwJRxp3blEvaxmHgI2iOzNP6KGLSyd4dz
 
 ## Numerical Methods and Optimization
 
-Numerical methods+optimization: matrix factorization (LU, Cholesky, QR, SVD), FFT, normal equations, sensitivity analysis, convexity, Newton’s method, auto diff, grad descent, conj GD, proximal GD, SGD, momentum, BFGS, duality, KKT, LP, QP, SDP, SOCP, Frank Wolfe, and mirror descent.
+- Matrix factorization (LU, Cholesky, QR, SVD),
+- Eigenproblems (power iteration, shifting, deflation, QR Iteration, Krylov subspace methods),
+- Fast Fourier Transform,
+- Varational methods and normal equations,
+- Sensitivity analysis,
+- Fixed-point iteration,
+- Newton’s method,
+- BFGS,
+- Automatic differentiation,
+- Gradient descent,
+- Conjugate gradient descent,
+- Proximal gradient descent,
+- Stochastic gradient descent,
+- Convexity,
+- Duality,
+- Karush Kuhn Tucker conditions,
+- Convex problems (LP, QP, SDP, SOCP),
+- Momentum,
+- Frank Wolfe methods, and
+- Mirror descent.
 
-- https://people.csail.mit.edu/jsolomon/share/book/numerical_book.PLE7DDD91010BC51F8 with accompanying [lecture playlist](https://www.youtube.com/playlist?list=PLHrg69yaUAPeiLEsa-1KauSe2HaA0Wf6I).
-- https://youtube.com/playlist?list=PLRPU00LaonXQ27RBcq6jFJnyIbGw5azOI
+Here are some resources
+
+- [Numerical Algorithms playlist](https://www.youtube.com/playlist?list=PLHrg69yaUAPeiLEsa-1KauSe2HaA0Wf6I) with accompanying [textbook](https://people.csail.mit.edu/jsolomon/share/book/numerical_book.PLE7DDD91010BC51F8)
+- [Convex optimization course](https://youtube.com/playlist?list=PLRPU00LaonXQ27RBcq6jFJnyIbGw5azOI).
 - https://www.youtube.com/playlist?list=PLMrJAkhIeNNRjxJ_sMtJ02geqw_-vuB7O
-- https://www.youtube.com/playlist?list=PLMrJAkhIeNNRTVrHYDfjNyqzZ6Q6rsTyf
-- https://www.cs.utexas.edu/users/flame/laff/alaff-beta/ALAFF.html
-- https://www.youtube.com/playlist?list=PLAPSKVSdi0oZPbS-UD_kwT4ePZQx_CiME
+- [Scientific computing course](https://www.youtube.com/playlist?list=PLMrJAkhIeNNRTVrHYDfjNyqzZ6Q6rsTyf
+- [Numerical Linear Algebra online course](https://www.cs.utexas.edu/users/flame/laff/alaff-beta/ALAFF.html).
+- [Convex optimization summer school](https://www.youtube.com/playlist?list=PLAPSKVSdi0oZPbS-UD_kwT4ePZQx_CiME)
 
 ## Core ML
 
-Core ML: perceptron (XOR), SVM (Slater), kernels (Representer, Mercer), realizable PAC, VC dim, Sauer’s lemma, NFL Theorem, agnostic PAC, Rademacher Complexity, fundamental Theorem of stat learning, bias-variance tradeoff, double descent, approx algorithms, clustering, NNs, bagging, boosting, PGM, MDP.
+- Perceptron (XOR),
+- SVM (Slater),
+- Kernels (Representer, Mercer),
+- Realizable PAC,
+- VC dimension,
+- Sauer’s lemma,
+- No Free Lunch Theorem,
+- Agnostic PAC,
+- Rademacher Complexity,
+- Fundamental theorem of statistical learning,
+- Bias-variance tradeoff,
+- double descent,
+- Approximation algorithms,
+- Clustering,
+- Neural networks,
+- Ensemble methods (bagging, boosting),
+- Probabilistic graphical models,
+- Multi-armed bandits, and
+- Markov decision processes.
+
+Note: no reinforcement learning here.
 
 - https://cs.huji.ac.il/~shais/UnderstandingMachineLearning/understanding-machine-learning-theory-algorithms.pdf
 - https://www.youtube.com/playlist?list=PLAPSKVSdi0oac6hwCklK7pddglecmcAno
@@ -274,7 +319,33 @@ Core ML: perceptron (XOR), SVM (Slater), kernels (Representer, Mercer), realizab
 
 ## Seminal Research in ML
 
-Research: CV (classification, segmentation, OCR, optical flow, reconstruction), NLP (syntax, speech, semantics, translation, QA, retrieval), NNs as universal approx, backpropagation, batch normalization, dropout, momentum, NTK, CNN, ResNet, LSTM, language models, transformers, VAE, WGAN, NAS, RL.
+- Computer vision
+    - classification,
+    - segmentation,
+    - OCR,
+    - optical flow, and
+    - reconstruction
+- Natural language processing
+    - syntax,
+    - speech,
+    - semantics,
+    - translation,
+    - QA,
+    - retrieval
+- Neural networks as universal function approximators,
+- Backpropagation,
+- batch normalization,
+- Dropout,
+- Momentum,
+- NTK,
+- CNN,
+- ResNet,
+- LSTM,
+- Language models,
+- Transformers,
+- VAE,
+- WGAN,
+- NAS.
 
 - https://deeplearningbook.org
 - https://github.com/terryum/awesome-deep-learning-papers
@@ -283,14 +354,30 @@ Research: CV (classification, segmentation, OCR, optical flow, reconstruction), 
 
 ## Tools
 
-Tools: Python or Julia w/ conda, numerical libs (numpy, PyTorch, JAX), data (SQL, NoSQL, redis, pandas, spark, S3), systems (ssh, MPI, docker, kubernetes), visualization (matplotlib, seaborn, PCA, t-SNE, UMAP), stat analysis (scipy, statsmodel), and notebooks (Jupyter, Pluto).
+- Python or Julia with conda,
+- Numerical libraries (numpy, PyTorch, JAX),
+- Data tools (SQL, NoSQL, redis, pandas, spark, S3),
+- System tools (ssh, MPI, docker, kubernetes),
+- Visualization tools (matplotlib, seaborn, PCA, t-SNE, UMAP),
+- statistical analysis tools (scipy, statsmodel), and
+- Notebooks (Jupyter, Pluto).
 
 - https://www.youtube.com/playlist?list=PLP8iPy9hna6Q2Kr16aWPOKE0dz9OnsnIJ
 
 ## Additional Topics
 
-Additional topics: optimal transport, functional analysis, algebraic/differential topology/geometry, information theory, game theory, stat mech, psychology, cognitive science, graphics, hardware architecture, automata theory (decidability, P vs NP), type theory, category theory.
-
+- Optimal transport,
+- Algebraic/differential topology/geometry,
+- Information theory,
+- Game theory,
+- Statistical  mechanics,
+- Psychology,
+- Cognitive science,
+- Graphics,
+- Hardware architecture,
+- Automata theory,
+- Type theory,
+- Category theory,
 - [Computational Fluid Dynamics](https://www.youtube.com/c/braintruffle/videos) (a visual masterpiece) and also introduces some important ideas about information reduction for computational feasibility.
 - [Intution for General Relativity](https://www.youtube.com/playlist?list=PLu7cY2CPiRjVY-VaUZ69bXHZr5QslKbzo).
 - [Breadboard computer](https://www.youtube.com/playlist?list=PLowKtXNTBypGqImE405J2565dvjafglHU).
