@@ -35,6 +35,7 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 
 ### Propositional Logic
 <details>
+
 - Propositions,
 - Connectives (negation, conjunction, inclusive and exclusive disjunction),
 - De Morgan's theorem,
@@ -46,6 +47,7 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 
 ### Set theory (ZFC axioms),
 <details>
+
 - Roster and set builder notation,
 - Sets contain elements,
 - Operations (intersection [conjunction], union [disjunction], difference, symmetric difference),
@@ -58,6 +60,7 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 
 ### Predicate logic,
 <details>
+
 - Noun phrase (subject) and verb phrase (predicate),
 - Truth set,
 - Universal quantifier,
@@ -69,6 +72,7 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 
 ### Proof techniques,
 <details>
+
 - Axioms/postulates, conjectures, lemmas, theorems, corollaries,
 - Completeness, consistency, and decidability (Godel's incompleteness theorems),
 - Valid Arguments (modus ponens, modus tollens, law of syllogism),
@@ -84,6 +88,7 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 
 ### Relations,
 <details>
+
 - Tuples,
 - Cartesian products (Cartesian square),
 - Arity of operations,
@@ -98,6 +103,7 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 
 ### Functions,
 <details>
+
 - Left-total, left-unique, right-total, right-unique,
 - Function (left-total and right-unique),
 - Prototype and definition,
@@ -110,6 +116,7 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 
 ### Number systems,
 <details>
+
 - Pigeon-hole principle,
 - Cantor-Bernstein-Schroder theorem,
 - Cardinality,
@@ -127,6 +134,7 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 
 ### Basic number theory,
 <details>
+
 - Divisibility,
 - Multiples and factors,
 - Euclidean division,
@@ -146,6 +154,7 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 
 ### Modular arithmetic,
 <details>
+
 - Remainder,
 - Congruence modulo m,
 - Properties of modulo,
