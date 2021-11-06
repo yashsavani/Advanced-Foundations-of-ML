@@ -165,22 +165,72 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 </details>
 
 ### Birkhoff geometry
+<details>
+
+- point,
+- line (set of points),
+- distance,
+- angle,
+- between,
+- line segment,
+- half-line/rays and endpoint,
+- parallel,
+- straight angle, right-angle, perpendicular,
+- triangle, vertices, degenerate triangle,
+- similar and congruent,
+- bijection between points of a line and real numbers,
+- unique line containing two distinct points,
+- bijection between rays and real numbers mod 2 pi,
+- similarity of triangles.
+</details>
 
 ### Polynomials
+<details>
+
+TODO @yashsavani: Add details
+</details>
 
 ### Systems of equations
+<details>
+
+TODO @yashsavani: Add details
+</details>
 
 ### Linear Algebra
+<details>
+
+TODO @yashsavani: Add details
+</details>
 
 ### Group Theory
+<details>
+
+TODO @yashsavani: Add details
+</details>
 
 ### Rings
+<details>
+
+TODO @yashsavani: Add details
+</details>
 
 ### Fields
+<details>
+
+TODO @yashsavani: Add details
+</details>
 
 ### Morphisms
+<details>
+
+TODO @yashsavani: Add details
+</details>
 
 ### Single Variable Calculus
+<details>
+
+TODO @yashsavani: Add details
+</details>
 
 One excellent resource I have found for this material is the playlist [Introduction to Higher Mathematics](https://youtube.com/playlist?list=PLZzHxk_TPOStgPtqRZ6KzmkUQBQ8TSWVX). I recommend going through this playlist at least once.
 
