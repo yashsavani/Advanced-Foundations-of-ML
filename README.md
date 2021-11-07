@@ -42,7 +42,7 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 - Truth tables, and
 - Logical equivalence.
 
-### Set theory (ZFC axioms)
+### Set Theory (ZFC axioms)
 - Roster and set builder notation,
 - Sets contain elements,
 - Operations (intersection [conjunction], union [disjunction], difference, symmetric difference),
@@ -53,7 +53,7 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 - Equality (biconditional), and
 - Family of sets and Russell's paradox.
 
-### Predicate logic
+### Predicate Logic
 - Noun phrase (subject) and verb phrase (predicate),
 - Truth set,
 - Universal quantifier,
@@ -63,7 +63,7 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 - Negation of quantifiers, and
 - Index sets (union and intersection).
 
-### Proof techniques
+### Proof Techniques
 - Axioms/postulates, conjectures, lemmas, theorems, corollaries,
 - Completeness, consistency, and decidability (Godel's incompleteness theorems),
 - Valid arguments (modus ponens, modus tollens, law of syllogism),
@@ -111,7 +111,7 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 - Restricing domain and codomain, and
 - Monotonic functions.
 
-### Number systems
+### Number Systems
 - Cardinality,
 - Pigeon-hole principle,
 - Cantor-Bernstein-Schroder theorem,
@@ -120,6 +120,11 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 - Countable sets (Aleph-Null),
 - Integers,
 - Rationals (snaking argument),
+- Arithmetic operations,
+    - Addition with inverse (subtraction),
+    - Multiplication (repeated addition) with inverse (division),
+- Exponentiation (repeated multiplication) with inverse (logarithm),
+    - Generalized exponentiation with rational exponent (roots),
 - Algebraic numbers,
 - Real Numbers
     - Zeno's paradoxes,
@@ -129,10 +134,10 @@ Before diving into some of the more advanced math concepts, I would encourage yo
     - Cantor's diagonalization argument,
 - Cardinality of the continuum (continuum hypothesis),
 - Hilbert's paradox of the Grand Hotel,
-- Complex numbers (closure under roots, conjugate, modulus), and
+- Complex numbers (closure under roots, conjugate, modulus) (no ordering), and
 - Quarternions (not commutative) and octonions (not associative).
 
-### Basic number theory
+### Basic Number Theory
 - Divisibility,
 - Multiples and factors,
 - Euclidean division (dividend = quotient divisor + remainder),
@@ -150,7 +155,7 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 - Mill's theorem, and
 - Riemann Hypothesis.
 
-### Modular arithmetic
+### Modular Arithmetic
 - Remainders follow cyclic pattern,
 - Congruence modulo m,
 - Properties of modulo,
@@ -159,7 +164,7 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 - Divisibility tests, and
 - Multiplicative inverses.
 
-### Birkhoff geometry (geometry based on real numbers)
+### Birkhoff Geometry (geometry based on real numbers)
 - Undefined terms
     - point,
     - line (set of points),
@@ -191,8 +196,10 @@ Before diving into some of the more advanced math concepts, I would encourage yo
     - Rhombus,
     - Square,
     - Trapezoid,
-    - Polygons (regular and irregular), and
-    - Circles (radius and diameter, chords, tangents, arcs, angles).
+    - Polygons (regular and irregular),
+    - Circles (radius and diameter, chords, tangents, arcs, angles),
+    - Polyhedrons are 3D object with flat faces and edges, and
+    - Dihedrons are a 2D object in 3D space with two faces and edges of neglegible thickness.
 - Trigonometry
     - Right-angle triangle (opposite, adjacent, hypotenuse),
     - Sine, cosine, tangent,
@@ -209,7 +216,7 @@ Before diving into some of the more advanced math concepts, I would encourage yo
     - Product to sum and sum to product formulae, and
     - Convert sine to cosine by phase shift.
 
-### Polynomials
+### Polynomials, Systems of Equations, and Matrices
 - Monomials,
 - Polynomials,
 - Quadratic equation,
@@ -217,14 +224,10 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 - No closed form for quartic (Galois),
 - Binomial theorem (permutations and combinations) (Pascal's triangle), 
 
-### Systems of equations
-TODO @yashsavani: Add details
-
-### Linear Algebra
-TODO @yashsavani: Add details
-
 ### Group Theory
 - Group (closed, associative, unique identity, unique inverse),
+- Idempotence,
+- Order of a group the cardinality of the group,
 - Finite and infinite groups,
 - GLnR group of nonsingular matrices under matrix multiplication,
 - Abelian groups (commutative group),
@@ -239,7 +242,7 @@ TODO @yashsavani: Add details
 
 ### Rings and Fields
 - Rings are additive abelian groups that are closed under multiplication,
-    - addition and multiplication are linked through the distributive property,
+    - Addition and multiplication are linked through the distributive property,
 - Exponentiation is repeated multiplication,
 - 0a = a0 = 0
 - a (-b) = (-a) b = -(ab)
@@ -249,12 +252,29 @@ TODO @yashsavani: Add details
 - Commutative rings,
 - Unital ring (multiplicative identity) (inverses and units),
     - 1 = 0 implies the ring is the trivial ring,
-- Division ring,
-- Integral domain,
-- Field is an a
+- Division ring (unital ring where every non-zero element is a unit),
+- Zero divisor (non-zero element times another non-zero element gives 0),
+- Intersection of units and zero divisors is empty
+- Integral domain (commutative, unital ring with no zero divisors),
+- Can cancel factors from both sides of an integral domain,
+- A field is an algebraic structure that is abelian under both addition and multiplication.
+    - A field is an integral domain where every non-zero element is a unit.
+- Rationals, reals, and complex numbers are infinite fields.
+- Integers modulo a prime are finite fields.
+- All arithmetic operations +, -, ⨯, and ÷ play nicely together.
 
 ### Morphisms
-TODO @yashsavani: Add details
+- Symmetry is patterned self-similarity,
+- Dihedral group D_n is a non-abelian, non-cyclic group with order 2n,
+- Homomorphisms (operation preserving functions),
+- Isomorphisms (bijective homomorphisms) (equivalence relation),
+- Endomorphisms and automorphisms (isomorphic endomorphism),
+- Automorphism group
+- Group action,
+- Any finite cyclic group of order m is isomorphic to the integers mod m.
+- Cayley's theorem (every group is isomorphic to a subgroup of the symmetric group).
+- Every permutation can be expressed as a composition of transpositions,
+- Every permutation has a fixed parity (odd or even based on number of transpositions)
 
 ### Single Variable Calculus
 TODO @yashsavani: Add details
@@ -262,8 +282,6 @@ TODO @yashsavani: Add details
 One excellent resource I have found for this material is the playlist [Introduction to Higher Mathematics](https://youtube.com/playlist?list=PLZzHxk_TPOStgPtqRZ6KzmkUQBQ8TSWVX). I recommend going through this playlist at least once.
 
 Linear algebra is the foundation of almost all the math needed for machine learning. As my advisor says, "you can't ever know enough linear algebra". To develop a strong intuition for this material, I would first recommend going through [this excellent playlist](https://youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) by [3Blue1Brown](https://www.3blue1brown.com/) (Grant Sanderson). If you have never seen anything from his channel, you are in for a treat! Grant's expositions on math concepts are mesmerizing. Once you have developed some of the intuition for linear algebra, I would recommend going through [this playlist](https://youtube.com/playlist?list=PLE7DDD91010BC51F8) by the esteemed Prof. Gilbert Strang from MIT for a more thorough coverage of the material.
-
-Another crucial tool in the machine learning toolbox is calculus. Most of the machine learning literature makes extensive use of multivariable calculus. However, before diving into the nuances of multivariable calculus, it's important to make sure you have a solid foundation and intuition for single variable calculus first. To gain the intuition I would recommend a [this playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr) by 3Blue1Brown, or [this course](https://www.khanacademy.org/math/ap-calculus-bc) on AP calculus from Khan Academy. If you already have a strong calculus foundation, you can safely skip this section. Though, I would still encourage you to go through [the essence of calculus playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr) by 3Blue1Brown at some point though. It helps fill in a lot of intuition that more formal classes may have missed. Who knows? You may learn something you didn't realize you had missed. Even small insights in the foundations can lead to major revelations later on.
 
 ## Core CS
 
@@ -344,19 +362,43 @@ For this basic foundation in systems, I would recommend [CS107](https://www.yout
 
 Now we come to some of the more advanced topics in math that will almost definitely be used either directly or indirectly in any contemporary machine learning research you may come across.
 
-- Real Analysis,
-- Multivariable calculus using analysis,
-- Probability theory (measure theory and stochastic processes),
-- Concentration inequalities,
-- Central limit theorem,
-- Exponential families,
-- Maximum likelihood estimation,
-- Hypothesis testing,
-- Regression (Linear, Logistic, Generalized), and
-- Bayesian techniques
-- Spectral multilinear algebra,
+### Linear Algebra
+TODO @yashsavani: Add details
 
-Some of the resources to learn this material are:
+### Real Analysis,
+TODO @yashsavani: Add details
+
+### Multivariable calculus using analysis,
+TODO @yashsavani: Add details
+
+### Probability theory (measure theory and stochastic processes),
+TODO @yashsavani: Add details
+
+### Concentration inequalities,
+TODO @yashsavani: Add details
+
+### Central limit theorem,
+TODO @yashsavani: Add details
+
+### Exponential families,
+TODO @yashsavani: Add details
+
+### Maximum likelihood estimation,
+TODO @yashsavani: Add details
+
+### Hypothesis testing,
+TODO @yashsavani: Add details
+
+### Regression (Linear, Logistic, Generalized), and
+TODO @yashsavani: Add details
+
+### Bayesian techniques
+TODO @yashsavani: Add details
+
+### Spectral multilinear algebra,
+TODO @yashsavani: Add details
+
+Another crucial tool in the machine learning toolbox is calculus. Most of the machine learning literature makes extensive use of multivariable calculus. However, before diving into the nuances of multivariable calculus, it's important to make sure you have a solid foundation and intuition for single variable calculus first. To gain the intuition I would recommend a [this playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr) by 3Blue1Brown, or [this course](https://www.khanacademy.org/math/ap-calculus-bc) on AP calculus from Khan Academy. If you already have a strong calculus foundation, you can safely skip this section. Though, I would still encourage you to go through [the essence of calculus playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr) by 3Blue1Brown at some point though. It helps fill in a lot of intuition that more formal classes may have missed. Who knows? You may learn something you didn't realize you had missed. Even small insights in the foundations can lead to major revelations later on.
 
 Once you have a strong core, one of the most important math topics to cover is real analysis and multivariable calculus. Most of the theoretical foundation in machine learning relies on analyzing the convergence of processes in the limit. Real analysis is a tough topic, so it helps to have multiple sources to refer to if you get stuck. Some of the resources I can recommend are
 - [Analysis II](https://amazon.com/Analysis-II-Third-Readings-Mathematics/dp/9380250657) by the incredible Prof. Terrence Tao.
