@@ -123,8 +123,7 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 - Arithmetic operations,
     - Addition with inverse (subtraction),
     - Multiplication (repeated addition) with inverse (division),
-- Exponentiation (repeated multiplication) with inverse (logarithm),
-    - Generalized exponentiation with rational exponent (roots),
+- Exponentiation (repeated multiplication) with inverses (logarithms and roots since exponentiation is not commutative),
 - Algebraic numbers,
 - Real Numbers
     - Zeno's paradoxes,
@@ -134,7 +133,11 @@ Before diving into some of the more advanced math concepts, I would encourage yo
     - Cantor's diagonalization argument,
 - Cardinality of the continuum (continuum hypothesis),
 - Hilbert's paradox of the Grand Hotel,
-- Complex numbers (closure under roots, conjugate, modulus) (no ordering), and
+- Complex numbers (closure under roots) (no ordering),
+    - Complex arithmetic,
+    - Conjugate,
+    - Modulus,
+    - Argand diagram, and
 - Quarternions (not commutative) and octonions (not associative).
 
 ### Basic Number Theory
@@ -205,24 +208,39 @@ Before diving into some of the more advanced math concepts, I would encourage yo
     - Sine, cosine, tangent,
     - Reciprocals (cosecant, secant, cotangent),
     - Inverses (arcsine, arccosine, arctangent)
+    - Tan = sin / cos,
     - Unit circle,
     - Radians vs degrees,
     - Domains and ranges,
     - Periods,
-    - Tan = sin / cos,
     - Pythagorean identities (sin^2 + cos^2 = 1)
-    - Sine is odd, Cos is even,
+    - Sine is odd, cos is even,
     - Sum and difference formulae (cos together and flip, sin seperate and keep),
-    - Product to sum and sum to product formulae, and
-    - Convert sine to cosine by phase shift.
+    - Product to sum and sum to product formulae,
+    - Convert sine to cosine by phase shift,
+    - Relation to complex numbers (e^{ix} = cos(x) + i sin(x)), and
+    - Multiply complex numbers by adding the angles and multiplying the lengths.
 
-### Polynomials, Systems of Equations, and Matrices
+### Systems of Equations, Matrices, Polynomials
+- Algebraic expressions (rational exponents),
+- Linear equations and inequalities,
+- Linear graphs,
+- Absolute value and piecewise equations,
+- Multiple equations with multiple unknowns,
+- Writing systems of equations as matrices,
 - Monomials,
 - Polynomials,
 - Quadratic equation,
 - Cubic equation,
-- No closed form for quartic (Galois),
+- No closed form for quartic equation (Galois),
+- Binomials,
 - Binomial theorem (permutations and combinations) (Pascal's triangle), 
+- Polynomial arithmetic,
+- Polynomial factorization,
+- Polynomial division,
+- Polynomial graphs,
+- Complex polynomials, and
+- Fundamental theorem of algebra (any polynomial of degree d has d, possibly complex, roots) (connects algebra with geometry).
 
 ### Group Theory
 - Group (closed, associative, unique identity, unique inverse),
@@ -244,9 +262,9 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 - Rings are additive abelian groups that are closed under multiplication,
     - Addition and multiplication are linked through the distributive property,
 - Exponentiation is repeated multiplication,
-- 0a = a0 = 0
-- a (-b) = (-a) b = -(ab)
-- -(-a)(-b) = ab
+- 0a = a0 = 0,
+- a (-b) = (-a) b = -(ab),
+- -(-a)(-b) = ab,
 - Infinite and finite rings,
 - Polynomial rings,
 - Commutative rings,
@@ -254,13 +272,13 @@ Before diving into some of the more advanced math concepts, I would encourage yo
     - 1 = 0 implies the ring is the trivial ring,
 - Division ring (unital ring where every non-zero element is a unit),
 - Zero divisor (non-zero element times another non-zero element gives 0),
-- Intersection of units and zero divisors is empty
+- Intersection of units and zero divisors is empty,
 - Integral domain (commutative, unital ring with no zero divisors),
 - Can cancel factors from both sides of an integral domain,
-- A field is an algebraic structure that is abelian under both addition and multiplication.
-    - A field is an integral domain where every non-zero element is a unit.
-- Rationals, reals, and complex numbers are infinite fields.
-- Integers modulo a prime are finite fields.
+- A field is an algebraic structure that is abelian under both addition and multiplication,
+    - A field is an integral domain where every non-zero element is a unit,
+- Rationals, reals, and complex numbers are infinite fields,
+- Integers modulo a prime are finite fields, and
 - All arithmetic operations +, -, ⨯, and ÷ play nicely together.
 
 ### Morphisms
@@ -273,15 +291,35 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 - Group action,
 - Any finite cyclic group of order m is isomorphic to the integers mod m.
 - Cayley's theorem (every group is isomorphic to a subgroup of the symmetric group).
-- Every permutation can be expressed as a composition of transpositions,
-- Every permutation has a fixed parity (odd or even based on number of transpositions)
+- Every permutation can be expressed as a composition of transpositions, and
+- Every permutation has a fixed parity (odd or even based on number of transpositions).
 
 ### Single Variable Calculus
-TODO @yashsavani: Add details
+- Limits (intuitive definition),
+- Arithmetic properties of limits,
+- Limit evaluation,
+- L'Hopital's rule,
+- Intermediate value theorem,
+- Derivative,
+- Basic properties,
+- Higher order derivatives,
+- Implicit differentiation,
+- Critical points,
+- Concave and convex functions,
+- Extreme value theorem,
+- Mean value theorem,
+- Newton's method,
+- Anti-derivative,
+- Definite vs indefinite anti-derivative,
+- Fundamental theorem of calculus,
+- Properties of anti-derivative,
+- Standard integral techniques, and
+- Improper integrals.
 
-One excellent resource I have found for this material is the playlist [Introduction to Higher Mathematics](https://youtube.com/playlist?list=PLZzHxk_TPOStgPtqRZ6KzmkUQBQ8TSWVX). I recommend going through this playlist at least once.
+One excellent resource I have found for some of this material is the playlist [Introduction to Higher Mathematics](https://youtube.com/playlist?list=PLZzHxk_TPOStgPtqRZ6KzmkUQBQ8TSWVX). I recommend going through this playlist at least once.
 
-Linear algebra is the foundation of almost all the math needed for machine learning. As my advisor says, "you can't ever know enough linear algebra". To develop a strong intuition for this material, I would first recommend going through [this excellent playlist](https://youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) by [3Blue1Brown](https://www.3blue1brown.com/) (Grant Sanderson). If you have never seen anything from his channel, you are in for a treat! Grant's expositions on math concepts are mesmerizing. Once you have developed some of the intuition for linear algebra, I would recommend going through [this playlist](https://youtube.com/playlist?list=PLE7DDD91010BC51F8) by the esteemed Prof. Gilbert Strang from MIT for a more thorough coverage of the material.
+A crucial tool in the machine learning toolbox is calculus. Most of the machine learning literature makes extensive use of multivariable calculus. However, before diving into the nuances of multivariable calculus, it's important to make sure you have a solid foundation and intuition for single variable calculus first. To gain the intuition I would recommend a [this playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr) by 3Blue1Brown, or [this course](https://www.khanacademy.org/math/ap-calculus-bc) on AP calculus from Khan Academy. If you already have a strong calculus foundation, you can safely skip this section. Though, I would still encourage you to go through [the essence of calculus playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr) by 3Blue1Brown at some point though. It helps fill in a lot of intuition that more formal classes may have missed. Who knows? You may learn something you didn't realize you had missed. Even small insights in the foundations can lead to major revelations later on.
+
 
 ## Core CS
 
@@ -398,7 +436,7 @@ TODO @yashsavani: Add details
 ### Spectral multilinear algebra,
 TODO @yashsavani: Add details
 
-Another crucial tool in the machine learning toolbox is calculus. Most of the machine learning literature makes extensive use of multivariable calculus. However, before diving into the nuances of multivariable calculus, it's important to make sure you have a solid foundation and intuition for single variable calculus first. To gain the intuition I would recommend a [this playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr) by 3Blue1Brown, or [this course](https://www.khanacademy.org/math/ap-calculus-bc) on AP calculus from Khan Academy. If you already have a strong calculus foundation, you can safely skip this section. Though, I would still encourage you to go through [the essence of calculus playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr) by 3Blue1Brown at some point though. It helps fill in a lot of intuition that more formal classes may have missed. Who knows? You may learn something you didn't realize you had missed. Even small insights in the foundations can lead to major revelations later on.
+Linear algebra is the foundation of almost all the math needed for machine learning. As my advisor says, "you can't ever know enough linear algebra". To develop a strong intuition for this material, I would first recommend going through [this excellent playlist](https://youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) by [3Blue1Brown](https://www.3blue1brown.com/) (Grant Sanderson). If you have never seen anything from his channel, you are in for a treat! Grant's expositions on math concepts are mesmerizing. Once you have developed some of the intuition for linear algebra, I would recommend going through [this playlist](https://youtube.com/playlist?list=PLE7DDD91010BC51F8) by the esteemed Prof. Gilbert Strang from MIT for a more thorough coverage of the material.
 
 Once you have a strong core, one of the most important math topics to cover is real analysis and multivariable calculus. Most of the theoretical foundation in machine learning relies on analyzing the convergence of processes in the limit. Real analysis is a tough topic, so it helps to have multiple sources to refer to if you get stuck. Some of the resources I can recommend are
 - [Analysis II](https://amazon.com/Analysis-II-Third-Readings-Mathematics/dp/9380250657) by the incredible Prof. Terrence Tao.
