@@ -372,7 +372,7 @@ Before diving into some of the more advanced math concepts, I would encourage yo
     - Alternating series test,
     - Ratio test,
     - Root test,
-    - Power series, and
+    - Power series (radius of convergence), and
 - Taylor series,
 
 One excellent resource I have found for some of this material is the playlist [Introduction to Higher Mathematics](https://youtube.com/playlist?list=PLZzHxk_TPOStgPtqRZ6KzmkUQBQ8TSWVX). I recommend going through this playlist at least once.
