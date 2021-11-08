@@ -364,16 +364,19 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 - Arithmetic series (average of the terms times the number of terms),
 - Geometric series (infinite limit = a/(1-r)),
 - Telescoping series,
-- Harmonic series and p-series,
+- Harmonic series (infinitely divergent) and p-series,
 - Convergence tests,
     - Integral test,
-    - Comparison test,
-    - Limit comparison test,
+    - (Limit) comparison test,
     - Alternating series test,
     - Ratio test,
     - Root test,
     - Power series (radius of convergence), and
 - Taylor series,
+    - 1/(1-x) = sum x^i,
+    - e^x = sum x^i / i!,
+    - cos x = sum (-1)^n x^{2n}/(2n)!,
+    - sin x = sum (-1)^n x^{2n+1}/(2n+1)!.
 
 One excellent resource I have found for some of this material is the playlist [Introduction to Higher Mathematics](https://youtube.com/playlist?list=PLZzHxk_TPOStgPtqRZ6KzmkUQBQ8TSWVX). I recommend going through this playlist at least once.
 
