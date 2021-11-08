@@ -17,7 +17,10 @@ Some might argue that the best way to learn this missing material is to just div
 
 If you have no experience with machine learning at all, then I would encourage you to take an intro class in machine learning to see just how cool this field is. One example of such a course is (https://www.coursera.org/learn/machine-learning) by Andrew Ng. Machine learning is one of the most exciting fields to have blossomed over the past decade, and there are still a plethora of untapped applications to many of the existing techniques. I urge you to explore as much as you can, and also to start reading papers and thinking of extensions to contemporary work. This material should be seen more as a complement than a prerequisite to your machine learning journey. If you find yourself struggling with some of the advanced material, or you get a gnawing sense that you are missing something fundamental while reading the literature, then maybe something from this resource can help you.
 
+For those of you who already have some experience with machine learning, I hope this resource can act as a good reference and review checklist. There are many topics and perspectives to consider any machine learning problem through. While you may be familiar with some of the ideas listed here, I hope this repository presents a few alternative viewpoints that you may have neglected to consider your problems through. Hopefully, these alternative lenses can highlight some key, deep insights into your problem that would otherwise have lied dormant. Furthermore, having a systematic checklist for review items can also help focus and prioritize future explorations. By going through the topics listed here, you can identify areas of high impact that you may not completely comfortable with. Focusing on these areas has the potential to maximize the utility of your explorations.
+
 My goal with this repository is to create a curated list of resources for those who want to do a deeper dive into some of the more advanced foundations of machine learning. I hope that anyone with a high school background in math and CS who goes through all the material here will successfully be able to read and carry out state-of-the-art research in both theoretical and applied machine learning feeling empowered and confident in their work.
+
 
 The rest of this document is organized into several different sub-fields, with accompanying learning resources, that I think are necessary to gain this advanced foundation in machine learning.
 
@@ -87,7 +90,7 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 - Domain and codomain,
 - Inverse relations,
 - Graphs and digraphs,
-- Relations on A,
+- Relations on a set,
 - Pre-order relations (reflexive, transitive),
 - Equivalence relations (reflexive, transitive, symmetric),
 - Equivalence classes,
@@ -123,10 +126,10 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 - Arithmetic operations,
     - Addition with inverse (subtraction),
     - Multiplication (repeated addition) with inverse (division),
-- Exponentiation (repeated multiplication) with inverses (logarithms and roots since exponentiation is not commutative),
+- Exponentiation (repeated multiplication) with inverses (logarithms and radicals/roots since exponentiation is not commutative),
 - Algebraic numbers,
 - Real Numbers
-    - Zeno's paradoxes,
+    - Zenos' paradoxes,
     - Transcendental numbers,
     - Dedekind cut,
     - Supremum property, and
@@ -161,7 +164,7 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 ### Modular Arithmetic
 - Remainders follow cyclic pattern,
 - Congruence modulo m,
-- Properties of modulo,
+- Properties of congruence,
 - Congruence classes,
 - Cancelling when dividing by relative prime of modulus,
 - Divisibility tests, and
@@ -201,8 +204,11 @@ Before diving into some of the more advanced math concepts, I would encourage yo
     - Trapezoid,
     - Polygons (regular and irregular),
     - Circles (radius and diameter, chords, tangents, arcs, angles),
-    - Polyhedrons are 3D object with flat faces and edges, and
-    - Dihedrons are a 2D object in 3D space with two faces and edges of neglegible thickness.
+- 3D cylinders and volume,
+- Planes and disks,
+- Spheres,
+- Polyhedrons are 3D object with flat faces and edges, and
+- Dihedrons are a 2D object in 3D space with two faces and edges of neglegible thickness.
 - Trigonometry
     - Right-angle triangle (opposite, adjacent, hypotenuse),
     - Sine, cosine, tangent,
@@ -218,16 +224,20 @@ Before diving into some of the more advanced math concepts, I would encourage yo
     - Sum and difference formulae (cos together and flip, sin seperate and keep),
     - Product to sum and sum to product formulae,
     - Convert sine to cosine by phase shift,
-    - Relation to complex numbers (e^{ix} = cos(x) + i sin(x)), and
+    - Relation to complex numbers (e^{ix} = cos(x) + i sin(x)),
+    - Add complex numbers using parallelogram rule, and
     - Multiply complex numbers by adding the angles and multiplying the lengths.
 
 ### Systems of Equations, Matrices, Polynomials
 - Algebraic expressions (rational exponents),
 - Linear equations and inequalities,
 - Linear graphs,
-- Absolute value and piecewise equations,
+- Critical points,
 - Multiple equations with multiple unknowns,
-- Writing systems of equations as matrices,
+- Writing linear systems of equations as matrices,
+- Matrix multiplication,
+- Matrix inverses (singular matrices),
+- Absolute value and piecewise equations,
 - Monomials,
 - Polynomials,
 - Quadratic equation,
@@ -235,17 +245,21 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 - No closed form for quartic equation (Galois),
 - Binomials,
 - Binomial theorem (permutations and combinations) (Pascal's triangle), 
+    - (a-b)^2 = (a-b)(a+b),
+- Foil,
 - Polynomial arithmetic,
 - Polynomial factorization,
 - Polynomial division,
+- Partial fractions (Partial fraction decomposition),
 - Polynomial graphs,
+- Reciprocal graph,
 - Complex polynomials, and
 - Fundamental theorem of algebra (any polynomial of degree d has d, possibly complex, roots) (connects algebra with geometry).
 
 ### Group Theory
 - Group (closed, associative, unique identity, unique inverse),
 - Idempotence,
-- Order of a group the cardinality of the group,
+- Order of a group is the cardinality of the group,
 - Finite and infinite groups,
 - GLnR group of nonsingular matrices under matrix multiplication,
 - Abelian groups (commutative group),
@@ -287,7 +301,7 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 - Homomorphisms (operation preserving functions),
 - Isomorphisms (bijective homomorphisms) (equivalence relation),
 - Endomorphisms and automorphisms (isomorphic endomorphism),
-- Automorphism group
+- Automorphism group,
 - Group action,
 - Any finite cyclic group of order m is isomorphic to the integers mod m.
 - Cayley's theorem (every group is isomorphic to a subgroup of the symmetric group).
@@ -295,26 +309,60 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 - Every permutation has a fixed parity (odd or even based on number of transpositions).
 
 ### Single Variable Calculus
+- Zenos' paradoxes,
 - Limits (intuitive definition),
-- Arithmetic properties of limits,
+    - Limits at infinity and infinite limits,
+    - One sided limits,
+- Properties of limits,
+    - Constant scaling,
+    - Closure under arithmetic operations (+, -, ⨯, ÷, powers, and roots),
 - Limit evaluation,
+- Continuous functions and closure of contiuity under composition,
 - L'Hopital's rule,
+- Squeeze theorem,
 - Intermediate value theorem,
 - Derivative,
-- Basic properties,
-- Higher order derivatives,
-- Implicit differentiation,
-- Critical points,
-- Concave and convex functions,
+    - Interpretation as relative changes in variables,
+- Polynomial derivative,
+- Basic properties of derivatives,
+    - Constant derivative is zero,
+    - Constant scaling,
+    - Addition, subtraction,
+    - Product rule,
+    - Quotient rule,
+    - Power rule,
+    - Chain rule,
+- Exponential derivative and Euler's number,
+- Higher order derivatives (smooth functions),
+- Implicit differentiation (logarthmic derivative),
+- Common derivatives,
+    - c, x, sin, cos, tan, arcsin, arccos, arctan, e^x, a^x, ln(x), 
+- Optimization (constrained and unconstrained),
+- Critical points and extrema,
+- Monotonic functions,
+- Convex and concave functions,
+- Local and global extrema,
 - Extreme value theorem,
+- 1st and 2nd derivative test,
 - Mean value theorem,
+- Lagrange multipliers,
 - Newton's method,
-- Anti-derivative,
-- Definite vs indefinite anti-derivative,
+- Riemann integral and anti-derivative,
+- Definite vs indefinite integral,
 - Fundamental theorem of calculus,
 - Properties of anti-derivative,
-- Standard integral techniques, and
-- Improper integrals.
+    - Constant scaling,
+    - Addition and subtraction,
+- Common integrals,
+    - k, polynomials, 1/x, ln(x), e^x, sin, cos, tan
+- Standard integral techniques,
+    - Substitution,
+    - Integration by parts,
+- Infinite sequences and series,
+    - Arithmetic sequence and series,
+    - Geometric sequence and series,
+    - Harmonic series and p-series, and
+- Taylor series,
 
 One excellent resource I have found for some of this material is the playlist [Introduction to Higher Mathematics](https://youtube.com/playlist?list=PLZzHxk_TPOStgPtqRZ6KzmkUQBQ8TSWVX). I recommend going through this playlist at least once.
 
@@ -596,4 +644,3 @@ Some resources are:
 ## Acknowledgements
 
 I want to thank [Josh Cho](https://github.com/joshcho) for giving me advice on this repository.
-
