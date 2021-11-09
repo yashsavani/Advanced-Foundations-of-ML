@@ -555,34 +555,34 @@ Now we come to some of the more advanced topics in math that will almost definit
     - Plug in the basis and dual basis elements to get all components of the tensor, and
 - Einstein notation (upper is up to down, lower is left to right).
 
-### Real Analysis,
+### Real Analysis
 TODO @yashsavani: Add details
 
-### Multivariable calculus using analysis,
+### Multivariable Calculus Using Analysis
 TODO @yashsavani: Add details
 
-### Probability theory (measure theory and stochastic processes),
+### Probability Theory (Measure Theory and Stochastic Processes)
 TODO @yashsavani: Add details
 
-### Concentration inequalities,
+### Concentration Inequalities
 TODO @yashsavani: Add details
 
-### Central limit theorem,
+### Central Limit Theorem
 TODO @yashsavani: Add details
 
-### Exponential families,
+### Exponential Families
 TODO @yashsavani: Add details
 
-### Maximum likelihood estimation,
+### Maximum Likelihood Estimation
 TODO @yashsavani: Add details
 
-### Hypothesis testing,
+### Hypothesis Testing
 TODO @yashsavani: Add details
 
-### Regression (Linear, Logistic, Generalized), and
+### Regression (Linear, Logistic, Generalized)
 TODO @yashsavani: Add details
 
-### Bayesian techniques
+### Bayesian Techniques
 TODO @yashsavani: Add details
 
 Linear algebra is the foundation of almost all the math needed for machine learning. As my advisor says, "you can't ever know enough linear algebra". To develop a strong intuition for this material, I would first recommend going through [this excellent playlist](https://youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) by [3Blue1Brown](https://www.3blue1brown.com/) (Grant Sanderson). If you have never seen anything from his channel, you are in for a treat! Grant's expositions on math concepts are mesmerizing. Once you have developed some of the intuition for linear algebra, I would recommend going through [this playlist](https://youtube.com/playlist?list=PLE7DDD91010BC51F8) by the esteemed Prof. Gilbert Strang from MIT for a more thorough coverage of the material.
