@@ -495,7 +495,7 @@ Now we come to some of the more advanced topics in math that will almost definit
 - Matrices are linear maps expressed in a grid form based on the chosen basis,
     - Square and rectangle matrices,
     - Zero matrix,
-    - Identity matrix,
+    - Identity matrix (kronecker delta),
 - Geometry of matrices (based on euclidean space),
 - Systems of linear equations,
 - Matrix transpose (AB)^T = B^T A^T,
@@ -515,8 +515,8 @@ Now we come to some of the more advanced topics in math that will almost definit
     - Non-commutativity,
 - Rank and null space of a matrix,
 - Determinant (volume of a parallelepiped),
-    - Cramer's rule,
 - Matrix inverse,
+- Cramer's rule,
 - Gaussian elimination,
     - Diagonal matrices,
     - Elimination matrices,
@@ -530,7 +530,6 @@ Now we come to some of the more advanced topics in math that will almost definit
     - Symmetric matrices (antisymmetric matrices),
     - Quadratic forms,
     - Positive/negative (semi)-definite matrices,
-- Mahalanobis metric,
 - Trace of a matrix,
 - Cholesky decomposition of a symmetric, positive definite matrix,
 - Orthonormal/orthogonal matrices (Gram-Schmidt),
@@ -569,11 +568,11 @@ Now we come to some of the more advanced topics in math that will almost definit
 - (r,s)-Tensors (multilinear [linear in every entry] map from cartesian product of r covectors and s vectors to reals),
     - Vectors are (1,0)-tensors for finite dimensional vector spaces,
     - Covectors are (0,1)-tensors,
-    - Linear maps are (1,1)-tensors,
-    - Inner products are (0,2)-tensors,
+    - Linear maps (matrices) are (1,1)-tensors,
+    - Inner products (also matrices) are (0,2)-tensors,
 - Components/coordinates of tensors,
     - Plug in the basis and dual basis elements to get all components/coordinates of the tensor,
-- Kronecker product (relation to outer product), and
+- Kronecker/tensor product (relation to outer product), and
 - Einstein notation (upper is up to down, lower is left to right).
 
 ### Real Analysis
