@@ -2,37 +2,143 @@
 
 Before diving into some of the more advanced math concepts, I would encourage you to at least cursorily go through some of the core math resources provided here. I recommend doing this even if you think you are comfortable with all the topics listed below. I can't count the number of times I thought I completely understood some core math concept, only to later realize that there was some subtlety I had neglected. These neglected subtleties can often have a cascading effect making it very hard to understand some of the more advanced material that rely on a solid core.
 
-## Problem Solving (Entry, Attack, Review)
+## Problem Solving
 
-- Problems are ones that:
-	- Engage intellect
-	- Make connections to develop a coherent framework
-	- Can be solved in more than one way
-	- Should foster effective communication of mathematical ideas
--  Phases of Problem Solving:
-	- Entry: what do I know (question, experience), what do I want (paraphrase, ambiguities), what can I introduce (diagram, notation).
-	- Attack: brute force, look for patterns.
-	- Review: check, reflect, extend, understand why it works.
+### Problems are ones that:
+* Engage intellect
+* Make connections to develop a coherent framework
+* Can be solved in more than one way
+* Should foster effective communication of mathematical ideas
+
+### Phases of problem solving:
+* *Entry:* what do I know (question, experience), what do I want (paraphrase, ambiguities), what can I introduce (diagram, notation).
+* *Attack:* brute force, look for patterns.
+* *Review:* check, reflect, extend, understand why it works.
 
 ## Propositional Logic
-- Propositions,
-- Connectives (negation, conjunction, inclusive and exclusive disjunction),
-- De Morgan's theorem,
-- Implication (converse, inverse, contrapositive),
-- Biconditional,
-- Truth tables, and
-- Logical equivalence.
+
+* Propositional Logic is the foundation for the language of reason.
+* A *proposition* is a statement that has one and only one truth value, $\true$ or $\false$.
+* *Propositional variables* are letters used to stand in for actual propositional statements.
+They are usually $p, q,$ or $r$.
+* *Propositional connectives* are symbols used to connect propositional variables together.
+* *Propositional expressions* are statements that link together propositional variables with potentially multiple propositional connectives.
+* A *truth table* is a table that exhaustively lists all the possible truth values of the expressions.
+* *Logical equivalence* (denoted by $\iff$ or $\equiv$) is when two propositional expressions are equivalent. That is, they take on the same truth value for every possible input.
+
+### Common connectives
+* *Tautology or $\top$:* $\top(p)$ is always $\true$ no matter what truth value $p$ takes. Usually when we try to prove something, we want to show that it is equivalent to a tautology, which means it is true no matter what the input truth values.
+* *Negation or NOT or $\lnot$ or $\bar{p}$:* $\lnot p$ is $\true$ if and only if $p$ is $\false$.
+* *Conjunction or AND or $\land$:* $p \land q$ is $\true$ if and only if $p$ and $q$ are both $\true$.
+* *Inclusive Disjunction or OR or $\lor$:* $p \lor q$ is $\true$ if and only if either $p$ or $q$ or both are $\true$.
+* *Exclusive Disjunction or XOR or $\oplus$:* $p \oplus q$ is $\true$ if $p$ and $q$ have different truth values.
+* *Implication or Conditional or IMPLIES or $\to$:* $p \to q$ is $\false$ if and only if $p$ is $\true$ and $q$ is $\false$.
+    * $p$ is called the  *antecedent*, and $q$ is called the *consequent*.
+    * The *converse* of $p \to q$ is $q \to p$. It is not equivalent to $p \to q$.
+    * The *inverse* of  $p \to q$ is $\lnot p \to \lnot q$. It is not equivalent to $p \to q$.
+    * The *contrapositive* of  $p \to q$ is $\lnot q \to \lnot p$. It is equivalent to $p \to q$.
+* *Biconditional or IFF or $\leftrightarrow$:* $p \leftrightarrow q$ is $\true$ if and only if both $p$ and $q$ have the same truth value.
+
+### Truth table for common connectives
+| $p$ | $q$ | $\lnot p$ | $p \land q$ |  $p \lor q$ | $p \oplus q$ | $p \to q$ |  $p \leftrightarrow q$ |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| 0 | 0 | 1 | 0 | 0 | 0 | 1 | 1 |
+| 0 | 1 | 1 | 0 | 1 | 1 | 1 | 0 |
+| 1 | 0 | 0 | 0 | 1 | 1 | 0 | 0 |
+| 1 | 1 | 0 | 1 | 1 | 0 | 1 | 1 |
+
+### Order of operations
+
+As a convention, we evaluate any propositional expression in the following order:
+
+1. Parantheses,
+2. Negation,
+3. Conjunction (left to right),
+4. Inclusive disjunction (left to right),
+5. Implication, and
+6. Biconditional.
+
+### De Morgan's theorem
+
+One important theorem in propositional logic that appears everywhere is De Morgan's theorem. The theorem states that:
+
+\begin{align*}
+    \lnot(p \land q) &\equiv \lnot p \lor \lnot q, \text{and}\\
+    \lnot(p \lor q) &\equiv \lnot p \land \lnot q.
+\end{align*}
+
+We can prove this by showing that the truth tables for the expressions are equivalent.
 
 ## Set Theory (ZFC axioms)
-- Roster and set builder notation,
-- Sets contain elements,
-- Operations (intersection [conjunction], union [disjunction], difference, symmetric difference),
-- universal and null/empty set,
-- Complement,
-- Venn diagrams,
-- Subset (implication) and superset,
-- Equality (biconditional), and
-- Family of sets and Russell's paradox.
+
+* A *set* is a collection of members / elements.
+* *Roster notation* explicitly lists out every element of the set (e.g. $A=\{1,2,3,4,5\}, B=\{2,4,6,10\}$).
+* *Set builder notation* implicitly describes all the elements in a set (e.g. $A=\{x \mid x\text{ is an integer between 1 and 5 inclusive}\},$ here $x$ is a dummy variable).
+* To denote that an object is an element of a set we use the symbol $\in$ (e.g. $3 \in A$). Note that this is a valid proposition.
+* To denote that on object is not an element of a set we use the symbol $\not\in$ (e.g. $10 \not\in A$). Note that this is also a valid proposition.
+* Elements cannot appear more than once in a set, though they can appear more than once in a multiset.
+* A set is not ordered.
+* The *universal set* is the set of all the objects being considered. It is usually notated as $\mathcal{U}$.
+In our case we may assume that $\mathcal{U} = \{x \mid x$ is an integer between 1 and 10 inclusive $\}$
+* The *null set or empty set* is the set containing no elements. It is notated as $\varnothing = \{ \}$.
+* Set theory has operators to combine sets.
+* *Venn diagrams* are a visual representation of sets and the operations on sets.
+
+### Set operators
+
+* *Complement or $^c$:*
+$A^c = \{ x \mid \lnot(x \in A) \}$ (e.g. $A^c = \{6, 7, 8, 9, 10\}$).
+
+* *Intersection or $\cap$:* 
+$A \cap B = \{x \mid x \in A \land x \in B\}$ (e.g. $A \cap B = \{2,4\}$).
+
+* *Union or $\cup$:* 
+$A \cup B = \{x \mid x \in A \lor x \in B\}$ (e.g. $A \cup B = \{1,2,3,4,5,6,8,10\}$). 
+
+* *Difference or $\setminus$:* 
+$A \setminus B = \{x \mid x \in A \land x \not\in B\}$ (e.g. $A \setminus B = \{1,3,5\}$).
+
+* *Symmetric difference or $\Delta$:* 
+$A \Delta B = \{x \mid x \in A \oplus x \in B\}$ (e.g. $A \Delta B = \{1,3,5,6,8,10\}$).
+
+### Subsets, supersets, and equality
+
+Three other propositional statements for sets are the subset, superset, and equality relations.
+
+* We say that a set $D$ is a subset *subset* of a set $A$, if every element $x \in D$ is also an element of $A$. Formally, we can write this as $\forall x, x \in D \to x \in A$. It is notated as $D \subseteq A$.
+* We say that a set $A$ is a *superset* of a set $D$, if every element $x \in D$ is also an element of $A$. the superset proposition is essentially the reverse of the subset proposition. We notate this by $A \supseteq D$.
+* We say that a set $A$ is *equivalent* to a set $D$ if it is both a superset and a subset of $D$. Formally, we can write this as $\forall x, x\in D \leftrightarrow x \in A$. We notate this by $A = D$.
+
+We say that $D$ is a strict subset of $A$ if $D \subseteq A$, but $D \not= A$. In this case we write $D \subset A$. We can reverse the statement to get strict supersets ($A\supset D$).
+
+A trivial statement that is always true is that $\varnothing \in C$ for all possible sets $C$. We say that this is true vacuously or true in an empty sort of way.
+
+Another such trivial statement is that every set is a subset of itself since it is equal to itself.
+
+### Special sets
+
+Some special sets that we often consider are:
+
+* The set of *natural numbers*, $\N = \{1,2,3,4,\ldots\}$ (some people claim $0 \in \N$).
+* The set of *integers*, $\Z = \{\ldots,-2,-1,0,1,2,\ldots\}$.
+* The set of *rational numbers*, $\Q = \left\{x \mid x = \frac{p}{q}, \where p,q \in \Z \right\}$.
+* The set of *real numbers*, $\R$ that are the completion of $\Q$.
+* The set of *irrational numbers* given by $\R \setminus \Q$.
+* The set of *complex numbers*,
+$\C = \{x \mid x = a + ib, \where a,b \in \R \land i = \sqrt{-1}\}$.
+
+From the definitions we can see that $\N \subset \Z \subset \Q \subset \R \subset \C$.
+
+### Russell's paradox and families of sets
+
+A set cannot contain itself. If we let this be the case then we get a paradox.
+The paradox comes from the set $A = \{X \mid X \not\in X \}$.
+That is, the set that contains all sets which do not contain themselves.
+If $A$ is an element of $A$, then $A$ must not be in the set, but then it must be in the set.
+This leads to a contradiction.
+To avoid this kind of paradox, we accept a system of 9 axioms governing everything we can call a set and everything we can do with a set. We call this set of axioms ZFC or Zermelo–Fraenkel set theory with the axiom of choice.
+
+We call a set comprised of other sets a family of sets. We usually denote such families of sets with a uppercase script character like $\mathcal{F}$.
 
 ## Predicate Logic
 - Noun phrase (subject) and verb phrase (predicate),
