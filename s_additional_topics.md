@@ -1,0 +1,23 @@
+# Additional Topics
+
+- Optimal transport,
+- Algebraic/differential topology/geometry,
+- Information theory,
+- Game theory,
+- Statistical  mechanics,
+- Psychology,
+- Cognitive science,
+- Graphics,
+- Hardware architecture,
+- Automata theory,
+- Type theory,
+- Category theory,
+- [Computational Fluid Dynamics](https://www.youtube.com/c/braintruffle/videos) (a visual masterpiece) and also introduces some important ideas about information reduction for computational feasibility.
+- [Intution for General Relativity](https://www.youtube.com/playlist?list=PLu7cY2CPiRjVY-VaUZ69bXHZr5QslKbzo).
+- [Breadboard computer](https://www.youtube.com/playlist?list=PLowKtXNTBypGqImE405J2565dvjafglHU).
+- [Advanced Algorithms Stanford CS261](https://www.youtube.com/playlist?list=PLEGCF-WLh2RJh2yDxlJJjnKswWdoO8gAc) by Prof. Tim Roughgarden.
+- [Advanced Algorithms Harvard COMPSCI 224](https://www.youtube.com/playlist?list=PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf) by Prof. Jelani Nelson.
+- [General Relativity and more generally differential topology](https://www.youtube.com/playlist?list=PLFeEvEPtX_0S6vxxiiNPrJbLu9aK1UVC).
+- [Engineering Mathematics](https://www.youtube.com/playlist?list=PLMrJAkhIeNNR2W2sPWsYxfrxcASrUt_9j).
+- [Functional Analysis](https://www.youtube.com/playlist?list=PLo4jXE-LdDTTIIIRwqK35CbFJieSJEcVR).
+- [Five Miracles of Mirror Descent](https://www.youtube.com/playlist?list=PLAPSKVSdi0obG1b3w4k41JMLFbyBJS5AQ).
