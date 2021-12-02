@@ -69,7 +69,7 @@ One important theorem in propositional logic that appears everywhere is De Morga
 
 We can prove this by showing that the truth tables for the expressions are equivalent.
 
-## Set Theory (ZFC axioms)
+## Set Theory
 
 * A *set* is a collection of members / elements.
 * *Roster notation* explicitly lists out every element of the set (e.g. $A=\{1,2,3,4,5\}, B=\{2,4,6,10\}$).
@@ -89,16 +89,18 @@ In our case we may assume that $\mathcal{U} = \{x \mid x$ is an integer between 
 * *Complement or $^c$:*
 $A^c = \{ x \mid \lnot(x \in A) \}$ (e.g. $A^c = \{6, 7, 8, 9, 10\}$).
 
-* *Intersection or $\cap$:* 
+* *Intersection or $\cap$:*
 $A \cap B = \{x \mid x \in A \land x \in B\}$ (e.g. $A \cap B = \{2,4\}$).
+Note that the intersection is *associative*. That is, $(A \cap B) \cap C = A \cap (B \cap C) = A \cap B \cap C$.
 
-* *Union or $\cup$:* 
-$A \cup B = \{x \mid x \in A \lor x \in B\}$ (e.g. $A \cup B = \{1,2,3,4,5,6,8,10\}$). 
+* *Union or $\cup$:*
+$A \cup B = \{x \mid x \in A \lor x \in B\}$ (e.g. $A \cup B = \{1,2,3,4,5,6,8,10\}$).
+Note that the union is *associative*. That is, $(A \cup B) \cup C = A \cup (B \cup C) = A \cup B \cup C$.
 
-* *Difference or $\setminus$:* 
+* *Difference or $\setminus$:*
 $A \setminus B = \{x \mid x \in A \land x \not\in B\}$ (e.g. $A \setminus B = \{1,3,5\}$).
 
-* *Symmetric difference or $\Delta$:* 
+* *Symmetric difference or $\Delta$:*
 $A \Delta B = \{x \mid x \in A \oplus x \in B\}$ (e.g. $A \Delta B = \{1,3,5,6,8,10\}$).
 
 ### Subsets, supersets, and equality
@@ -129,7 +131,7 @@ $\C = \{x \mid x = a + ib, \where a,b \in \R \land i = \sqrt{-1}\}$.
 
 From the definitions we can see that $\N \subset \Z \subset \Q \subset \R \subset \C$.
 
-### Russell's paradox and families of sets
+### Russell's paradox, families of sets, and index sets
 
 A set cannot contain itself. If we let this be the case then we get a paradox.
 The paradox comes from the set $A = \{X \mid X \not\in X \}$.
@@ -140,15 +142,32 @@ To avoid this kind of paradox, we accept a system of 9 axioms governing everythi
 
 We call a set comprised of other sets a family of sets. We usually denote such families of sets with a uppercase script character like $\mathcal{F}$.
 
+Index sets are sets that are used to enumerate the elements of a set, though they don't need to be a set of numbers. They are sometimes used with families of sets to enumerate the sets contained within the family.
+For example, $\mathcal{F} = \{L_1, L_2, \ldots\}, \where L_i = \{p \mid p \in \mathcal{P} \land p \leq i\}$,
+so $L_{10} = \{2,3,5,7\}$.
+An index set might be $\mathcal{I} = \{1,2,\ldots,100\}$ and it can be used to index the $L_i$ sets of $\mathcal{F}$ for $i \in \mathcal{I}$.
+
 ## Predicate Logic
-- Noun phrase (subject) and verb phrase (predicate),
-- Truth set,
-- Universal quantifier,
-- Existential quantifier,
-- Unique existential quantifier,
-- Compound quantifiers,
-- Negation of quantifiers, and
-- Index sets (union and intersection).
+
+* Linguistically a proposition needs to be a declarative sentence with a subject, which is a noun phrase, and a predicate, which is a verb phrase.
+* We can represent the subject by an element of a set and store the predicate separately
+(e.g. $p(x) =$ "x is an even number", where $x$ is a free variable and $p$ is the predicate).
+* The *truth set* of $p$ is the set of all  $x$ for which $p(x)$ is $\true$. That is, the truth set of $p$ is $\{x \mid p(x)\}$.
+* *Quantifiers* tell us how big our truth set is.
+* The *universal quantifier or "for all x, p(x)" or $\forall x, p(x)$* says that $p(x)$ is $\true$ for every possible element of our universal set.
+    * $(\forall b \in B, p(b)) \iff (\forall b, (b \in B \to p(b)))$ is a useful identity for when we want to say something about every element in a non universal set $B$.
+* The *existential quantifier or "there exists x such that p(x)" or $\exists x, \st p(x)$* says that there exists an $x$ in the universal set such that p(x) is $\true$.
+    * $(\exists a \in A, \st p(a)) \iff (\exists a, \st (a \in A \land p(a)))$ is a useful identity for when we want to say something about some element of a non universal set $A$.
+    * Sometimes we want to say that there exists a unique element for which $p(x)$ is $\true$. In this case we use the notation $\exists! x, \st p(x)$ to say that there exists exactly one element $x \in \mathcal{U}$ that is in the truth set of $p(x)$.
+* We can see that $\forall b \in B, p(b) \implies \exists b \in B, \st p(b)$ is trivially true. This tells us that any statement with a universal quantifier is a stronger than one with an existential quantifier.
+* We can also combine quantifiers to get compound quantifiers.
+    * $\forall x, \exists y, \st (x < y)$ is $\true$ for all natural numbers.
+    * $\exists y, \st \forall x, \st (x < y)$ is $\false$ for all natural numbers since there is no largest natural number.
+* We can also negate quantifiers.
+    * $\lnot \forall x, p(x) \iff \exists x, \st \lnot p(x)$.
+    * $\lnot \exists x, \st p(x) \iff \forall x, \lnot p(x)$.
+* For a family of sets $\mathcal{F}$, we say that $\bigcup_{A \in \mathcal{F}} A = \{a | \exists A \in \mathcal{F}, \st a \in A\}$
+* For a family of sets $\mathcal{F}$, we say that $\bigcap_{A \in \mathcal{F}} A = \{a | \forall A \in \mathcal{F}, a \in A\}$
 
 ## Proof Techniques
 - Axioms/postulates, conjectures, lemmas, theorems, corollaries,
@@ -328,7 +347,7 @@ We call a set comprised of other sets a family of sets. We usually denote such f
 - Cubic equation,
 - No closed form for quartic equation (Galois),
 - Binomials,
-- Binomial theorem (permutations and combinations) (Pascal's triangle), 
+- Binomial theorem (permutations and combinations) (Pascal's triangle),
     - $(a-b)^2 = (a-b)(a+b)$,
 - Foil,
 - Polynomial arithmetic,
@@ -422,7 +441,7 @@ We call a set comprised of other sets a family of sets. We usually denote such f
 - Higher order derivatives (smooth functions),
 - Implicit differentiation (logarthmic derivative),
 - Common derivatives,
-    - c, x, sin, cos, tan, arcsin, arccos, arctan, e^x, a^x, ln(x), 
+    - c, x, sin, cos, tan, arcsin, arccos, arctan, e^x, a^x, ln(x),
 - Optimization (constrained and unconstrained),
 - Critical points and extrema (local and global),
 - Convex and concave functions,
