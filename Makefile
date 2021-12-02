@@ -30,4 +30,4 @@ open:
 	# evince document.pdf &
 
 clean:
-	rm -f *.out *.aux *.dvi *.log *.blg *.bbl *.tex-ee *.fdb_latexmk *.fls *.synctex* s_*.tex
+	rm -f *.out *.aux *.dvi *.log *.blg *.bbl *.tex-ee *.fdb_latexmk *.fls *.synctex* s_*.tex *.html
