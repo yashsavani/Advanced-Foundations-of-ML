@@ -1,6 +1,16 @@
 \documentclass{article}
 \usepackage{ysavani}
 
+% Must use to prevent a pandoc bug, where all headers are unconditionally
+% inserted with a \hypertarget command See:
+% https://github.com/jgm/pandoc/issues/7264
+\usepackage{hyperref}
+\usepackage{longtable}
+
+% Avoid pandoc bug when there are lists in the body.
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
 \title{Advanced Foundations of Machine Learning}
 
 \author{
@@ -14,31 +24,30 @@
 \begin{document}
 \maketitle
 
-\input{include/01_introduction.tex}
+\input{include/01_introduction}
 
-\input{include/02_meta_tools.tex}
+\input{include/02_meta_tools}
 
-\input{include/03_core_math.tex}
+\input{include/03_core_math}
 
-\input{include/04_core_cs.tex}
+\input{include/04_core_cs}
 
-\input{include/05_intermediate_math.tex}
+\input{include/05_intermediate_math}
 
-\input{include/06_numerical_methods_and_optimization.tex}
+\input{include/06_numerical_methods_and_optimization}
 
-\input{include/07_core_ml.tex}
+\input{include/07_core_ml}
 
-\input{include/08_seminal_research_in_ml.tex}
+\input{include/08_seminal_research_in_ml}
 
-\input{include/09_tools.tex}
+\input{include/09_tools}
 
-\input{include/10_additional_topics.tex}
+\input{include/10_additional_topics}
 
 \section{Acknowledgements}%
 \label{sec:acknowledgements}
-
 I want to thank \href{https://github.com/joshcho}{Josh Cho} for giving me advice on this repository.
 
 
-\bibliography{references}
+\bibliography{include/references}
 \end{document}

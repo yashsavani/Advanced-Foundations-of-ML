@@ -18,13 +18,14 @@ $(TARGET): $(TEX_SRC) $(RASTERIMG) $(patsubst %.svg,%.pdf,$(VECTORIMG)) $(BIB)
 # '$@' is a variable holding the name of the target.
 # '$<' is a variable houlding the (first) dependency of a rule.
 %.tex: %.md
-	pandoc -f markdown -t latex --listings -o $@ $<
+	pandoc -f markdown -t latex -o $@ $<
 
 %.pdf: %.svg
 	inkscape -A $@ $<
 
 %.pdf: %.tex
-	pandoc --toc -f latex -t pdf -o $@ $<
+	# pandoc --toc -f latex -t pdf --listings -o $@ $<
+	latexmk -use-make -pdf -silent -pdflatex="pdflatex -interaction=nonstopmode" $<
 
 $(SITE): $(patsubst %.pdf,%.tex,$(TARGET))
 	pandoc --toc -s --mathjax -f latex -t html -o $@ $<

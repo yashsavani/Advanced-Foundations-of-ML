@@ -5,10 +5,10 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 ## Problem Solving
 
 ### Problems are ones that:
-* Engage intellect
-* Make connections to develop a coherent framework
-* Can be solved in more than one way
-* Should foster effective communication of mathematical ideas
+* Engage intellect,
+* Make connections to develop a coherent framework,
+* Can be solved in more than one way, and
+* Should foster effective communication of mathematical ideas.
 
 ### Phases of problem solving:
 * *Entry:* what do I know (question, experience), what do I want (paraphrase, ambiguities), what can I introduce (diagram, notation).
@@ -170,6 +170,7 @@ An index set might be $\mathcal{I} = \{1,2,\ldots,100\}$ and it can be used to i
 * For a family of sets $\mathcal{F}$, we say that $\bigcap_{A \in \mathcal{F}} A = \{a | \forall A \in \mathcal{F}, a \in A\}$
 
 ## Proof Techniques
+- What is an axiom
 - Axioms/postulates, conjectures, lemmas, theorems, corollaries,
 - Completeness, consistency, and decidability (Godel's incompleteness theorems),
 - Valid arguments (modus ponens, modus tollens, law of syllogism),
