@@ -170,8 +170,20 @@ An index set might be $\mathcal{I} = \{1,2,\ldots,100\}$ and it can be used to i
 * For a family of sets $\mathcal{F}$, we say that $\bigcap_{A \in \mathcal{F}} A = \{a | \forall A \in \mathcal{F}, a \in A\}$
 
 ## Proof Techniques
-- What is an axiom
-- Axioms/postulates, conjectures, lemmas, theorems, corollaries,
+
+* **Proofs** are demonstrations that if some fundamental statements are assumed to be $\true$, then some consequent mathematical statements must necessarily also be $\true$.
+* **Definitions** are accurate, reversible descriptions of concepts.
+* **Axioms or postulates** are statements that we accept without proof. All proofs must only be built on these axioms.
+* **Theorems** are statements that we prove using our axioms and other previously proved theorems (e.g. Pythagorean theorem).
+* **Lemmas** are mini-theorems that we use to prove the main theorems. Though, it is not necessary that the lemma be simple to prove.
+* **Corollaries** are results that follow easily from a theorem.
+* **Conjectures** are ideas that are believed to be $\true$ but are not yet proven (e.g. Goldbach's conjecture, Collatz conjecture, Fermat's conjecture).
+* **Trivial** solutions are obvious solutions. Though, sometimes mathematicians claim triviality even when the solutions are not so obvious, especially for beginners.
+* A fundamental mathematical question worth asking is if there is a set of foundational mathematical axioms upon which all of mathematics can be built. Towards this goal, we desire a mathematical system that has the following properties:
+    * **Completeness** is when all true mathematical statements can be proven using the axioms.
+    * **Consistency** is when the axioms do not lead to any contradictions.
+    * **Decidability** is when every statement can be identified as a valid mathematical statement.
+
 - Completeness, consistency, and decidability (Godel's incompleteness theorems),
 - Valid arguments (modus ponens, modus tollens, law of syllogism),
 - Invalid arguments (affirming the consequent),
