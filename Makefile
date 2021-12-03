@@ -1,5 +1,6 @@
 # Output files
-TARGET := afoml.pdf afoml.html
+TARGET := afoml.pdf
+SITE := index.html
 
 # Input files
 MD_SRC := $(wildcard include/*.md)
@@ -10,7 +11,7 @@ BIB := include/references.bib
 
 .PHONY: all clean distclean check open
 
-all: $(TARGET)
+all: $(TARGET) $(SITE)
 
 $(TARGET): $(TEX_SRC) $(RASTERIMG) $(patsubst %.svg,%.pdf,$(VECTORIMG)) $(BIB)
 
@@ -25,7 +26,7 @@ $(TARGET): $(TEX_SRC) $(RASTERIMG) $(patsubst %.svg,%.pdf,$(VECTORIMG)) $(BIB)
 %.pdf: %.tex
 	pandoc --toc -f latex -t pdf -o $@ $<
 
-%.html: %.tex
+$(SITE): $(patsubst %.pdf,%.tex,$(TARGET))
 	pandoc --toc -s --mathjax -f latex -t html -o $@ $<
 
 clean:
@@ -50,7 +51,7 @@ check:
 	@sh ${HOME}/.config/latex/diction.sh chapters/*.md 1>&2
 
 open:
-	open $(TARGET)
+	@open $(TARGET)
 
 # build:
 # 	./convert.sh
