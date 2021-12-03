@@ -50,7 +50,7 @@ check:
 	@sh ${HOME}/.config/latex/diction.sh chapters/*.md 1>&2
 
 open:
-	open main.pdf
+	open $(TARGET)
 
 # build:
 # 	./convert.sh
