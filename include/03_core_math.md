@@ -51,7 +51,7 @@ They are usually $p, q,$ or $r$.
 
 As a convention, we evaluate any propositional expression in the following order:
 
-1. Parantheses,
+1. Parentheses,
 2. Negation,
 3. Conjunction (left to right),
 4. Inclusive disjunction (left to right),
@@ -214,13 +214,13 @@ An index set might be $\mathcal{I} = \{1,2,\ldots,100\}$ and it can be used to i
 - Bijective/one-to-one correspondence (right-total and left-unique),
 - Inverse functions,
 - Function composition,
-- Restricing domain and codomain, and
+- Restricting domain and codomain, and
 - Monotonicity.
 
 ## Number Systems
 - Cardinality,
 - Pigeon-hole principle,
-- Cantor-Bernstein-Schroder theorem,
+- Cantor-Bernstein-Schroeder theorem,
 - Finite Sets,
 - Peano's axioms,
 - Countable sets (Aleph-Null),
@@ -269,7 +269,7 @@ An index set might be $\mathcal{I} = \{1,2,\ldots,100\}$ and it can be used to i
 - Congruence modulo m,
 - Properties of congruence,
 - Congruence classes,
-- Cancelling when dividing by relative prime of modulus,
+- Canceling when dividing by relative prime of modulus,
 - Divisibility tests, and
 - Multiplicative inverses.
 
@@ -311,7 +311,7 @@ An index set might be $\mathcal{I} = \{1,2,\ldots,100\}$ and it can be used to i
 - Planes and disks,
 - Spheres,
 - Polyhedrons are 3D object with flat faces and edges, and
-- Dihedrons are a 2D object in 3D space with two faces and edges of neglegible thickness.
+- Dihedrons are a 2D object in 3D space with two faces and edges of negligible thickness.
 - Trigonometry
     - Right-angle triangle (opposite, adjacent, hypotenuse),
     - Sine, cosine, tangent,
@@ -324,7 +324,7 @@ An index set might be $\mathcal{I} = \{1,2,\ldots,100\}$ and it can be used to i
     - Periods,
     - Pythagorean identities ($\sin^2 + \cos^2 = 1$)
     - Sine is odd, cos is even,
-    - Sum and difference formulae (cos together and flip, sin seperate and keep),
+    - Sum and difference formulae (cos together and flip, sin separate and keep),
     - Product to sum and sum to product formulae,
     - Convert sine to cosine by phase shift,
     - Relation to complex numbers ($e^{ix} = \cos(x) + i \cdot \sin(x)$),
@@ -373,10 +373,10 @@ An index set might be $\mathcal{I} = \{1,2,\ldots,100\}$ and it can be used to i
 - Order of an element,
 - Cyclic group,
 - Dihedral group (symmetries of a regular polygon), and
-- Symmetric/permutation group (bijections from a set to itself) (transpositions, cycles, compostion).
+- Symmetric/permutation group (bijections from a set to itself) (transpositions, cycles, composition).
 
 ## Rings and Fields
-- Rings are additive abelian groups that are closed under multiplication,
+- Rings are additive Abelian groups that are closed under multiplication,
     - Addition and multiplication are linked through the distributive property,
 - Exponentiation is repeated multiplication,
 - 0a = a0 = 0,
@@ -392,7 +392,7 @@ An index set might be $\mathcal{I} = \{1,2,\ldots,100\}$ and it can be used to i
 - Intersection of units and zero divisors is empty,
 - Integral domain (commutative, unital ring with no zero divisors),
 - Can cancel factors from both sides of an integral domain,
-- A field is an algebraic structure that is abelian under both addition and multiplication,
+- A field is an algebraic structure that is Abelian under both addition and multiplication,
     - A field is an integral domain where every non-zero element is a unit,
 - Rationals, reals, and complex numbers are infinite fields,
 - Integers modulo a prime are finite fields, and
@@ -423,7 +423,7 @@ An index set might be $\mathcal{I} = \{1,2,\ldots,100\}$ and it can be used to i
     - Constant scaling,
     - Closure under arithmetic operations ($+, -, \times, \div$, powers, and roots),
 - Limit evaluation,
-- Continuous functions and closure of contiuity under composition,
+- Continuous functions and closure of continuity under composition,
 - Intermediate value theorem,
 - Derivative,
     - Interpretation as relative changes in variables,
@@ -439,7 +439,7 @@ An index set might be $\mathcal{I} = \{1,2,\ldots,100\}$ and it can be used to i
     - Chain rule,
 - Exponential derivative and Euler's number,
 - Higher order derivatives (smooth functions),
-- Implicit differentiation (logarthmic derivative),
+- Implicit differentiation (logarithmic derivative),
 - Common derivatives,
     - c, x, sin, cos, tan, arcsin, arccos, arctan, e^x, a^x, ln(x),
 - Optimization (constrained and unconstrained),
