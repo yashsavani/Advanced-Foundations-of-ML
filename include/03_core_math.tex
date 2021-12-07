@@ -1,0 +1,1266 @@
+\hypertarget{core-math}{%
+\section{Core Math}\label{core-math}}
+
+Before diving into some of the more advanced math concepts, I would
+encourage you to at least cursorily go through some of the core math
+resources provided here. I recommend doing this even if you think you
+are comfortable with all the topics listed below. I can't count the
+number of times I thought I completely understood some core math
+concept, only to later realize that there was some subtlety I had
+neglected. These neglected subtleties can often have a cascading effect
+making it very hard to understand some of the more advanced material
+that rely on a solid core.
+
+\hypertarget{problem-solving}{%
+\subsection{Problem Solving}\label{problem-solving}}
+
+\hypertarget{problems-are-ones-that}{%
+\subsubsection{Problems are ones that:}\label{problems-are-ones-that}}
+
+\begin{itemize}
+\tightlist
+\item
+  Engage intellect,
+\item
+  Make connections to develop a coherent framework,
+\item
+  Can be solved in more than one way, and
+\item
+  Should foster effective communication of mathematical ideas.
+\end{itemize}
+
+\hypertarget{phases-of-problem-solving}{%
+\subsubsection{Phases of problem
+solving:}\label{phases-of-problem-solving}}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Entry:} what do I know (question, experience), what do I want
+  (paraphrase, ambiguities), what can I introduce (diagram, notation).
+\item
+  \emph{Attack:} brute force, look for patterns.
+\item
+  \emph{Review:} check, reflect, extend, understand why it works.
+\end{itemize}
+
+\hypertarget{propositional-logic}{%
+\subsection{Propositional Logic}\label{propositional-logic}}
+
+\begin{itemize}
+\tightlist
+\item
+  Propositional Logic is the foundation for the language of reason.
+\item
+  A \emph{proposition} is a statement that has one and only one truth
+  value, \(\true\) or \(\false\).
+\item
+  \emph{Propositional variables} are letters used to stand in for actual
+  propositional statements. They are usually \(p, q,\) or \(r\).
+\item
+  \emph{Propositional connectives} are symbols used to connect
+  propositional variables together.
+\item
+  \emph{Propositional expressions} are statements that link together
+  propositional variables with potentially multiple propositional
+  connectives.
+\item
+  A \emph{truth table} is a table that exhaustively lists all the
+  possible truth values of the expressions.
+\item
+  \emph{Logical equivalence} (denoted by \(\iff\) or \(\equiv\)) is when
+  two propositional expressions are equivalent. That is, they take on
+  the same truth value for every possible input.
+\end{itemize}
+
+\hypertarget{common-connectives}{%
+\subsubsection{Common connectives}\label{common-connectives}}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Tautology or \(\top\):} \(\top(p)\) is always \(\true\) no
+  matter what truth value \(p\) takes. Usually when we try to prove
+  something, we want to show that it is equivalent to a tautology, which
+  means it is true no matter what the input truth values.
+\item
+  \emph{Negation or NOT or \(\lnot\) or \(\bar{p}\):} \(\lnot p\) is
+  \(\true\) if and only if \(p\) is \(\false\).
+\item
+  \emph{Conjunction or AND or \(\land\):} \(p \land q\) is \(\true\) if
+  and only if \(p\) and \(q\) are both \(\true\).
+\item
+  \emph{Inclusive Disjunction or OR or \(\lor\):} \(p \lor q\) is
+  \(\true\) if and only if either \(p\) or \(q\) or both are \(\true\).
+\item
+  \emph{Exclusive Disjunction or XOR or \(\oplus\):} \(p \oplus q\) is
+  \(\true\) if \(p\) and \(q\) have different truth values.
+\item
+  \emph{Implication or Conditional or IMPLIES or \(\to\):} \(p \to q\)
+  is \(\false\) if and only if \(p\) is \(\true\) and \(q\) is
+  \(\false\).
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \(p\) is called the \emph{antecedent}, and \(q\) is called the
+    \emph{consequent}.
+  \item
+    The \emph{converse} of \(p \to q\) is \(q \to p\). It is not
+    equivalent to \(p \to q\).
+  \item
+    The \emph{inverse} of \(p \to q\) is \(\lnot p \to \lnot q\). It is
+    not equivalent to \(p \to q\).
+  \item
+    The \emph{contrapositive} of \(p \to q\) is \(\lnot q \to \lnot p\).
+    It is equivalent to \(p \to q\).
+  \end{itemize}
+\item
+  \emph{Biconditional or IFF or \(\leftrightarrow\):}
+  \(p \leftrightarrow q\) is \(\true\) if and only if both \(p\) and
+  \(q\) have the same truth value.
+\end{itemize}
+
+\hypertarget{truth-table-for-common-connectives}{%
+\subsubsection{Truth table for common
+connectives}\label{truth-table-for-common-connectives}}
+
+\begin{longtable}[]{@{}cccccccc@{}}
+\toprule
+\(p\) & \(q\) & \(\lnot p\) & \(p \land q\) & \(p \lor q\) &
+\(p \oplus q\) & \(p \to q\) & \(p \leftrightarrow q\) \\
+\midrule
+\endhead
+0 & 0 & 1 & 0 & 0 & 0 & 1 & 1 \\
+0 & 1 & 1 & 0 & 1 & 1 & 1 & 0 \\
+1 & 0 & 0 & 0 & 1 & 1 & 0 & 0 \\
+1 & 1 & 0 & 1 & 1 & 0 & 1 & 1 \\
+\bottomrule
+\end{longtable}
+
+\hypertarget{order-of-operations}{%
+\subsubsection{Order of operations}\label{order-of-operations}}
+
+As a convention, we evaluate any propositional expression in the
+following order:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Parentheses,
+\item
+  Negation,
+\item
+  Conjunction (left to right),
+\item
+  Inclusive disjunction (left to right),
+\item
+  Implication, and
+\item
+  Biconditional.
+\end{enumerate}
+
+\hypertarget{de-morgans-theorem}{%
+\subsubsection{De Morgan's theorem}\label{de-morgans-theorem}}
+
+One important theorem in propositional logic that appears everywhere is
+De Morgan's theorem. The theorem states that:
+
+\begin{align*}
+    \lnot(p \land q) &\equiv \lnot p \lor \lnot q, \text{and}\\
+    \lnot(p \lor q) &\equiv \lnot p \land \lnot q.
+\end{align*}
+
+We can prove this by showing that the truth tables for the expressions
+are equivalent.
+
+\hypertarget{set-theory}{%
+\subsection{Set Theory}\label{set-theory}}
+
+\begin{itemize}
+\tightlist
+\item
+  A \emph{set} is a collection of members / elements.
+\item
+  \emph{Roster notation} explicitly lists out every element of the set
+  (e.g.~\(A=\{1,2,3,4,5\}, B=\{2,4,6,10\}\)).
+\item
+  \emph{Set builder notation} implicitly describes all the elements in a
+  set
+  (e.g.~\(A=\{x \mid x\text{ is an integer between 1 and 5 inclusive}\},\)
+  here \(x\) is a dummy variable).
+\item
+  To denote that an object is an element of a set we use the symbol
+  \(\in\) (e.g.~\(3 \in A\)). Note that this is a valid proposition.
+\item
+  To denote that on object is not an element of a set we use the symbol
+  \(\not\in\) (e.g.~\(10 \not\in A\)). Note that this is also a valid
+  proposition.
+\item
+  Elements cannot appear more than once in a set, though they can appear
+  more than once in a multiset.
+\item
+  A set is not ordered.
+\item
+  The \emph{universal set} is the set of all the objects being
+  considered. It is usually notated as \(\mathcal{U}\). In our case we
+  may assume that \(\mathcal{U} = \{x \mid x\) is an integer between 1
+  and 10 inclusive \(\}\)
+\item
+  The \emph{null set or empty set} is the set containing no elements. It
+  is notated as \(\varnothing = \{ \}\).
+\item
+  Set theory has operators to combine sets.
+\item
+  \emph{Venn diagrams} are a visual representation of sets and the
+  operations on sets.
+\end{itemize}
+
+\hypertarget{set-operators}{%
+\subsubsection{Set operators}\label{set-operators}}
+
+\begin{itemize}
+\item
+  \emph{Complement or \(^c\):} \(A^c = \{ x \mid \lnot(x \in A) \}\)
+  (e.g.~\(A^c = \{6, 7, 8, 9, 10\}\)).
+\item
+  \emph{Intersection or \(\cap\):}
+  \(A \cap B = \{x \mid x \in A \land x \in B\}\)
+  (e.g.~\(A \cap B = \{2,4\}\)). Note that the intersection is
+  \emph{associative}. That is,
+  \((A \cap B) \cap C = A \cap (B \cap C) = A \cap B \cap C\).
+\item
+  \emph{Union or \(\cup\):}
+  \(A \cup B = \{x \mid x \in A \lor x \in B\}\)
+  (e.g.~\(A \cup B = \{1,2,3,4,5,6,8,10\}\)). Note that the union is
+  \emph{associative}. That is,
+  \((A \cup B) \cup C = A \cup (B \cup C) = A \cup B \cup C\).
+\item
+  \emph{Difference or \(\setminus\):}
+  \(A \setminus B = \{x \mid x \in A \land x \not\in B\}\)
+  (e.g.~\(A \setminus B = \{1,3,5\}\)).
+\item
+  \emph{Symmetric difference or \(\Delta\):}
+  \(A \Delta B = \{x \mid x \in A \oplus x \in B\}\)
+  (e.g.~\(A \Delta B = \{1,3,5,6,8,10\}\)).
+\end{itemize}
+
+\hypertarget{subsets-supersets-and-equality}{%
+\subsubsection{Subsets, supersets, and
+equality}\label{subsets-supersets-and-equality}}
+
+Three other propositional statements for sets are the subset, superset,
+and equality relations.
+
+\begin{itemize}
+\tightlist
+\item
+  We say that a set \(D\) is a subset \emph{subset} of a set \(A\), if
+  every element \(x \in D\) is also an element of \(A\). Formally, we
+  can write this as \(\forall x, x \in D \to x \in A\). It is notated as
+  \(D \subseteq A\).
+\item
+  We say that a set \(A\) is a \emph{superset} of a set \(D\), if every
+  element \(x \in D\) is also an element of \(A\). the superset
+  proposition is essentially the reverse of the subset proposition. We
+  notate this by \(A \supseteq D\).
+\item
+  We say that a set \(A\) is \emph{equivalent} to a set \(D\) if it is
+  both a superset and a subset of \(D\). Formally, we can write this as
+  \(\forall x, x\in D \leftrightarrow x \in A\). We notate this by
+  \(A = D\).
+\end{itemize}
+
+We say that \(D\) is a strict subset of \(A\) if \(D \subseteq A\), but
+\(D \not= A\). In this case we write \(D \subset A\). We can reverse the
+statement to get strict supersets (\(A\supset D\)).
+
+A trivial statement that is always true is that \(\varnothing \in C\)
+for all possible sets \(C\). We say that this is true vacuously or true
+in an empty sort of way.
+
+Another such trivial statement is that every set is a subset of itself
+since it is equal to itself.
+
+\hypertarget{special-sets}{%
+\subsubsection{Special sets}\label{special-sets}}
+
+Some special sets that we often consider are:
+
+\begin{itemize}
+\tightlist
+\item
+  The set of \emph{natural numbers}, \(\N = \{1,2,3,4,\ldots\}\) (some
+  people claim \(0 \in \N\)).
+\item
+  The set of \emph{integers}, \(\Z = \{\ldots,-2,-1,0,1,2,\ldots\}\).
+\item
+  The set of \emph{rational numbers},
+  \(\Q = \left\{x \mid x = \frac{p}{q}, \where p,q \in \Z \right\}\).
+\item
+  The set of \emph{real numbers}, \(\R\) that are the completion of
+  \(\Q\).
+\item
+  The set of \emph{irrational numbers} given by \(\R \setminus \Q\).
+\item
+  The set of \emph{complex numbers},
+  \(\C = \{x \mid x = a + ib, \where a,b \in \R \land i = \sqrt{-1}\}\).
+\end{itemize}
+
+From the definitions we can see that
+\(\N \subset \Z \subset \Q \subset \R \subset \C\).
+
+\hypertarget{russells-paradox-families-of-sets-and-index-sets}{%
+\subsubsection{Russell's paradox, families of sets, and index
+sets}\label{russells-paradox-families-of-sets-and-index-sets}}
+
+A set cannot contain itself. If we let this be the case then we get a
+paradox. The paradox comes from the set \(A = \{X \mid X \not\in X \}\).
+That is, the set that contains all sets which do not contain themselves.
+If \(A\) is an element of \(A\), then \(A\) must not be in the set, but
+then it must be in the set. This leads to a contradiction. To avoid this
+kind of paradox, we accept a system of 9 axioms governing everything we
+can call a set and everything we can do with a set. We call this set of
+axioms ZFC or Zermelo--Fraenkel set theory with the axiom of choice.
+
+We call a set comprised of other sets a family of sets. We usually
+denote such families of sets with a uppercase script character like
+\(\mathcal{F}\).
+
+Index sets are sets that are used to enumerate the elements of a set,
+though they don't need to be a set of numbers. They are sometimes used
+with families of sets to enumerate the sets contained within the family.
+For example,
+\(\mathcal{F} = \{L_1, L_2, \ldots\}, \where L_i = \{p \mid p \in \mathcal{P} \land p \leq i\}\),
+so \(L_{10} = \{2,3,5,7\}\). An index set might be
+\(\mathcal{I} = \{1,2,\ldots,100\}\) and it can be used to index the
+\(L_i\) sets of \(\mathcal{F}\) for \(i \in \mathcal{I}\).
+
+\hypertarget{predicate-logic}{%
+\subsection{Predicate Logic}\label{predicate-logic}}
+
+\begin{itemize}
+\tightlist
+\item
+  Linguistically a proposition needs to be a declarative sentence with a
+  subject, which is a noun phrase, and a predicate, which is a verb
+  phrase.
+\item
+  We can represent the subject by an element of a set and store the
+  predicate separately (e.g.~\(p(x) =\) ``x is an even number'', where
+  \(x\) is a free variable and \(p\) is the predicate).
+\item
+  The \emph{truth set} of \(p\) is the set of all \(x\) for which
+  \(p(x)\) is \(\true\). That is, the truth set of \(p\) is
+  \(\{x \mid p(x)\}\).
+\item
+  \emph{Quantifiers} tell us how big our truth set is.
+\item
+  The \emph{universal quantifier or ``for all x, p(x)'' or
+  \(\forall x, p(x)\)} says that \(p(x)\) is \(\true\) for every
+  possible element of our universal set.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \((\forall b \in B, p(b)) \iff (\forall b, (b \in B \to p(b)))\) is
+    a useful identity for when we want to say something about every
+    element in a non universal set \(B\).
+  \end{itemize}
+\item
+  The \emph{existential quantifier or ``there exists x such that p(x)''
+  or \(\exists x, \st p(x)\)} says that there exists an \(x\) in the
+  universal set such that p(x) is \(\true\).
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \((\exists a \in A, \st p(a)) \iff (\exists a, \st (a \in A \land p(a)))\)
+    is a useful identity for when we want to say something about some
+    element of a non universal set \(A\).
+  \item
+    Sometimes we want to say that there exists a unique element for
+    which \(p(x)\) is \(\true\). In this case we use the notation
+    \(\exists! x, \st p(x)\) to say that there exists exactly one
+    element \(x \in \mathcal{U}\) that is in the truth set of \(p(x)\).
+  \end{itemize}
+\item
+  We can see that
+  \(\forall b \in B, p(b) \implies \exists b \in B, \st p(b)\) is
+  trivially true. This tells us that any statement with a universal
+  quantifier is a stronger than one with an existential quantifier.
+\item
+  We can also combine quantifiers to get compound quantifiers.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \(\forall x, \exists y, \st (x < y)\) is \(\true\) for all natural
+    numbers.
+  \item
+    \(\exists y, \st \forall x, \st (x < y)\) is \(\false\) for all
+    natural numbers since there is no largest natural number.
+  \end{itemize}
+\item
+  We can also negate quantifiers.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \(\lnot \forall x, p(x) \iff \exists x, \st \lnot p(x)\).
+  \item
+    \(\lnot \exists x, \st p(x) \iff \forall x, \lnot p(x)\).
+  \end{itemize}
+\item
+  For a family of sets \(\mathcal{F}\), we say that
+  \(\bigcup_{A \in \mathcal{F}} A = \{a | \exists A \in \mathcal{F}, \st a \in A\}\)
+\item
+  For a family of sets \(\mathcal{F}\), we say that
+  \(\bigcap_{A \in \mathcal{F}} A = \{a | \forall A \in \mathcal{F}, a \in A\}\)
+\end{itemize}
+
+\hypertarget{proof-techniques}{%
+\subsection{Proof Techniques}\label{proof-techniques}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Proofs} are demonstrations that if some fundamental statements
+  are assumed to be \(\true\), then some consequent mathematical
+  statements must necessarily also be \(\true\).
+\item
+  \textbf{Definitions} are accurate, reversible descriptions of
+  concepts.
+\item
+  \textbf{Axioms or postulates} are statements that we accept without
+  proof. All proofs must only be built on these axioms.
+\item
+  \textbf{Theorems} are statements that we prove using our axioms and
+  other previously proved theorems (e.g.~Pythagorean theorem).
+\item
+  \textbf{Lemmas} are mini-theorems that we use to prove the main
+  theorems. Though, it is not necessary that the lemma be simple to
+  prove.
+\item
+  \textbf{Corollaries} are results that follow easily from a theorem.
+\item
+  \textbf{Conjectures} are ideas that are believed to be \(\true\) but
+  are not yet proven (e.g.~Goldbach's conjecture, Collatz conjecture,
+  Fermat's conjecture).
+\item
+  \textbf{Trivial} solutions are obvious solutions. Though, sometimes
+  mathematicians claim triviality even when the solutions are not so
+  obvious, especially for beginners.
+\item
+  A fundamental mathematical question worth asking is if there is a set
+  of foundational mathematical axioms upon which all of mathematics can
+  be built. Towards this goal, we desire a mathematical system that has
+  the following properties:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Completeness} is when all true mathematical statements can
+    be proven using the axioms.
+  \item
+    \textbf{Consistency} is when the axioms do not lead to any
+    contradictions.
+  \item
+    \textbf{Decidability} is when every statement can be identified as a
+    valid mathematical statement.
+  \end{itemize}
+\item
+  Completeness, consistency, and decidability (Godel's incompleteness
+  theorems),
+\item
+  Valid arguments (modus ponens, modus tollens, law of syllogism),
+\item
+  Invalid arguments (affirming the consequent),
+\item
+  Direct proof,
+\item
+  Proof by contrapositive,
+\item
+  Proof by contradiction,
+\item
+  Proof of conjunction,
+\item
+  Proof of inclusive disjunction,
+\item
+  Universal: let x be arbitrary, prove p(x),
+\item
+  Existential: find an x such that p(x) is true,
+\item
+  Uniqueness: assume p(x), p(y), show x = y,
+\item
+  Successor operation,
+\item
+  Proof by induction (weak and strong), and
+\item
+  Deductive vs inductive reasoning.
+\end{itemize}
+
+\hypertarget{relations}{%
+\subsection{Relations}\label{relations}}
+
+\begin{itemize}
+\tightlist
+\item
+  Tuples,
+\item
+  Cartesian products (cartesian square, cartesian power),
+\item
+  Arity of operations,
+\item
+  Domain and codomain,
+\item
+  Inverse relations,
+\item
+  Graphs and digraphs,
+\item
+  Relations on a set,
+\item
+  Pre-order relations (reflexive, transitive),
+\item
+  Equivalence relations (reflexive, transitive, symmetric),
+\item
+  Equivalence classes,
+\item
+  Partial-order relations (reflexive, transitive, antisymmetric)
+  (posets),
+\item
+  Hasse diagrams,
+\item
+  Total-order relations (complete, transitive, antisymmetric),
+\item
+  Strict-order relations (reflexive -\textgreater{} irreflexive)
+  (trichotomous),
+\item
+  Upper bounds, lower bounds, maximum, minimum, and
+\item
+  Least upper bound (supremum), greatest lower bound (infimum).
+\end{itemize}
+
+\hypertarget{functions}{%
+\subsection{Functions}\label{functions}}
+
+\begin{itemize}
+\tightlist
+\item
+  Left-total, left-unique, right-total, right-unique,
+\item
+  Function (left-total and right-unique),
+\item
+  Prototype and definition,
+\item
+  Images, ranges, and preimages,
+\item
+  Injective/one-to-one (left-unique),
+\item
+  Surjective/onto (right-total),
+\item
+  Bijective/one-to-one correspondence (right-total and left-unique),
+\item
+  Inverse functions,
+\item
+  Function composition,
+\item
+  Restricting domain and codomain, and
+\item
+  Monotonicity.
+\end{itemize}
+
+\hypertarget{number-systems}{%
+\subsection{Number Systems}\label{number-systems}}
+
+\begin{itemize}
+\tightlist
+\item
+  Cardinality,
+\item
+  Pigeon-hole principle,
+\item
+  Cantor-Bernstein-Schroeder theorem,
+\item
+  Finite Sets,
+\item
+  Peano's axioms,
+\item
+  Countable sets (Aleph-Null),
+\item
+  Integers,
+\item
+  Rationals (snaking argument),
+\item
+  Arithmetic operations,
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Addition with inverse (subtraction),
+  \item
+    Multiplication (repeated addition) with inverse (division),
+  \end{itemize}
+\item
+  Exponentiation (repeated multiplication) with inverses (logarithms and
+  radicals/roots since exponentiation is not commutative),
+\item
+  Algebraic numbers,
+\item
+  Real Numbers
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Zenos' paradoxes,
+  \item
+    Transcendental numbers,
+  \item
+    Dedekind cut,
+  \item
+    Supremum property, and
+  \item
+    Cantor's diagonalization argument,
+  \end{itemize}
+\item
+  Cardinality of the continuum (continuum hypothesis),
+\item
+  Hilbert's paradox of the Grand Hotel,
+\item
+  Complex numbers (closure under roots) (no ordering),
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Complex arithmetic,
+  \item
+    Conjugate,
+  \item
+    Modulus,
+  \item
+    Argand diagram, and
+  \end{itemize}
+\item
+  Quarternions (not commutative) and octonions (not associative).
+\end{itemize}
+
+\hypertarget{basic-number-theory}{%
+\subsection{Basic Number Theory}\label{basic-number-theory}}
+
+\begin{itemize}
+\tightlist
+\item
+  Divisibility,
+\item
+  Multiples and factors,
+\item
+  Euclidean division (dividend = quotient divisor + remainder),
+\item
+  Greatest common divisor, and lowest common multiple,
+\item
+  Relative primes,
+\item
+  Euclid's algorithm,
+\item
+  Linear combination,
+\item
+  Diophantine equations,
+\item
+  Prime numbers,
+\item
+  Unique prime factorization,
+\item
+  Euler totient function,
+\item
+  Prime counting function,
+\item
+  Sieve of Eratosthenes,
+\item
+  Mersenne primes,
+\item
+  Mill's theorem, and
+\item
+  Riemann Hypothesis.
+\end{itemize}
+
+\hypertarget{modular-arithmetic}{%
+\subsection{Modular Arithmetic}\label{modular-arithmetic}}
+
+\begin{itemize}
+\tightlist
+\item
+  Remainders follow cyclic pattern,
+\item
+  Congruence modulo m,
+\item
+  Properties of congruence,
+\item
+  Congruence classes,
+\item
+  Canceling when dividing by relative prime of modulus,
+\item
+  Divisibility tests, and
+\item
+  Multiplicative inverses.
+\end{itemize}
+
+\hypertarget{birkhoff-geometry-geometry-based-on-real-numbers}{%
+\subsection{Birkhoff Geometry (geometry based on real
+numbers)}\label{birkhoff-geometry-geometry-based-on-real-numbers}}
+
+\begin{itemize}
+\tightlist
+\item
+  Undefined terms
+
+  \begin{itemize}
+  \tightlist
+  \item
+    point,
+  \item
+    line (set of points),
+  \item
+    distance (positive definite, symmetric, triangle inequality), and
+  \item
+    angle (formed by 3 points).
+  \end{itemize}
+\item
+  Definitions
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Between,
+  \item
+    Line segment,
+  \item
+    Half-line/ray and endpoint,
+  \item
+    Parallel,
+  \item
+    Straight angle, right-angle, perpendicular,
+  \item
+    Triangle, vertices, degenerate triangle, and
+  \item
+    Similar and congruent.
+  \end{itemize}
+\item
+  Postulates
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Bijection between points of a line and real numbers,
+  \item
+    Unique line containing two distinct points,
+  \item
+    Bijection between rays and real numbers mod 2 pi, and
+  \item
+    Triangle congruences.
+  \end{itemize}
+\item
+  Theorems
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Linear pair,
+  \item
+    Vertical angles,
+  \item
+    Triangle angles sum,
+  \item
+    Corresponding angles (and converse),
+  \item
+    Alternate interior/exterior angles (and converses),
+  \item
+    Interiors on the same side (and converse),
+  \item
+    Perimeter and Area,
+  \item
+    Parallelogram,
+  \item
+    Rectangle,
+  \item
+    Rhombus,
+  \item
+    Square,
+  \item
+    Trapezoid,
+  \item
+    Polygons (regular and irregular),
+  \item
+    Circles (radius and diameter, chords, tangents, arcs, angles),
+  \end{itemize}
+\item
+  3D cylinders and volume,
+\item
+  Planes and disks,
+\item
+  Spheres,
+\item
+  Polyhedrons are 3D object with flat faces and edges, and
+\item
+  Dihedrons are a 2D object in 3D space with two faces and edges of
+  negligible thickness.
+\item
+  Trigonometry
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Right-angle triangle (opposite, adjacent, hypotenuse),
+  \item
+    Sine, cosine, tangent,
+  \item
+    Reciprocals (cosecant, secant, cotangent),
+  \item
+    Inverses (arcsine, arccosine, arctangent)
+  \item
+    Tan = sin / cos,
+  \item
+    Unit circle,
+  \item
+    Radians vs degrees,
+  \item
+    Domains and ranges,
+  \item
+    Periods,
+  \item
+    Pythagorean identities (\(\sin^2 + \cos^2 = 1\))
+  \item
+    Sine is odd, cos is even,
+  \item
+    Sum and difference formulae (cos together and flip, sin separate and
+    keep),
+  \item
+    Product to sum and sum to product formulae,
+  \item
+    Convert sine to cosine by phase shift,
+  \item
+    Relation to complex numbers
+    (\(e^{ix} = \cos(x) + i \cdot \sin(x)\)),
+  \item
+    Add complex numbers using parallelogram rule, and
+  \item
+    Multiply complex numbers by adding the angles and multiplying the
+    lengths.
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{systems-of-equations-matrices-polynomials}{%
+\subsection{Systems of Equations, Matrices,
+Polynomials}\label{systems-of-equations-matrices-polynomials}}
+
+\begin{itemize}
+\tightlist
+\item
+  Algebraic expressions (rational exponents),
+\item
+  Linear equations and inequalities,
+\item
+  Linear graphs,
+\item
+  Critical points,
+\item
+  Multiple equations with multiple unknowns,
+\item
+  Writing linear systems of equations as matrices,
+\item
+  Matrix multiplication,
+\item
+  Matrix inverses (singular matrices),
+\item
+  Absolute value and piecewise equations,
+\item
+  Monomials,
+\item
+  Polynomials,
+\item
+  Quadratic equation,
+\item
+  Cubic equation,
+\item
+  No closed form for quartic equation (Galois),
+\item
+  Binomials,
+\item
+  Binomial theorem (permutations and combinations) (Pascal's triangle),
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \((a-b)^2 = (a-b)(a+b)\),
+  \end{itemize}
+\item
+  Foil,
+\item
+  Polynomial arithmetic,
+\item
+  Polynomial factorization,
+\item
+  Polynomial division,
+\item
+  Partial fractions (Partial fraction decomposition),
+\item
+  Polynomial graphs,
+\item
+  Reciprocal graph,
+\item
+  Complex polynomials, and
+\item
+  Fundamental theorem of algebra (any polynomial of degree d has d,
+  possibly complex, roots) (connects algebra with geometry).
+\end{itemize}
+
+\hypertarget{group-theory}{%
+\subsection{Group Theory}\label{group-theory}}
+
+\begin{itemize}
+\tightlist
+\item
+  Group (closed, associative, unique identity, unique inverse),
+\item
+  Idempotence,
+\item
+  Order of a group is the cardinality of the group,
+\item
+  Finite and infinite groups,
+\item
+  GLnR group of nonsingular matrices under matrix multiplication,
+\item
+  Abelian groups (commutative group),
+\item
+  Cayley table,
+\item
+  Subgroup (show closure and inverse for infinite group, only closure
+  for finite group),
+\item
+  Exponentiation,
+\item
+  Generated group,
+\item
+  Order of an element,
+\item
+  Cyclic group,
+\item
+  Dihedral group (symmetries of a regular polygon), and
+\item
+  Symmetric/permutation group (bijections from a set to itself)
+  (transpositions, cycles, composition).
+\end{itemize}
+
+\hypertarget{rings-and-fields}{%
+\subsection{Rings and Fields}\label{rings-and-fields}}
+
+\begin{itemize}
+\tightlist
+\item
+  Rings are additive Abelian groups that are closed under
+  multiplication,
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Addition and multiplication are linked through the distributive
+    property,
+  \end{itemize}
+\item
+  Exponentiation is repeated multiplication,
+\item
+  0a = a0 = 0,
+\item
+  a (-b) = (-a) b = -(ab),
+\item
+  -(-a)(-b) = ab,
+\item
+  Infinite and finite rings,
+\item
+  Polynomial rings,
+\item
+  Commutative rings,
+\item
+  Unital ring (multiplicative identity) (inverses and units),
+
+  \begin{itemize}
+  \tightlist
+  \item
+    1 = 0 implies the ring is the trivial ring,
+  \end{itemize}
+\item
+  Division ring (unital ring where every non-zero element is a unit),
+\item
+  Zero divisor (non-zero element times another non-zero element gives
+  0),
+\item
+  Intersection of units and zero divisors is empty,
+\item
+  Integral domain (commutative, unital ring with no zero divisors),
+\item
+  Can cancel factors from both sides of an integral domain,
+\item
+  A field is an algebraic structure that is Abelian under both addition
+  and multiplication,
+
+  \begin{itemize}
+  \tightlist
+  \item
+    A field is an integral domain where every non-zero element is a
+    unit,
+  \end{itemize}
+\item
+  Rationals, reals, and complex numbers are infinite fields,
+\item
+  Integers modulo a prime are finite fields, and
+\item
+  All arithmetic operations \(+, -, \times\), and \(\div\) play nicely
+  together.
+\end{itemize}
+
+\hypertarget{morphisms}{%
+\subsection{Morphisms}\label{morphisms}}
+
+\begin{itemize}
+\tightlist
+\item
+  Symmetry is patterned self-similarity,
+\item
+  Dihedral group \(D_n\) is a non-abelian, non-cyclic group with order
+  \(2n\),
+\item
+  Homomorphisms (operation preserving functions),
+\item
+  Isomorphisms (bijective homomorphisms) (equivalence relation),
+\item
+  Endomorphisms and automorphisms (isomorphic endomorphism),
+\item
+  Automorphism group,
+\item
+  Group action,
+\item
+  Any finite cyclic group of order m is isomorphic to the integers mod
+  m.
+\item
+  Cayley's theorem (every group is isomorphic to a subgroup of the
+  symmetric group).
+\item
+  Every permutation can be expressed as a composition of transpositions,
+  and
+\item
+  Every permutation has a fixed parity (odd or even based on number of
+  transpositions).
+\end{itemize}
+
+\hypertarget{single-variable-calculus}{%
+\subsection{Single Variable Calculus}\label{single-variable-calculus}}
+
+\begin{itemize}
+\tightlist
+\item
+  Zenos' paradoxes,
+\item
+  Sequences (notation, inductive and recursive definition),
+\item
+  Limits (intuitive definition),
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Limits at infinity and infinite limits,
+  \item
+    One sided limits,
+  \end{itemize}
+\item
+  Convergence and divergence (periodic),
+\item
+  Squeeze theorem,
+\item
+  Properties of limits,
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Constant scaling,
+  \item
+    Closure under arithmetic operations (\(+, -, \times, \div\), powers,
+    and roots),
+  \end{itemize}
+\item
+  Limit evaluation,
+\item
+  Continuous functions and closure of continuity under composition,
+\item
+  Intermediate value theorem,
+\item
+  Derivative,
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Interpretation as relative changes in variables,
+  \end{itemize}
+\item
+  L'Hopital's rule,
+\item
+  Polynomial derivative,
+\item
+  Basic properties of derivatives,
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Constant derivative is zero,
+  \item
+    Constant scaling,
+  \item
+    Addition, subtraction,
+  \item
+    Product rule,
+  \item
+    Quotient rule,
+  \item
+    Power rule,
+  \item
+    Chain rule,
+  \end{itemize}
+\item
+  Exponential derivative and Euler's number,
+\item
+  Higher order derivatives (smooth functions),
+\item
+  Implicit differentiation (logarithmic derivative),
+\item
+  Common derivatives,
+
+  \begin{itemize}
+  \tightlist
+  \item
+    c, x, sin, cos, tan, arcsin, arccos, arctan, e\^{}x, a\^{}x, ln(x),
+  \end{itemize}
+\item
+  Optimization (constrained and unconstrained),
+\item
+  Critical points and extrema (local and global),
+\item
+  Convex and concave functions,
+\item
+  Extreme value theorem,
+\item
+  1st and 2nd derivative test,
+\item
+  Lagrange multipliers,
+\item
+  Newton's method,
+\item
+  Mean value theorem,
+\item
+  Riemann integral and anti-derivative,
+\item
+  Fundamental theorem of calculus,
+\item
+  Definite vs indefinite integral,
+\item
+  Properties of anti-derivative,
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Constant scaling,
+  \item
+    Addition and subtraction,
+  \end{itemize}
+\item
+  Common integrals,
+
+  \begin{itemize}
+  \tightlist
+  \item
+    k, polynomials, 1/x, ln(x), e\^{}x, sin, cos, tan
+  \end{itemize}
+\item
+  Standard integral techniques,
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Substitution,
+  \item
+    Integration by parts,
+  \end{itemize}
+\item
+  Partial sums and infinite series,
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Absolutely convergence,
+  \item
+    Conditionally convergence,
+  \end{itemize}
+\item
+  Arithmetic series (average of the terms times the number of terms),
+\item
+  Geometric series (infinite limit = a/(1-r)),
+\item
+  Telescoping series,
+\item
+  Harmonic series (infinitely divergent) and p-series,
+\item
+  Convergence tests,
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Integral test,
+  \item
+    (Limit) comparison test,
+  \item
+    Alternating series test,
+  \item
+    Ratio test,
+  \item
+    Root test,
+  \item
+    Power series (radius of convergence), and
+  \end{itemize}
+\item
+  Taylor series,
+
+  \begin{itemize}
+  \tightlist
+  \item
+    1/(1-x) = sum x\^{}i,
+  \item
+    e\^{}x = sum x\^{}i / i!,
+  \item
+    cos x = sum (-1)\^{}n x\^{}\{2n\}/(2n)!,
+  \item
+    sin x = sum (-1)\^{}n x\^{}\{2n+1\}/(2n+1)!.
+  \end{itemize}
+\end{itemize}
+
+One excellent resource I have found for some of this material is the
+playlist
+\href{https://youtube.com/playlist?list=PLZzHxk_TPOStgPtqRZ6KzmkUQBQ8TSWVX}{Introduction
+to Higher Mathematics}. I recommend going through this playlist at least
+once.
+
+A crucial tool in the machine learning toolbox is calculus. Most of the
+machine learning literature makes extensive use of multivariable
+calculus. However, before diving into the nuances of multivariable
+calculus, it's important to make sure you have a solid foundation and
+intuition for single variable calculus first. To gain the intuition I
+would recommend a
+\href{https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr}{this
+playlist} by 3Blue1Brown, or
+\href{https://www.khanacademy.org/math/ap-calculus-bc}{this course} on
+AP calculus from Khan Academy. If you already have a strong calculus
+foundation, you can safely skip this section. Though, I would still
+encourage you to go through
+\href{https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr}{the
+essence of calculus playlist} by 3Blue1Brown at some point though. It
+helps fill in a lot of intuition that more formal classes may have
+missed. Who knows? You may learn something you didn't realize you had
+missed. Even small insights in the foundations can lead to major
+revelations later on.
