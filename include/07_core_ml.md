@@ -32,7 +32,7 @@ Recommended but not personally reviewed.
 - https://www.youtube.com/playlist?list=PLTPQEx-31JXhguCush5J7OGnEORofoCW9
 
 
-## Agnostic PAC Learning
+# Agnostic PAC Learning
 
 A hypothesis class $\mathcal{H}$ is agnostic PAC learnable if there exists a learning algorithm such that, for every $\epsilon > 0, \delta > 0$ there exists a positive integer $n^\ast(\epsilon, \delta)$, such that, for any distribution $D \sim \mathcal{X} \times \mathcal{Y}$, running the algorithm on $n \ge n^\ast(\epsilon, \delta)$ samples outputs $h$ such that $R_{(D)}(h) \le \min_{h' \in \mathcal{H}} R_{(D)}(h') + \epsilon$ with probability at least $1-\delta$.
 
@@ -50,6 +50,6 @@ The algorithm we choose to evaluate is empirical risk minimization (ERM). In thi
 
 to be more formal about this claim we introduce the notion of an $\epsilon$-representative sample.
 
-## $\epsilon$-representative sample
+# $\epsilon$-representative sample
 
 a training set $S$ is $\epsilon$-representative with respect to $\mathcal{h}$ and $d$ if $\forall h \in \mathcal{h}, |r_{(\unif(s))}(h) - r_{(d)}(h)| \le \epsilon$

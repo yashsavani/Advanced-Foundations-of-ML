@@ -2,20 +2,20 @@
 
 Before diving into some of the more advanced math concepts, I would encourage you to at least cursorily go through some of the core math resources provided here. I recommend doing this even if you think you are comfortable with all the topics listed below. I can't count the number of times I thought I completely understood some core math concept, only to later realize that there was some subtlety I had neglected. These neglected subtleties can often have a cascading effect making it very hard to understand some of the more advanced material that rely on a solid core.
 
-## Problem Solving
+# Problem Solving
 
-### Problems are ones that:
+## Problems are ones that:
 * Engage intellect,
 * Make connections to develop a coherent framework,
 * Can be solved in more than one way, and
 * Should foster effective communication of mathematical ideas.
 
-### Phases of problem solving:
+## Phases of problem solving:
 * *Entry:* what do I know (question, experience), what do I want (paraphrase, ambiguities), what can I introduce (diagram, notation).
 * *Attack:* brute force, look for patterns.
 * *Review:* check, reflect, extend, understand why it works.
 
-## Propositional Logic
+# Propositional Logic
 
 * Propositional Logic is the foundation for the language of reason.
 * A *proposition* is a statement that has one and only one truth value, $\true$ or $\false$.
@@ -26,7 +26,7 @@ They are usually $p, q,$ or $r$.
 * A *truth table* is a table that exhaustively lists all the possible truth values of the expressions.
 * *Logical equivalence* (denoted by $\iff$ or $\equiv$) is when two propositional expressions are equivalent. That is, they take on the same truth value for every possible input.
 
-### Common connectives
+## Common connectives
 * *Tautology or $\top$:* $\top(p)$ is always $\true$ no matter what truth value $p$ takes. Usually when we try to prove something, we want to show that it is equivalent to a tautology, which means it is true no matter what the input truth values.
 * *Negation or NOT or $\lnot$ or $\bar{p}$:* $\lnot p$ is $\true$ if and only if $p$ is $\false$.
 * *Conjunction or AND or $\land$:* $p \land q$ is $\true$ if and only if $p$ and $q$ are both $\true$.
@@ -39,7 +39,7 @@ They are usually $p, q,$ or $r$.
     * The *contrapositive* of  $p \to q$ is $\lnot q \to \lnot p$. It is equivalent to $p \to q$.
 * *Biconditional or IFF or $\leftrightarrow$:* $p \leftrightarrow q$ is $\true$ if and only if both $p$ and $q$ have the same truth value.
 
-### Truth table for common connectives
+## Truth table for common connectives
 | $p$ | $q$ | $\lnot p$ | $p \land q$ |  $p \lor q$ | $p \oplus q$ | $p \to q$ |  $p \leftrightarrow q$ |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | 0 | 0 | 1 | 0 | 0 | 0 | 1 | 1 |
@@ -47,7 +47,7 @@ They are usually $p, q,$ or $r$.
 | 1 | 0 | 0 | 0 | 1 | 1 | 0 | 0 |
 | 1 | 1 | 0 | 1 | 1 | 0 | 1 | 1 |
 
-### Order of operations
+## Order of operations
 
 As a convention, we evaluate any propositional expression in the following order:
 
@@ -58,7 +58,7 @@ As a convention, we evaluate any propositional expression in the following order
 5. Implication, and
 6. Biconditional.
 
-### De Morgan's theorem
+## De Morgan's theorem
 
 One important theorem in propositional logic that appears everywhere is De Morgan's theorem. The theorem states that:
 
@@ -69,7 +69,7 @@ One important theorem in propositional logic that appears everywhere is De Morga
 
 We can prove this by showing that the truth tables for the expressions are equivalent.
 
-## Set Theory
+# Set Theory
 
 * A *set* is a collection of members / elements.
 * *Roster notation* explicitly lists out every element of the set (e.g. $A=\{1,2,3,4,5\}, B=\{2,4,6,10\}$).
@@ -84,7 +84,7 @@ In our case we may assume that $\mathcal{U} = \{x \mid x$ is an integer between 
 * Set theory has operators to combine sets.
 * *Venn diagrams* are a visual representation of sets and the operations on sets.
 
-### Set operators
+## Set operators
 
 * *Complement or $^c$:*
 $A^c = \{ x \mid \lnot(x \in A) \}$ (e.g. $A^c = \{6, 7, 8, 9, 10\}$).
@@ -103,7 +103,7 @@ $A \setminus B = \{x \mid x \in A \land x \not\in B\}$ (e.g. $A \setminus B = \{
 * *Symmetric difference or $\Delta$:*
 $A \Delta B = \{x \mid x \in A \oplus x \in B\}$ (e.g. $A \Delta B = \{1,3,5,6,8,10\}$).
 
-### Subsets, supersets, and equality
+## Subsets, supersets, and equality
 
 Three other propositional statements for sets are the subset, superset, and equality relations.
 
@@ -117,7 +117,7 @@ A trivial statement that is always true is that $\varnothing \in C$ for all poss
 
 Another such trivial statement is that every set is a subset of itself since it is equal to itself.
 
-### Special sets
+## Special sets
 
 Some special sets that we often consider are:
 
@@ -131,7 +131,7 @@ $\C = \{x \mid x = a + ib, \where a,b \in \R \land i = \sqrt{-1}\}$.
 
 From the definitions we can see that $\N \subset \Z \subset \Q \subset \R \subset \C$.
 
-### Russell's paradox, families of sets, and index sets
+## Russell's paradox, families of sets, and index sets
 
 A set cannot contain itself. If we let this be the case then we get a paradox.
 The paradox comes from the set $A = \{X \mid X \not\in X \}$.
@@ -147,7 +147,7 @@ For example, $\mathcal{F} = \{L_1, L_2, \ldots\}, \where L_i = \{p \mid p \in \m
 so $L_{10} = \{2,3,5,7\}$.
 An index set might be $\mathcal{I} = \{1,2,\ldots,100\}$ and it can be used to index the $L_i$ sets of $\mathcal{F}$ for $i \in \mathcal{I}$.
 
-## Predicate Logic
+# Predicate Logic
 
 * Linguistically a proposition needs to be a declarative sentence with a subject, which is a noun phrase, and a predicate, which is a verb phrase.
 * We can represent the subject by an element of a set and store the predicate separately
@@ -169,7 +169,7 @@ An index set might be $\mathcal{I} = \{1,2,\ldots,100\}$ and it can be used to i
 * For a family of sets $\mathcal{F}$, we say that $\bigcup_{A \in \mathcal{F}} A = \{a | \exists A \in \mathcal{F}, \st a \in A\}$
 * For a family of sets $\mathcal{F}$, we say that $\bigcap_{A \in \mathcal{F}} A = \{a | \forall A \in \mathcal{F}, a \in A\}$
 
-## Proof Techniques
+# Proof Techniques
 
 * **Proofs** are demonstrations that if some fundamental statements are assumed to be $\true$, then some consequent mathematical statements must necessarily also be $\true$.
 * **Definitions** are accurate, reversible descriptions of concepts.
@@ -199,7 +199,7 @@ An index set might be $\mathcal{I} = \{1,2,\ldots,100\}$ and it can be used to i
 - Proof by induction (weak and strong), and
 - Deductive vs inductive reasoning.
 
-## Relations
+# Relations
 - Tuples,
 - Cartesian products (cartesian square, cartesian power),
 - Arity of operations,
@@ -217,7 +217,7 @@ An index set might be $\mathcal{I} = \{1,2,\ldots,100\}$ and it can be used to i
 - Upper bounds, lower bounds, maximum, minimum, and
 - Least upper bound (supremum), greatest lower bound (infimum).
 
-## Functions
+# Functions
 - Left-total, left-unique, right-total, right-unique,
 - Function (left-total and right-unique),
 - Prototype and definition,
@@ -230,7 +230,7 @@ An index set might be $\mathcal{I} = \{1,2,\ldots,100\}$ and it can be used to i
 - Restricting domain and codomain, and
 - Monotonicity.
 
-## Number Systems
+# Number Systems
 - Cardinality,
 - Pigeon-hole principle,
 - Cantor-Bernstein-Schroeder theorem,
@@ -259,7 +259,7 @@ An index set might be $\mathcal{I} = \{1,2,\ldots,100\}$ and it can be used to i
     - Argand diagram, and
 - Quarternions (not commutative) and octonions (not associative).
 
-## Basic Number Theory
+# Basic Number Theory
 - Divisibility,
 - Multiples and factors,
 - Euclidean division (dividend = quotient divisor + remainder),
@@ -277,7 +277,7 @@ An index set might be $\mathcal{I} = \{1,2,\ldots,100\}$ and it can be used to i
 - Mill's theorem, and
 - Riemann Hypothesis.
 
-## Modular Arithmetic
+# Modular Arithmetic
 - Remainders follow cyclic pattern,
 - Congruence modulo m,
 - Properties of congruence,
@@ -286,7 +286,7 @@ An index set might be $\mathcal{I} = \{1,2,\ldots,100\}$ and it can be used to i
 - Divisibility tests, and
 - Multiplicative inverses.
 
-## Birkhoff Geometry (geometry based on real numbers)
+# Birkhoff Geometry (geometry based on real numbers)
 - Undefined terms
     - point,
     - line (set of points),
@@ -344,7 +344,7 @@ An index set might be $\mathcal{I} = \{1,2,\ldots,100\}$ and it can be used to i
     - Add complex numbers using parallelogram rule, and
     - Multiply complex numbers by adding the angles and multiplying the lengths.
 
-## Systems of Equations, Matrices, Polynomials
+# Systems of Equations, Matrices, Polynomials
 - Algebraic expressions (rational exponents),
 - Linear equations and inequalities,
 - Linear graphs,
@@ -372,7 +372,7 @@ An index set might be $\mathcal{I} = \{1,2,\ldots,100\}$ and it can be used to i
 - Complex polynomials, and
 - Fundamental theorem of algebra (any polynomial of degree d has d, possibly complex, roots) (connects algebra with geometry).
 
-## Group Theory
+# Group Theory
 - Group (closed, associative, unique identity, unique inverse),
 - Idempotence,
 - Order of a group is the cardinality of the group,
@@ -388,7 +388,7 @@ An index set might be $\mathcal{I} = \{1,2,\ldots,100\}$ and it can be used to i
 - Dihedral group (symmetries of a regular polygon), and
 - Symmetric/permutation group (bijections from a set to itself) (transpositions, cycles, composition).
 
-## Rings and Fields
+# Rings and Fields
 - Rings are additive Abelian groups that are closed under multiplication,
     - Addition and multiplication are linked through the distributive property,
 - Exponentiation is repeated multiplication,
@@ -411,7 +411,7 @@ An index set might be $\mathcal{I} = \{1,2,\ldots,100\}$ and it can be used to i
 - Integers modulo a prime are finite fields, and
 - All arithmetic operations $+, -, \times$, and $\div$ play nicely together.
 
-## Morphisms
+# Morphisms
 - Symmetry is patterned self-similarity,
 - Dihedral group $D_n$ is a non-abelian, non-cyclic group with order $2n$,
 - Homomorphisms (operation preserving functions),
@@ -424,7 +424,7 @@ An index set might be $\mathcal{I} = \{1,2,\ldots,100\}$ and it can be used to i
 - Every permutation can be expressed as a composition of transpositions, and
 - Every permutation has a fixed parity (odd or even based on number of transpositions).
 
-## Single Variable Calculus
+# Single Variable Calculus
 - Zenos' paradoxes,
 - Sequences (notation, inductive and recursive definition),
 - Limits (intuitive definition),

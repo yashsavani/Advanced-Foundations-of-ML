@@ -2,7 +2,7 @@
 
 Many of the recent innovations in machine learning can be traced directly back to computer science roots. Furthermore, much of the language used in the contemporary machine learning literature is inherited almost entirely from the computer science literature. Also, ultimately most machine learning ideas will have to be transcribed into code that will run on computers. Therefore, having a solid foundation in computer science will be imperitave to your success in machine learning research. All the topics covered here should be part of any introductory CS curriculum.
 
-## Programming basics
+# Programming basics
 
 - Types,
 - Variables,
@@ -16,7 +16,7 @@ Many of the recent innovations in machine learning can be traced directly back t
 - Functional vs object oriented paradigms, and
 - Pointers/references and memory organization (stack and heap).
 
-## Algorithms
+# Algorithms
 
 - Search,
 - Sort,
@@ -33,7 +33,7 @@ Many of the recent innovations in machine learning can be traced directly back t
 - Min-cut and max-flow (Ford-Fulkerson), and
 - P vs NP (NP-completeness, 3 SAT, reductions).
 
-## Data Structures
+# Data Structures
 
 - Lists,
 - Stacks,
@@ -43,7 +43,7 @@ Many of the recent innovations in machine learning can be traced directly back t
 - Hashmaps (amortization), and
 - Sets.
 
-## Systems and Additional Topics
+# Systems and Additional Topics
 
 - Hardware overview (transistors, logic gates, latches, memory, CPU, RAM, GPU, peripherals),
 - Unix (filesystem, interrupts/signals, system calls, processess, interprocess communication, terminal, shell scripting),
