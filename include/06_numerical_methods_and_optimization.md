@@ -1,4 +1,4 @@
-# Numerical Methods and Optimization
+\chapter{Numerical Methods and Optimization}
 
 - Matrix factorization (LU, Cholesky, QR, SVD),
 - Eigenproblems (power iteration, shifting, deflation, QR Iteration, Krylov subspace methods),

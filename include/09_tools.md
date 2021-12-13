@@ -1,4 +1,4 @@
-# Tools
+\chapter{Tools}
 
 - Python or Julia with conda,
 - Numerical libraries (numpy, PyTorch, JAX),

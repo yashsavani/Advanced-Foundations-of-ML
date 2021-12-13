@@ -25,7 +25,7 @@ $(TARGET): $(TEX_SRC) $(RASTERIMG) $(patsubst %.svg,%.pdf,$(VECTORIMG)) $(BIB)
 
 %.pdf: %.tex
 	# pandoc --toc -f latex -t pdf --listings -o $@ $<
-	latexmk -use-make -pdf -silent -pdflatex="pdflatex -interaction=nonstopmode" $<
+	latexmk -use-make -pdf -silent -pdflatex="xelatex %O %S" $<
 
 $(SITE): $(patsubst %.pdf,%.tex,$(TARGET))
 	pandoc --toc -s --mathjax -f latex -t html -o $@ $<

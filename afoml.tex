@@ -1,17 +1,25 @@
-\documentclass{article}
+\documentclass[12pt,oneside]{book}
+\usepackage[%
+colorlinks=true,allcolors=link_color,pageanchor=true,%
+plainpages=false,pdfpagelabels,bookmarks,bookmarksnumbered,%
+]{hyperref}
 \usepackage{ysavani}
+\definecolor{link_color}{RGB}{0,128,255}
+\usepackage{fancyhdr}
+\usepackage[Lenny]{fncychap}
+\ChTitleVar{\Huge\bfseries}
+
 
 % Must use to prevent a pandoc bug, where all headers are unconditionally
 % inserted with a \hypertarget command See:
 % https://github.com/jgm/pandoc/issues/7264
-\usepackage{hyperref}
 \usepackage{longtable}
 
 % Avoid pandoc bug when there are lists in the body.
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
-\title{Advanced Foundations of Machine Learning}
+\title{\bf{Advanced Foundations of Machine Learning}}
 
 \author{
 	Yash Savani \\
@@ -22,7 +30,15 @@
 }
 
 \begin{document}
+\frontmatter
+
+\pagestyle{fancy}
+
 \maketitle
+
+\tableofcontents
+
+\mainmatter
 
 \input{include/01_introduction}
 
@@ -44,8 +60,8 @@
 
 \input{include/10_additional_topics}
 
-\section{Acknowledgements}%
-\label{sec:acknowledgements}
+\chapter{Acknowledgements}%
+\label{ch:acknowledgements}
 I want to thank \href{https://github.com/joshcho}{Josh Cho} for giving me advice on this repository.
 
 

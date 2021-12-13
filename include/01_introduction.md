@@ -1,4 +1,4 @@
-# Introduction
+\chapter{Introduction}
 
 There are already several repositories and courses that cover the foundations of Machine Learning. Here are a few of them:
 

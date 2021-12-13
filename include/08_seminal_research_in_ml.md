@@ -1,4 +1,4 @@
-# Seminal Research in ML
+\chapter{Seminal Research in ML}
 
 - Computer vision
     - classification,

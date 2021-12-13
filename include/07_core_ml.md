@@ -1,4 +1,4 @@
-# Core ML
+\chapter{Core ML}
 
 - Perceptron (XOR),
 - SVM (Slater),

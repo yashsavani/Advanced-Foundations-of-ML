@@ -1,4 +1,4 @@
-# Additional Topics
+\chapter{Additional Topics}
 
 - Optimal transport,
 - Algebraic/differential topology/geometry,
