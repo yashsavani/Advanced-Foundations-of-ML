@@ -31,7 +31,7 @@ $(SITE): $(patsubst %.pdf,%.tex,$(TARGET))
 	pandoc --toc -s --mathjax -f latex -t html -o $@ $<
 
 clean:
-	rm -f *.out *.aux *.dvi *.log *.blg *.bbl *.tex-ee *.fdb_latexmk *.fls *.synctex* 
+	rm -f *.out *.aux *.dvi *.log *.blg *.bbl *.tex-ee *.fdb_latexmk *.fls *.synctex* *.toc *.xdv
 	rm -f $(TEX_SRC)
 
 distclean: clean
