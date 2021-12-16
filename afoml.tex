@@ -15,9 +15,20 @@ plainpages=false,pdfpagelabels,bookmarks,bookmarksnumbered,%
 % https://github.com/jgm/pandoc/issues/7264
 \usepackage{longtable}
 
-% Avoid pandoc bug when there are lists in the body.
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\newenvironment{psuedochapter}[1]
+{\cleardoublepage
+  \thispagestyle{empty}
+  % \vspace*{\stretch{1}}
+  \begin{center} \large {\bf #1} \end{center}
+  % \addcontentsline{toc}{chapter}{\numberline{}#1} %--not yet mjz
+  \begin{quotation}}
+  {\end{quotation}
+  \vspace*{\stretch{3}}
+  \clearpage
+}
 
 \title{\bf{Advanced Foundations of Machine Learning}}
 
@@ -35,6 +46,10 @@ plainpages=false,pdfpagelabels,bookmarks,bookmarksnumbered,%
 \pagestyle{fancy}
 
 \maketitle
+
+\begin{psuedochapter}{Acknowledgments}
+I want to thank \href{https://github.com/joshcho}{Josh Cho} for giving me advice on this repository.
+\end{psuedochapter}
 
 \tableofcontents
 
@@ -59,11 +74,6 @@ plainpages=false,pdfpagelabels,bookmarks,bookmarksnumbered,%
 \input{include/09_tools}
 
 \input{include/10_additional_topics}
-
-\chapter{Acknowledgements}%
-\label{ch:acknowledgements}
-I want to thank \href{https://github.com/joshcho}{Josh Cho} for giving me advice on this repository.
-
 
 \bibliography{include/references}
 \end{document}

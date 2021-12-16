@@ -183,8 +183,24 @@ An index set might be $\mathcal{I} = \{1,2,\ldots,100\}$ and it can be used to i
     * **Completeness** is when all true mathematical statements can be proven using the axioms.
     * **Consistency** is when the axioms do not lead to any contradictions.
     * **Decidability** is when every statement can be identified as a valid mathematical statement.
+* Sadly, in his incompleteness theorems, Kurt G\"odel showed that there cannot exist such a foundational set of mathematical axioms.
+    * No mathematical system can be both complete and consistent.
+    * There will always be statements that are not decidable.
+* While we seem doomed in our search of a foundational mathematics, all is not lost. We surprisingly find that despite it's inherent flaws, mathematics still serves as an extremely realistic model of the world. So studying proofs still has a lot of utility as they form the basis of the tools we end up using to better understand our world. Even if the tools themselves flawed.
 
-- Completeness, consistency, and decidability (Godel's incompleteness theorems),
+While proofs may take a tortuous journey through abstract theory to validate our claims, it is considered best practice to make the proof itself as easy to understand as possible. This means, writing the proof in complete sentences instead of in terse equations laden with mathematical jargon.
+
+A proof should be a logical argument that attempts to persuade someone of something by giving reasons or evidence for why they should accept the conclusion.Valid arguments are those where the conclusion follows logically from the premises. This resonates of the conditional connective.
+
+Some valid arguments we use in practice are:
+
+* *Modus Ponens or the law of detachment or affirming the antecedent:* is when we assume $p \to q$, and $p$. Then it directly follows that $q$. Succinctly,
+\begin{align*}
+    [(p \to q) \land p] \to q
+\end{align*}
+
+is the Modus Ponens tautology.
+
 - Valid arguments (modus ponens, modus tollens, law of syllogism),
 - Invalid arguments (affirming the consequent),
 - Direct proof,
@@ -286,7 +302,7 @@ An index set might be $\mathcal{I} = \{1,2,\ldots,100\}$ and it can be used to i
 - Divisibility tests, and
 - Multiplicative inverses.
 
-# Birkhoff Geometry (geometry based on real numbers)
+\section[Birkhoff Geometry]{Birkhoff Geometry (geometry based on real numbers)}
 - Undefined terms
     - point,
     - line (set of points),
@@ -344,7 +360,7 @@ An index set might be $\mathcal{I} = \{1,2,\ldots,100\}$ and it can be used to i
     - Add complex numbers using parallelogram rule, and
     - Multiply complex numbers by adding the angles and multiplying the lengths.
 
-# Systems of Equations, Matrices, Polynomials
+\section[Systems of Equations]{Systems of Equations, Matrices, Polynomials}
 - Algebraic expressions (rational exponents),
 - Linear equations and inequalities,
 - Linear graphs,
