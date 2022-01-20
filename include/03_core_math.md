@@ -11,33 +11,33 @@ Before diving into some of the more advanced math concepts, I would encourage yo
 * Should foster effective communication of mathematical ideas.
 
 ## Phases of problem solving:
-* *Entry:* what do I know (question, experience), what do I want (paraphrase, ambiguities), what can I introduce (diagram, notation).
-* *Attack:* brute force, look for patterns.
-* *Review:* check, reflect, extend, understand why it works.
+* **Entry:** what do I know (question, experience), what do I want (paraphrase, ambiguities), what can I introduce (diagram, notation).
+* **Attack:** brute force, look for patterns.
+* **Review:** check, reflect, extend, understand why it works.
 
 # Propositional Logic
 
 * Propositional Logic is the foundation for the language of reason.
-* A *proposition* is a statement that has one and only one truth value, $\true$ or $\false$.
-* *Propositional variables* are letters used to stand in for actual propositional statements.
+* A **proposition** is a statement that has one and only one truth value, $\true$ or $\false$.
+* **Propositional variables** are letters used to stand in for actual propositional statements.
 They are usually $p, q,$ or $r$.
-* *Propositional connectives* are symbols used to connect propositional variables together.
-* *Propositional expressions* are statements that link together propositional variables with potentially multiple propositional connectives.
-* A *truth table* is a table that exhaustively lists all the possible truth values of the expressions.
-* *Logical equivalence* (denoted by $\iff$ or $\equiv$) is when two propositional expressions are equivalent. That is, they take on the same truth value for every possible input.
+* **Propositional connectives** are symbols used to connect propositional variables together.
+* **Propositional expressions** are statements that link together propositional variables with potentially multiple propositional connectives.
+* A **truth table** is a table that exhaustively lists all the possible truth values of the expressions.
+* **Logical equivalence** (denoted by $\iff$ or $\equiv$) is when two propositional expressions are equivalent. That is, they take on the same truth value for every possible input.
 
 ## Common connectives
-* *Tautology or $\top$:* $\top(p)$ is always $\true$ no matter what truth value $p$ takes. Usually when we try to prove something, we want to show that it is equivalent to a tautology, which means it is true no matter what the input truth values.
-* *Negation or NOT or $\lnot$ or $\bar{p}$:* $\lnot p$ is $\true$ if and only if $p$ is $\false$.
-* *Conjunction or AND or $\land$:* $p \land q$ is $\true$ if and only if $p$ and $q$ are both $\true$.
-* *Inclusive Disjunction or OR or $\lor$:* $p \lor q$ is $\true$ if and only if either $p$ or $q$ or both are $\true$.
-* *Exclusive Disjunction or XOR or $\oplus$:* $p \oplus q$ is $\true$ if $p$ and $q$ have different truth values.
-* *Implication or Conditional or IMPLIES or $\to$:* $p \to q$ is $\false$ if and only if $p$ is $\true$ and $q$ is $\false$.
-    * $p$ is called the  *antecedent*, and $q$ is called the *consequent*.
-    * The *converse* of $p \to q$ is $q \to p$. It is not equivalent to $p \to q$.
-    * The *inverse* of  $p \to q$ is $\lnot p \to \lnot q$. It is not equivalent to $p \to q$.
-    * The *contrapositive* of  $p \to q$ is $\lnot q \to \lnot p$. It is equivalent to $p \to q$.
-* *Biconditional or IFF or $\leftrightarrow$:* $p \leftrightarrow q$ is $\true$ if and only if both $p$ and $q$ have the same truth value.
+* **Tautology or $\top$:** $\top(p)$ is always $\true$ no matter what truth value $p$ takes. Usually when we try to prove something, we want to show that it is equivalent to a tautology, which means it is true no matter what the input truth values.
+* **Negation or NOT or $\lnot$ or $\bar{p}$:** $\lnot p$ is $\true$ if and only if $p$ is $\false$.
+* **Conjunction or AND or $\land$:** $p \land q$ is $\true$ if and only if $p$ and $q$ are both $\true$.
+* **Inclusive Disjunction or OR or $\lor$:** $p \lor q$ is $\true$ if and only if either $p$ or $q$ or both are $\true$.
+* **Exclusive Disjunction or XOR or $\oplus$:** $p \oplus q$ is $\true$ if $p$ and $q$ have different truth values.
+* **Implication or Conditional or IMPLIES or $\to$:** $p \to q$ is $\false$ if and only if $p$ is $\true$ and $q$ is $\false$.
+    * $p$ is called the  **antecedent**, and $q$ is called the **consequent**.
+    * The **converse** of $p \to q$ is $q \to p$. It is not equivalent to $p \to q$.
+    * The **inverse** of  $p \to q$ is $\lnot p \to \lnot q$. It is not equivalent to $p \to q$.
+    * The **contrapositive** of  $p \to q$ is $\lnot q \to \lnot p$. It is equivalent to $p \to q$.
+* **Biconditional or IFF or $\leftrightarrow$:** $p \leftrightarrow q$ is $\true$ if and only if both $p$ and $q$ have the same truth value.
 
 ## Truth table for common connectives
 | $p$ | $q$ | $\lnot p$ | $p \land q$ |  $p \lor q$ | $p \oplus q$ | $p \to q$ |  $p \leftrightarrow q$ |
@@ -71,45 +71,45 @@ We can prove this by showing that the truth tables for the expressions are equiv
 
 # Set Theory
 
-* A *set* is a collection of members / elements.
-* *Roster notation* explicitly lists out every element of the set (e.g. $A=\{1,2,3,4,5\}, B=\{2,4,6,10\}$).
-* *Set builder notation* implicitly describes all the elements in a set (e.g. $A=\{x \mid x\text{ is an integer between 1 and 5 inclusive}\},$ here $x$ is a dummy variable).
+* A **set** is a collection of members / elements.
+* **Roster notation** explicitly lists out every element of the set (e.g. $A=\{1,2,3,4,5\}, B=\{2,4,6,10\}$).
+* **Set builder notation** implicitly describes all the elements in a set (e.g. $A=\{x \mid x\text{ is an integer between 1 and 5 inclusive}\},$ here $x$ is a dummy variable).
 * To denote that an object is an element of a set we use the symbol $\in$ (e.g. $3 \in A$). Note that this is a valid proposition.
 * To denote that on object is not an element of a set we use the symbol $\not\in$ (e.g. $10 \not\in A$). Note that this is also a valid proposition.
 * Elements cannot appear more than once in a set, though they can appear more than once in a multiset.
 * A set is not ordered.
-* The *universal set* is the set of all the objects being considered. It is usually notated as $\mathcal{U}$.
+* The **universal set** is the set of all the objects being considered. It is usually notated as $\mathcal{U}$.
 In our case we may assume that $\mathcal{U} = \{x \mid x$ is an integer between 1 and 10 inclusive $\}$
-* The *null set or empty set* is the set containing no elements. It is notated as $\varnothing = \{ \}$.
+* The **null set or empty set** is the set containing no elements. It is notated as $\varnothing = \{ \}$.
 * Set theory has operators to combine sets.
-* *Venn diagrams* are a visual representation of sets and the operations on sets.
+* **Venn diagrams** are a visual representation of sets and the operations on sets.
 
 ## Set operators
 
-* *Complement or $^c$:*
+* **Complement or $^c$:**
 $A^c = \{ x \mid \lnot(x \in A) \}$ (e.g. $A^c = \{6, 7, 8, 9, 10\}$).
 
-* *Intersection or $\cap$:*
+* **Intersection or $\cap$:**
 $A \cap B = \{x \mid x \in A \land x \in B\}$ (e.g. $A \cap B = \{2,4\}$).
-Note that the intersection is *associative*. That is, $(A \cap B) \cap C = A \cap (B \cap C) = A \cap B \cap C$.
+Note that the intersection is **associative**. That is, $(A \cap B) \cap C = A \cap (B \cap C) = A \cap B \cap C$.
 
-* *Union or $\cup$:*
+* **Union or $\cup$:**
 $A \cup B = \{x \mid x \in A \lor x \in B\}$ (e.g. $A \cup B = \{1,2,3,4,5,6,8,10\}$).
-Note that the union is *associative*. That is, $(A \cup B) \cup C = A \cup (B \cup C) = A \cup B \cup C$.
+Note that the union is **associative**. That is, $(A \cup B) \cup C = A \cup (B \cup C) = A \cup B \cup C$.
 
-* *Difference or $\setminus$:*
+* **Difference or $\setminus$:**
 $A \setminus B = \{x \mid x \in A \land x \not\in B\}$ (e.g. $A \setminus B = \{1,3,5\}$).
 
-* *Symmetric difference or $\Delta$:*
+* **Symmetric difference or $\Delta$:**
 $A \Delta B = \{x \mid x \in A \oplus x \in B\}$ (e.g. $A \Delta B = \{1,3,5,6,8,10\}$).
 
 ## Subsets, supersets, and equality
 
 Three other propositional statements for sets are the subset, superset, and equality relations.
 
-* We say that a set $D$ is a subset *subset* of a set $A$, if every element $x \in D$ is also an element of $A$. Formally, we can write this as $\forall x, x \in D \to x \in A$. It is notated as $D \subseteq A$.
-* We say that a set $A$ is a *superset* of a set $D$, if every element $x \in D$ is also an element of $A$. the superset proposition is essentially the reverse of the subset proposition. We notate this by $A \supseteq D$.
-* We say that a set $A$ is *equivalent* to a set $D$ if it is both a superset and a subset of $D$. Formally, we can write this as $\forall x, x\in D \leftrightarrow x \in A$. We notate this by $A = D$.
+* We say that a set $D$ is a subset **subset** of a set $A$, if every element $x \in D$ is also an element of $A$. Formally, we can write this as $\forall x, x \in D \to x \in A$. It is notated as $D \subseteq A$.
+* We say that a set $A$ is a **superset** of a set $D$, if every element $x \in D$ is also an element of $A$. the superset proposition is essentially the reverse of the subset proposition. We notate this by $A \supseteq D$.
+* We say that a set $A$ is **equivalent** to a set $D$ if it is both a superset and a subset of $D$. Formally, we can write this as $\forall x, x\in D \leftrightarrow x \in A$. We notate this by $A = D$.
 
 We say that $D$ is a strict subset of $A$ if $D \subseteq A$, but $D \not= A$. In this case we write $D \subset A$. We can reverse the statement to get strict supersets ($A\supset D$).
 
@@ -121,12 +121,12 @@ Another such trivial statement is that every set is a subset of itself since it 
 
 Some special sets that we often consider are:
 
-* The set of *natural numbers*, $\N = \{1,2,3,4,\ldots\}$ (some people claim $0 \in \N$).
-* The set of *integers*, $\Z = \{\ldots,-2,-1,0,1,2,\ldots\}$.
-* The set of *rational numbers*, $\Q = \left\{x \mid x = \frac{p}{q}, \where p,q \in \Z \right\}$.
-* The set of *real numbers*, $\R$ that are the completion of $\Q$.
-* The set of *irrational numbers* given by $\R \setminus \Q$.
-* The set of *complex numbers*,
+* The set of **natural numbers**, $\N = \{1,2,3,4,\ldots\}$ (some people claim $0 \in \N$).
+* The set of **integers**, $\Z = \{\ldots,-2,-1,0,1,2,\ldots\}$.
+* The set of **rational numbers**, $\Q = \left\{x \mid x = \frac{p}{q}, \where p,q \in \Z \right\}$.
+* The set of **real numbers**, $\R$ that are the completion of $\Q$.
+* The set of **irrational numbers** given by $\R \setminus \Q$.
+* The set of **complex numbers**,
 $\C = \{x \mid x = a + ib, \where a,b \in \R \land i = \sqrt{-1}\}$.
 
 From the definitions we can see that $\N \subset \Z \subset \Q \subset \R \subset \C$.
@@ -152,12 +152,13 @@ An index set might be $\mathcal{I} = \{1,2,\ldots,100\}$ and it can be used to i
 * Linguistically a proposition needs to be a declarative sentence with a subject, which is a noun phrase, and a predicate, which is a verb phrase.
 * We can represent the subject by an element of a set and store the predicate separately
 (e.g. $p(x) =$ "x is an even number", where $x$ is a free variable and $p$ is the predicate).
-* The *truth set* of $p$ is the set of all  $x$ for which $p(x)$ is $\true$. That is, the truth set of $p$ is $\{x \mid p(x)\}$.
-* *Quantifiers* tell us how big our truth set is.
-* The *universal quantifier or "for all x, p(x)" or $\forall x, p(x)$* says that $p(x)$ is $\true$ for every possible element of our universal set.
+* The **truth set** of $p$ is the set of all  $x$ for which $p(x)$ is $\true$. That is, the truth set of $p$ is $\{x \mid p(x)\}$.
+* **Quantifiers** tell us how big our truth set is.
+* The **universal quantifier or "for all x, p(x)" or $\forall x, p(x)$** says that $p(x)$ is $\true$ for every possible element of our universal set.
     * $(\forall b \in B, p(b)) \iff (\forall b, (b \in B \to p(b)))$ is a useful identity for when we want to say something about every element in a non universal set $B$.
-* The *existential quantifier or "there exists x such that p(x)" or $\exists x, \st p(x)$* says that there exists an $x$ in the universal set such that p(x) is $\true$.
+* The **existential quantifier or "there exists x such that p(x)" or $\exists x, \st p(x)$** says that there exists an $x$ in the universal set such that p(x) is $\true$.
     * $(\exists a \in A, \st p(a)) \iff (\exists a, \st (a \in A \land p(a)))$ is a useful identity for when we want to say something about some element of a non universal set $A$.
+- Uniqueness: assume p(x), p(y), show x = y,
     * Sometimes we want to say that there exists a unique element for which $p(x)$ is $\true$. In this case we use the notation $\exists! x, \st p(x)$ to say that there exists exactly one element $x \in \mathcal{U}$ that is in the truth set of $p(x)$.
 * We can see that $\forall b \in B, p(b) \implies \exists b \in B, \st p(b)$ is trivially true. This tells us that any statement with a universal quantifier is a stronger than one with an existential quantifier.
 * We can also combine quantifiers to get compound quantifiers.
@@ -183,39 +184,82 @@ An index set might be $\mathcal{I} = \{1,2,\ldots,100\}$ and it can be used to i
     * **Completeness** is when all true mathematical statements can be proven using the axioms.
     * **Consistency** is when the axioms do not lead to any contradictions.
     * **Decidability** is when every statement can be identified as a valid mathematical statement.
-* Sadly, in his incompleteness theorems, Kurt G\"odel showed that there cannot exist such a foundational set of mathematical axioms.
+* Sadly, in his incompleteness theorems, Kurt Gödel showed that there cannot exist such a foundational set of mathematical axioms.
     * No mathematical system can be both complete and consistent.
     * There will always be statements that are not decidable.
-* While we seem doomed in our search of a foundational mathematics, all is not lost. We surprisingly find that despite it's inherent flaws, mathematics still serves as an extremely realistic model of the world. So studying proofs still has a lot of utility as they form the basis of the tools we end up using to better understand our world. Even if the tools themselves flawed.
+* While we seem doomed in our search of a foundational mathematics, all is not lost. We surprisingly find that despite it's inherent flaws, mathematics still serves as an extremely realistic model of the world. So studying proofs still has a lot of utility as they form the basis of the tools we end up using to better understand and improve our world. Even if the tools themselves flawed.
 
-While proofs may take a tortuous journey through abstract theory to validate our claims, it is considered best practice to make the proof itself as easy to understand as possible. This means, writing the proof in complete sentences instead of in terse equations laden with mathematical jargon.
+It is considered best practice to make proofs as easy to understand as possible. This means, writing the proof using complete sentences rather than terse equations laden with mathematical jargon.
 
-A proof should be a logical argument that attempts to persuade someone of something by giving reasons or evidence for why they should accept the conclusion.Valid arguments are those where the conclusion follows logically from the premises. This resonates of the conditional connective.
+A proof should be a logical argument that attempts to persuade someone to accept the claim by giving reasons or evidence for why they should accept the conclusion. Valid arguments or rules of inference are logical forms where the conclusion follows logically from the premises.
 
-Some valid arguments we use in practice are:
+Some popular valid arguments or rules of inference that we use in practice are:
 
-* *Modus Ponens or the law of detachment or affirming the antecedent:* is when we assume $p \to q$, and $p$. Then it directly follows that $q$. Succinctly,
+* **Modus Ponens or the law of detachment or affirming the antecedent:** is when we assume $p \to q$ and $p$. Then it directly follows that $q$. Succinctly,
 \begin{align*}
     [(p \to q) \land p] \to q
 \end{align*}
+is the Modus Ponens tautology. In other words, the above proposition is always $\true$ regardless of the truth values for $p$ or $q$.
 
-is the Modus Ponens tautology.
+* **Modus Tollens or deying the consequent:** is when we assume $p \to q$ and $\lnot q$. It then follows from the contrapositive that $\lnot p$. Succinctly,
+\begin{align*}
+    [(p \to q) \land \lnot q] \to \lnot p
+\end{align*}
+is the Modus Tollens tautology.
 
-- Valid arguments (modus ponens, modus tollens, law of syllogism),
-- Invalid arguments (affirming the consequent),
-- Direct proof,
-- Proof by contrapositive,
-- Proof by contradiction,
-- Proof of conjunction,
-- Proof of inclusive disjunction,
-- Universal: let x be arbitrary, prove p(x),
-- Existential: find an x such that p(x) is true,
-- Uniqueness: assume p(x), p(y), show x = y,
-- Successor operation,
-- Proof by induction (weak and strong), and
-- Deductive vs inductive reasoning.
+* **Hypothetical Syllogism:** is when we assume $p \to q$ and $q \to r$. Then it follows that $p \to r$. Succinctly
+\begin{align*}
+    [(p \to  q) \land (q \to r)] \to (p \to r)
+\end{align*}
+is the hypothetical syllogism tautology.
+
+An example of a common invalid argument to be wary of is **affirming the consequent**. If we assume $p \to q$ and $q$. Then it is *not* necessarily $\true$ that $p$. Be careful to not use this argument when writing proofs.
+
+Some common proof techniques used are as follows:
+
+* **Direct proof:** *Goal:* $p \to q$. *Technique:* assume $p$, then prove $q$.
+* **Proof by contrapositive:** *Goal:* $p \to q$. *Technique:* assume $\lnot q$, then prove $\lnot p$.
+* To disprove a statement, one counterexample is sufficient. 
+* *Goal:* $q$. *Technique:* Find axiom  $p$, then prove $p \to q$.
+* **Indirect proof:** *Goal:* $q$. *Technique:* assume $\lnot q$ and find a contradiction e.g. Euclid's proof for an infinite number of primes.
+* *Goal:* $p \land q$. *Technique:* prove $p$ and prove $q$.
+* *Goal:* $p \lor q$. *Technique:* split into cases. Prove $p$ in some cases and prove $q$ in other cases.
+* *Goal:* $p \lor q$. *Technique:* assume $\lnot p$, then prove $q$.
+* *Goal:* $p \leftrightarrow q$. *Technique:* prove $p \to q$ and prove $q \to p$.
+* *Goal:* $\forall x, p(x)$. *Technique:* Let $x$ be arbitrary, then prove $p(x)$.
+* *Goal:* $\exists x, \st p(x)$. *Technique:* find an $x$ such that $p(x)$ is  $\true$.
+    * When coming up with existence proofs we can sometimes assume the existence to be $\true$ and work from there to find the particular value that works.
+* *Goal:* $\exists! x, \st p(x)$. *Technique:* prove $\exists x, \st p(x)$, assume $p(x)$ and $p(y)$ are $\true$, and show that $x = y$.
+
+Another class of proofs are called proofs by induction. To explain these proofs we first need to understand the *well-ordering principle*.
+**The well-ordering principle** states that $(S \subseteq \N) \land (S \not= \varnothing) \to \exists s \in S, \st \forall x \in S (s \leq x)$.
+In other words, every non-empty subset of natural numbers has a smallest element.
+If we let $S$ be a set such that $1 \in S$ and $x \in S \to (x+1) \in S$, then $S$ must contain all the natural numbers.
+Now if we let $T = \N \setminus S$ and $T \not= \varnothing$, then by the well-ordering principle, $x \in \N$ and $x \not= 1$ is the smallest element in T.
+Then $x-1 \in S$, but $(x-1)+1 \in S$, so $x \in S$, which is a contradiction. Therefore, $T = \varnothing$.
+Using this, we can now define the proof by induction.
+
+* **Proof by weak induction:** *Goal:* $\forall n \in \N, p(n)$. *Technique:* show $p(1)$ is $\true$, then show $p(k) \to p(k+1)$ by assuming $p(k)$ to be $\true$ and proving $p(k+1)$.
+* **Proof by strong induction:** *Goal:* $\forall n \in \N, p(n)$. *Technique:* show $p(1)$ is $\true$, then show $p(1),p(2),\ldots,p(k) \to p(k+1)$.
+    * It is called strong because $p(1) \land p(2) \land \ldots \land p(k) \to p(k+1) \implies p(k) \to p(k+1)$
+
+Be careful not to confuse proof by induction with inductive reasoning.
+Two of the most common types of reasoning are deductive reasoning and inductive reasoning.
+
+Deductive reasoning goes from general to specific.
+The most canonical example of an argument that uses deductive reasoning is "All men are mortal, Socrates is a man, therefore Socrates is mortal".
+Deductive reasoning needs a priori knowledge. In the example, you need to know that all men are mortal before you can make the conclusion about Socrates.
+All mathematical arguments are deductive arguments. They assume some unprovable axioms and prove some conclusions from these axioms using deductive arguments.
+
+In contrast, we have inductive reasoning that goes from the specicfic to the general. Inductive reasoning relies of statistics and is the primary argument used in science.
+A canonical example of an inductive argument is "All men throughout history have been mortal, therefore all men are mortal".
+By making several observations, we may be able to draw some conclusions on how we believe the universe works. However, it is possible that our conclusions may not be true.
+So while inductive claims can be made with high probability, they cannot be shown to always be true under any circumstance.
+Proof by induction is a form of deductive reasoning. When something is proven using induction, then it is always true given the proof is valid.
 
 # Relations
+
+A **tuple**
 - Tuples,
 - Cartesian products (cartesian square, cartesian power),
 - Arity of operations,
